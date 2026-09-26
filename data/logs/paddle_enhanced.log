@@ -1,0 +1,56 @@
+INFO: Could not find files for the given pattern(s).
+${ORIGINAL_WORKSPACE}\work\paddle_env\Lib\site-packages\paddle\utils\cpp_extension\extension_utils.py:718: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+WARNING: OMP_NUM_THREADS set to 4, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+Connectivity check to the model hoster has been skipped because `DISABLE_MODEL_SOURCE_CHECK` is enabled.
+Creating model: ('PP-OCRv5_mobile_det', None)
+Model files already exist. Using cached files. To redownload, please delete the directory manually: `${ORIGINAL_WORKSPACE}\work\models\paddlex\official_models\PP-OCRv5_mobile_det`.
+Creating model: ('korean_PP-OCRv5_mobile_rec', None)
+Model files already exist. Using cached files. To redownload, please delete the directory manually: `${ORIGINAL_WORKSPACE}\work\models\paddlex\official_models\korean_PP-OCRv5_mobile_rec`.
+LOADED 0.682
+1 / 42 039c94d89a6db2c3 ok views 1 lines 4 seconds 2.987 
+2 / 42 18e9f9bdfa0ef112.png ok views 1 lines 0 seconds 0.357 
+3 / 42 21f0660741e35439.jpg ok views 1 lines 0 seconds 0.443 
+4 / 42 2704361fd844b918.jpg ok views 1 lines 0 seconds 0.394 
+5 / 42 7eb29474dd9cd8e3.jpg ok views 1 lines 0 seconds 0.357 
+6 / 42 9c17cdeeba6b0782.jpg ok views 1 lines 4 seconds 1.88 
+7 / 42 1138e6cad536ac89.png ok views 1 lines 0 seconds 0.155 
+8 / 42 14e1ab1c400daf72.png ok views 1 lines 1 seconds 0.358 
+9 / 42 28310e5cc65c488e.gif ok views 1 lines 1 seconds 0.218 
+10 / 42 3b117c7e08f4d107.png ok views 1 lines 1 seconds 0.415 
+11 / 42 428f1b4c5969909c.png ok views 1 lines 0 seconds 0.236 
+12 / 42 c0394af33514ebb1.png ok views 1 lines 1 seconds 0.539 
+13 / 42 026769b1356f3283.png ok views 1 lines 2 seconds 0.575 
+14 / 42 075ba88c36bea11a.do ok views 1 lines 1 seconds 0.497 
+15 / 42 0e1b6909831958ac.png ok views 1 lines 1 seconds 0.425 
+16 / 42 1e071b0427c69490.png ok views 1 lines 2 seconds 0.505 
+17 / 42 423177cbdda8d724.gif ok views 1 lines 2 seconds 0.786 
+18 / 42 d5aeb9aec8a6aac3.png ok views 1 lines 2 seconds 0.719 
+19 / 42 1b7d42dd2f95b6e1.jpg ok views 1 lines 13 seconds 3.508 
+20 / 42 1d3b9f31517547fe.jpg ok views 1 lines 2 seconds 1.381 
+21 / 42 38f9fbfe72f770f3.jpg ok views 1 lines 12 seconds 3.643 
+22 / 42 4741d9518dea78ff.jpg ok views 1 lines 11 seconds 2.814 
+23 / 42 569b18fe5cf1b3f9.jpg ok views 1 lines 5 seconds 2.378 
+24 / 42 ad9f57c142a01c88.jpg ok views 1 lines 8 seconds 3.436 
+25 / 42 046bf6ae3c5e646b.es ok views 1 lines 27 seconds 9.785 
+26 / 42 2426950fc41b9a93.png ok views 1 lines 35 seconds 12.408 
+27 / 42 3fd77908165a4ba9.jpg ok views 1 lines 25 seconds 9.387 
+28 / 42 425f8567e6c2156b.jpg ok views 1 lines 2 seconds 1.59 
+29 / 42 7a9e3ca7407f9a30.jpg ok views 1 lines 5 seconds 1.293 
+30 / 42 b182f126d1b1dbba.jpg ok views 1 lines 12 seconds 7.127 
+31 / 42 01fee160037c164e.do ok views 3 lines 48 seconds 27.896 
+32 / 42 0be9f0f533833af2.jpg ok views 1 lines 45 seconds 11.865 
+33 / 42 0c65e63384de3f64.png ok views 1 lines 76 seconds 16.351 
+34 / 42 25198da01a56c796.png ok views 1 lines 41 seconds 10.125 
+35 / 42 28b16068d4379176.png ok views 1 lines 142 seconds 28.708 
+36 / 42 658a87ad149352ab.jpg ok views 1 lines 9 seconds 2.646 
+37 / 42 11cc05715bac383f.png ok views 1 lines 1 seconds 0.193 
+38 / 42 1515dfefb89fa6d5.gif ok views 1 lines 1 seconds 0.18 
+Resized image size (4961x7016) exceeds max_side_limit of 4000. Resizing to fit within limit.
+39 / 42 58a031d1909dc03e.do ok views 21 lines 128 seconds 101.284 
+Resized image size (7257x4082) exceeds max_side_limit of 4000. Resizing to fit within limit.
+40 / 42 6f96819d13a5746b.do ok views 16 lines 151 seconds 77.686 
+41 / 42 c218978fb8f2c443.gif ok views 1 lines 0 seconds 0.015 
+42 / 42 f87a726b3de847c3.do ok views 7 lines 56 seconds 43.824 
+DONE 42 ok 42 partial 0 error 0

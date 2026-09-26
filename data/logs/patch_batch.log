@@ -1,0 +1,45 @@
+${PATCHIONER_RUNTIME}\venv\Lib\site-packages\timm\models\layers\__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+${PATCHIONER_SOURCE}\Patch-ioner\Patch-ioner\src\hf_utils.py:117: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=map_location)
+${PATCHIONER_RUNTIME}\cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+${PATCHIONER_RUNTIME}\cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+${PATCHIONER_RUNTIME}\cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+LOADED 3.84949370007962
+${PATCHIONER_RUNTIME}\cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\attention.py:74: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:555.)
+  x = nn.functional.scaled_dot_product_attention(
+0 00737652af24f19b.do a man and woman are standing in front of a wedding cake . 
+10 04ac3010bffa5f83.jpg a person sitting at a table working on a computer . 
+20 0d01350613178c2e.png a close up of a small bowl of food with a pair of scissors 
+30 11ce50aab7258d4a.jpg a computer screen with a lot of different types of electronics . 
+40 17643d3de3472b8b.es a red and white sign and a red traffic sign 
+50 1d3b9f31517547fe.jpg a close up of a tennis player swinging a racket 
+60 21b7feb43b80d724.png a colorful cat sitting on a computer keyboard . 
+70 25f2a57301b672c9.png two different types of electronic devices in a room . 
+80 2d24f498d31e8953.jpg a black and white photo of a vintage photo of a large clock . 
+90 3482f034c071256d.png a red stop sign with a graffiti on it . 
+100 3b373c53c4aeafea.png a person holding a red and black motorcycle . 
+110 423177cbdda8d724.gif a yellow and red traffic sign and a man 
+120 49052aa8181509a1.jpg a black and white photo of a toy train with a picture of a person on it . 
+130 4df52c1fd6dc2735.do a couple of people holding a large sign . 
+140 59cc8f399e307523.es a small child holding a book with a picture of a stuffed animal on it . 
+150 5f9bbe66aec6e27c.do a black and white photo of a building with a clock 
+160 658a87ad149352ab.jpg two colorful and blue trains are on a building . 
+170 6cafa6b71f52558a.png a black and white photo of a red keyboard and a black cellphone 
+180 782df1b6bd7c858e.do two men pose for a picture with a sign . 
+190 7b34a75688be181a.png a stuffed animal with a red hat on is sitting in a green and white photo . 
+200 7fccbfcecb6b7c4e.png a tennis player is reaching up to hit the ball . 
+210 8d8063ca320e4b28.png a painting of a person with a bunch of different colored animals . 
+220 91fd435d3fe44a39.png a man in a red shirt and black tie holding a pair of scissors . 
+230 9c17cdeeba6b0782.jpg a group of people posing for a picture with their tennis rackets . 
+240 aa117ef38c18f050.png a hand holding a knife with a tray of food . 
+250 b0aae43f672fae10.png a stop sign with a picture of a man holding a sign . 
+260 b83f24d7404f8e60.jpg a painting of a clock on a wall . 
+270 c5adfb2a3c19b021.png a large green and yellow bus with a lot of people standing around it . 
+280 d7d54fd2227d824e.jpg a person holding a pink and white teddy bear on a wall . 
+290 f4015b238fca1c80.jpg a building with a large building in the background . 
+292 f59e7f64d7640153.svg KeyError: 'path'
+DONE 299 seconds 93.50355870008934

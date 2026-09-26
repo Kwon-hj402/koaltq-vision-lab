@@ -1,0 +1,33 @@
+{
+  "model": "Ruggero1912/Patch-ioner_talk2dino_capdec_COCO_Captions",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce GTX 1660",
+  "torch": "2.4.1+cu121",
+  "image_size": [
+    181,
+    55
+  ],
+  "preprocessing": "Official image_transforms_no_crop: resize full image to 518x518",
+  "box_source": "single full-frame Gaussian patch pool for comparison",
+  "pooling": "Gaussian patch pooling, variance=0.5",
+  "whole_image": "a red and white sign with a man on it ",
+  "regions": [
+    {
+      "id": 1,
+      "box_xyxy": [
+        0,
+        0,
+        181,
+        55
+      ],
+      "caption": "a sign that says \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" "
+    }
+  ],
+  "inference_seconds": 0.741,
+  "model_load_seconds": 2.539,
+  "peak_gpu_allocated_mb": 755.8,
+  "peak_gpu_reserved_mb": 852.0,
+  "created_at": "2026-09-26T20:59:50.815155+09:00",
+  "metadata_used": false,
+  "label_used": false
+}

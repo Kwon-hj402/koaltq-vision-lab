@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-09-26",
+  "browser": "Codex in-app browser",
+  "desktop": {
+    "actual_viewport_width": 1067,
+    "document_width": 1054,
+    "horizontal_overflow": false
+  },
+  "mobile_results": {
+    "actual_viewport_width": 390,
+    "document_width": 377,
+    "horizontal_overflow": false
+  },
+  "interactive_checks": {
+    "all_samples": 299,
+    "subset_filter": 42,
+    "search_unique_sample": 1,
+    "empty_search_hides_previous_result": true,
+    "paddle_default_tiny_digit_missed": true,
+    "paddle_enhanced_tiny_digit_recovered": true,
+    "ocr_polygon_overlay_present": true,
+    "overlay_keyboard_toggle": true,
+    "next_sample_keyboard_navigation": true,
+    "report_link_keyboard_navigation": true,
+    "current_sample_image_loaded": true
+  },
+  "console_errors": [],
+  "notes": [
+    "Mouse click automation did not activate the link/checkbox in this browser; keyboard interaction verified the same native controls.",
+    "Literature layout checked separately in literature_qa.json."
+  ],
+  "mobile_main": {
+    "requested_viewport_width": 390,
+    "actual_css_viewport_width": 325,
+    "document_width": 312,
+    "horizontal_overflow": false
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-09-26",
+  "source": "work/experiments/patch_regions.jsonl",
+  "assessment_type": "assistant 시각 점검에 기반한 선택 사례 메모. 전문가 검증이나 42장 신규 정량 평가 아님.",
+  "method_scope": "공식 Patch-ioner get_cls_capt=True CLS 출력, full-frame Gaussian patch pooling(var=0.5), Florence-2 dense-region prediction의 첫 3개 유효 bbox를 이용한 Gaussian pooling을 구분한다. Florence와의 조합은 본 조사에서 구성한 파이프라인이며 논문 원형 재현이 아니다.",
+  "notes": [
+    {
+      "file": "039c94d89a6db2c3",
+      "contact_index": 7,
+      "visible_evidence": "안경을 쓰고 파란 재킷과 분홍색 셔츠를 입은 사람이 손에 마이크를 들고 말한다.",
+      "cls": "a man sitting in a chair with a glass of wine .",
+      "full_frame": "a man in a suit and tie is talking on a phone .",
+      "region": "a man in a suit is holding a cell phone .",
+      "assessment": "CLS의 와인 오류가 전체 패치와 손·마이크 영역에서는 전화기 오류로 바뀐다. Florence의 영역 라벨에 microphone이 있어도 Patch 입력으로 사용된 것은 bbox이며, 이 조합의 해당 영역 캡션은 마이크를 식별하지 못했다. 넥타이 주장도 원본과 맞지 않는다."
+    },
+    {
+      "file": "026769b1356f3283.png",
+      "contact_index": 5,
+      "visible_evidence": "정부 상징과 ‘문화체육관광부 국립중앙도서관’ 글자가 함께 있는 로고.",
+      "cls": "a red and white sign with a man on it",
+      "full_frame": "a sign that says (반복 따옴표)",
+      "region": "a sign that says (반복 따옴표)",
+      "assessment": "CLS의 사람 주장은 사라지지만 전체 패치와 자동 영역 모두 따옴표를 반복하고 기관명을 읽지 못한다. 텍스트 존재만 포착하는 것으로는 기관을 식별하는 설명이 완성되지 않는다."
+    },
+    {
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "contact_index": 48,
+      "visible_evidence": "‘교제폭력·스토킹 레드플래그 10’ 안내와 연락처 1366·112가 있는 포스터.",
+      "cls": "a close up of a red and yellow fire hydrant",
+      "full_frame": "a sign with a (따옴표) written on it with a (따옴표) written on it .",
+      "region": "a person holding a red and white kite with a flag on it .",
+      "assessment": "전체 패치에서는 소화전 대신 표지물 수준의 표현이 나오지만 핵심 한글·숫자는 복원되지 않는다. 별도 깃발 영역에는 사람과 연을 만들어낸다. Florence의 ‘South Korea 10th anniversary’ 라벨 역시 원본의 의미와 다르므로 검출기의 자연어 라벨도 독립적으로 검증해야 한다."
+    },
+    {
+      "file": "7a9e3ca7407f9a30.jpg",
+      "contact_index": 187,
+      "visible_evidence": "‘평생소득안전망 국민연금’ 문구와 여러 세대의 인물을 포함한 그림.",
+      "cls": "a man and woman are holding a baby .",
+      "full_frame": "a picture of a man and a woman with a sign that says (따옴표) on it .",
+      "region_examples": [
+        "a man and a woman are standing together .",
+        "a man and a woman sitting next to each other ."
+      ],
+      "assessment": "전체 패치에서 인물 그림·글자라는 형식은 일부 회복되지만 국민연금 주제와 다세대 구성은 누락된다. 영역 캡션을 단순 연결해도 한글 주제를 얻지 못한다. Florence의 Korean drama·living room 같은 영역 라벨은 확인된 사실로 채택하지 않는다."
+    },
+    {
+      "file": "1138e6cad536ac89.png",
+      "contact_index": 27,
+      "visible_evidence": "투명 배경 위 노란 태양 아이콘. 흰 배경 합성본으로 세부를 재확인함.",
+      "cls": "a man holding a pink frisbee in front of a large clock .",
+      "full_frame": "a white cup with a pink and white design",
+      "region_examples": [],
+      "assessment": "전체 패치 풀링도 태양을 컵으로 잘못 설명한다. Florence가 반환한 유효 bbox가 없어 이 이미지의 자동 부분 영역 캡션은 없다. 작은 아이콘 도메인에는 범용 COCO 캡션 디코더의 명백한 분포 차이가 관찰된다."
+    }
+  ],
+  "interpretation": "이 다섯 사례는 branch를 바꾸면 문장이 달라진다는 증거이며, 전체 데이터 성능의 향상 또는 악화를 추정하는 근거는 아니다. 핵심 한글은 별도 OCR 근거로 제공하고 시각 설명의 객체·행동 주장은 원본과 대조해야 한다. 기존 Patch 42장 통계는 오직 CLS global 출력에 대한 결과이다."
+}

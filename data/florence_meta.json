@@ -1,0 +1,16 @@
+{
+  "model": "microsoft/Florence-2-base",
+  "variant": "0.23B pretrained, not base-ft",
+  "device": "cuda float16 eager",
+  "load_seconds": 1.601769300061278,
+  "tasks": [
+    "<MORE_DETAILED_CAPTION>",
+    "<DENSE_REGION_CAPTION>"
+  ],
+  "max_new_tokens": 256,
+  "num_beams": 3,
+  "do_sample": false,
+  "input_policy": "first frame EXIF corrected, alpha on white; no alt/context/label",
+  "source": "https://huggingface.co/microsoft/Florence-2-base",
+  "conference": "CVPR2024; practical baseline outside2026 strict filter"
+}

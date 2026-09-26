@@ -1,0 +1,18 @@
+{
+  "images": 42,
+  "ok_images": 42,
+  "error_images": 0,
+  "partial_images": 0,
+  "dark_background_images": 2,
+  "upscaled_images": 21,
+  "tiled_images": 4,
+  "views": 85,
+  "raw_lines": 999,
+  "merged_lines": 877,
+  "coordinate_inverse_max_error": 0,
+  "load_seconds": 0.6823081000475213,
+  "elapsed_seconds": 395.8433290999383,
+  "sum_inference_seconds": 391.37225879973266,
+  "latency_isolated": false,
+  "integrity_checks_passed": true
+}

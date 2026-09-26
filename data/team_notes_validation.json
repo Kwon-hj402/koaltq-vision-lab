@@ -1,0 +1,27 @@
+{
+  "revision": "team_notes",
+  "checked_at": "2026-09-26",
+  "main_examples": 12,
+  "gallery_diagnostic_examples": 42,
+  "gallery_extra_svg": 1,
+  "gallery_phrase_tables": 29,
+  "gallery_patch_region_panels": 42,
+  "local_links_checked": 425,
+  "data_files_compared_with_previous_zip": 38,
+  "data_files_changed": [],
+  "desktop": {
+    "main_viewport": 1021,
+    "main_document_width": 1008,
+    "gallery_viewport": 1280,
+    "gallery_document_width": 1265
+  },
+  "mobile": {
+    "viewport": 390,
+    "main_document_width": 375,
+    "gallery_document_width": 375,
+    "literature_document_width": 375
+  },
+  "table_scroll_contained": true,
+  "details_expand_checked": true,
+  "console_errors": []
+}

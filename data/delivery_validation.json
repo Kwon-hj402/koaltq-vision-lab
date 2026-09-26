@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-09-26",
+  "html_files": 6,
+  "local_links_checked": 427,
+  "sample_rows": 299,
+  "evidence_packets": 299,
+  "verified_png_assets": 300,
+  "errors": [],
+  "packet_label_reference_audit_leakage": false
+}

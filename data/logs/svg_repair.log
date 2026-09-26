@@ -1,0 +1,99 @@
+${PATCHIONER_RUNTIME}\venv\Lib\site-packages\timm\models\layers\__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+${PATCHIONER_SOURCE}\Patch-ioner\Patch-ioner\src\hf_utils.py:117: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=map_location)
+${PATCHIONER_RUNTIME}\cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+${PATCHIONER_RUNTIME}\cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+${PATCHIONER_RUNTIME}\cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+${PATCHIONER_RUNTIME}\cache\torch\hub\facebookresearch_dinov2_main\dinov2\layers\attention.py:74: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:555.)
+  x = nn.functional.scaled_dot_product_attention(
+{
+  "patch": {
+    "model": "Ruggero1912/Patch-ioner_talk2dino_capdec_COCO_Captions",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1660",
+    "torch": "2.4.1+cu121",
+    "image_size": [
+      129,
+      29
+    ],
+    "preprocessing": "Official image_transforms_no_crop: resize full image to 518x518",
+    "box_source": "manually selected, not automatic detections",
+    "pooling": "Gaussian patch pooling, variance=0.5",
+    "whole_image": "a white and black bottle of water on a bed . ",
+    "regions": [],
+    "inference_seconds": 0.685,
+    "model_load_seconds": 3.65,
+    "peak_gpu_allocated_mb": 755.8,
+    "peak_gpu_reserved_mb": 850.0,
+    "created_at": "2026-09-26T20:49:36.935560+09:00",
+    "file": "f59e7f64d7640153.svg",
+    "repair": "SVG rasterized preserving alpha then white composite"
+  },
+  "easy": {
+    "file": "f59e7f64d7640153.svg",
+    "seconds": 0.049975299974903464,
+    "peak_gpu_allocated_mb": 144.5498046875,
+    "lines": [],
+    "repair": "alpha-preserving SVG rasterization",
+    "dark_background": false,
+    "scale": 1
+  },
+  "easy_enhanced": {
+    "file": "f59e7f64d7640153.svg",
+    "seconds": 0.08135360002052039,
+    "peak_gpu_allocated_mb": 160.0068359375,
+    "lines": [
+      {
+        "box": [
+          [
+            1.0078125,
+            21.66796875
+          ],
+          [
+            26.70703125,
+            21.66796875
+          ],
+          [
+            26.70703125,
+            28.974609375
+          ],
+          [
+            1.0078125,
+            28.974609375
+          ]
+        ],
+        "text": "OGOU",
+        "confidence": 0.36200767755508423
+      },
+      {
+        "box": [
+          [
+            37.541015625,
+            8.0625
+          ],
+          [
+            129.0,
+            8.0625
+          ],
+          [
+            129.0,
+            28.974609375
+          ],
+          [
+            37.541015625,
+            28.974609375
+          ]
+        ],
+        "text": "|대구광역시",
+        "confidence": 0.3341236319028277
+      }
+    ],
+    "repair": "alpha-preserving SVG rasterization",
+    "dark_background": true,
+    "scale": 3.9689922480620154
+  }
+}

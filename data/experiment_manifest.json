@@ -1,0 +1,160 @@
+{
+  "created_at": "2026-09-26T21:06:22.000489+09:00",
+  "date": "2026-09-26",
+  "source_archive_name": "koaltq_sample_299.zip",
+  "source_archive_sha256": "94b2b6b13813dc7384b06a972eb80b01434291bbe55fc5ab0c0dc2ed7eb10866",
+  "record_count": 299,
+  "unique_image_files": 299,
+  "unique_file_content_sha256": 289,
+  "hardware": {
+    "gpu": "NVIDIA GeForce GTX 1660",
+    "vram_mib": 6144,
+    "cpu": "AMD Ryzen 7 3700X, 8C/16T",
+    "ram_bytes": 34277883904,
+    "os": "Windows"
+  },
+  "label_counts": {
+    "파일명형": 6,
+    "무관형": 11,
+    "불충분형": 74,
+    "적절": 167,
+    "중복형": 5,
+    "무의미형": 30,
+    "장식오용형": 6
+  },
+  "scope": "Description/OCR component diagnostics, not a Gemma or final 7-class evaluation",
+  "global_image_policy": "EXIF transpose; alpha over white; first frame; all GIFs single-frame; SVG separately rasterized with resvg-py0.5.0",
+  "inference_inputs": "image pixels only, without alt/context/labels",
+  "references": "assistant-authored visual diagnoses; not independently human validated",
+  "metadata": {
+    "easy_meta": {
+      "model": "EasyOCR1.7.2 CRAFT + korean_g2",
+      "version": "1.7.2",
+      "torch": "2.4.1+cu121",
+      "device": "cuda",
+      "load_seconds": 11.109976300038397,
+      "settings": {
+        "languages": [
+          "ko",
+          "en"
+        ],
+        "decoder": "greedy",
+        "paragraph": false,
+        "canvas_size": 2560,
+        "mag_ratio": 1,
+        "text_threshold": 0.7,
+        "low_text": 0.4,
+        "link_threshold": 0.4,
+        "batch_size": 1
+      },
+      "input_policy": "first frame EXIF corrected, alpha on white; native pixel size; no alt/context/label"
+    },
+    "florence_meta": {
+      "model": "microsoft/Florence-2-base",
+      "variant": "0.23B pretrained, not base-ft",
+      "device": "cuda float16 eager",
+      "load_seconds": 1.601769300061278,
+      "tasks": [
+        "<MORE_DETAILED_CAPTION>",
+        "<DENSE_REGION_CAPTION>"
+      ],
+      "max_new_tokens": 256,
+      "num_beams": 3,
+      "do_sample": false,
+      "input_policy": "first frame EXIF corrected, alpha on white; no alt/context/label",
+      "source": "https://huggingface.co/microsoft/Florence-2-base",
+      "conference": "CVPR2024; practical baseline outside2026 strict filter"
+    },
+    "paddle_enhanced_meta": {
+      "started_at_utc": "2026-09-26T11:48:19.322260+00:00",
+      "status": "complete",
+      "model": "PP-OCRv5 mobile detection + Korean mobile recognition",
+      "detection_model": "PP-OCRv5_mobile_det",
+      "recognition_model": "korean_PP-OCRv5_mobile_rec",
+      "paddle": "3.2.2",
+      "paddleocr": "3.3.2",
+      "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+      "python_executable": "${ORIGINAL_WORKSPACE}\\work\\paddle_env\\Scripts\\python.exe",
+      "device": "CPU",
+      "cpu_threads": 4,
+      "orientation": false,
+      "unwarping": false,
+      "mkldnn": false,
+      "policy": {
+        "input": "all 42 rows of subset.json, unchanged order; no labels, OCR outputs or references read",
+        "frame": "first frame; EXIF transpose; retain native resolution before fixed transforms",
+        "alpha": "fraction(alpha < 255) > 0.05 AND alpha-weighted mean RGB brightness > 180 => #202020; otherwise white",
+        "small": "maxside < 512 => nominal scale min(8, 512 / maxside); Lanczos, rounded dimensions",
+        "large": "maxside > 1800 => whole image plus native-resolution 1600px tiles, stride 1440px (160px overlap); edge tiles cropped to bounds",
+        "merge": "descending confidence; axis-aligned intersection / smaller-box area > 0.5 AND normalized text SequenceMatcher ratio > 0.5 => duplicate; keep highest confidence",
+        "normalization_for_merge_only": "Unicode NFC, remove whitespace, lowercase; raw text unchanged",
+        "coordinates": "inverse resize separately by actual x/y ratio, then add tile origin; EXIF-corrected original coordinates",
+        "reading_order": "approximate y-bands of 12 original pixels then x; not a validated document reading-order model"
+      },
+      "input_sha256": "76ae982652e19d8c51cd86a3459346f6cdd6daa79bdeeb3b5fd6be2210ac8aee",
+      "script_sha256": "ba9181467ef37f4a72913934766580dfab861eb315f561fccd8384181024b308",
+      "expected_images": 42,
+      "latency_isolated": false,
+      "latency_note": "Concurrent parent PaddleOCR CPU 4-thread all-image run and Florence GPU experiment; times are observational and not isolated benchmarks.",
+      "load_seconds": 0.6823081000475213,
+      "finished_at_utc": "2026-09-26T11:54:55.849164+00:00",
+      "elapsed_seconds": 395.8433290999383,
+      "written_images": 42,
+      "ok_images": 42,
+      "partial_images": 0,
+      "error_images": 0
+    },
+    "paddle_meta": {
+      "model": "PP-OCRv5 mobile detection + Korean mobile recognition",
+      "paddle": "3.2.2",
+      "paddleocr": "3.3.2",
+      "device": "CPU",
+      "cpu_threads": 4,
+      "load_seconds": 0.5909775999607518,
+      "orientation": false,
+      "unwarping": false,
+      "mkldnn": false,
+      "input_policy": "first frame EXIF corrected alpha on white; native size; no alt/context/label"
+    },
+    "paddle_subset_meta": {
+      "model": "PP-OCRv5 mobile detection + Korean mobile recognition",
+      "paddle": "3.2.2",
+      "paddleocr": "3.3.2",
+      "device": "CPU",
+      "cpu_threads": 4,
+      "load_seconds": 7.365087900077924,
+      "orientation": false,
+      "unwarping": false,
+      "mkldnn": false,
+      "input_policy": "first frame EXIF corrected alpha on white; native size; no alt/context/label"
+    },
+    "patch_meta": {
+      "model": "Ruggero1912/Patch-ioner_talk2dino_capdec_COCO_Captions",
+      "device": "cuda",
+      "torch": "2.4.1+cu121",
+      "python": "3.11.9",
+      "load_seconds": 3.84949370007962,
+      "input_policy": "PIL first frame, EXIF corrected, RGBA composited on white; no alt/context/label given to model",
+      "full_image_transform": "518x518 full-image resize, no crop",
+      "seed": 0,
+      "created_at": "2026-09-26T20:38:20"
+    }
+  },
+  "weights": [
+    {
+      "name": "model.safetensors",
+      "bytes": 463221266,
+      "sha256": "03075d2d2d2bbd3e180b9ba0afae4aa8563226e2d32911656966e05b2f2ee060"
+    },
+    {
+      "name": "craft_mlt_25k.pth",
+      "bytes": 83152330,
+      "sha256": "4a5efbfb48b4081100544e75e1e2b57f8de3d84f213004b14b85fd4b3748db17"
+    },
+    {
+      "name": "korean_g2.pth",
+      "bytes": 16081533,
+      "sha256": "ecdead53c909748aad74bc2f2beeab3e3ad751134db6335e97ea19f879ca407e"
+    }
+  ]
+}

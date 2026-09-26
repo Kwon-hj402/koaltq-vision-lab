@@ -1,0 +1,8 @@
+# Observed local CPU environment, 2026-09-26; not a clean-install lock.
+# Do not install paddlepaddle-gpu alongside paddlepaddle in the same environment.
+paddlepaddle==3.2.2
+paddleocr==3.3.2
+paddlex==3.3.13
+Pillow==12.3.0
+numpy==2.4.6
+opencv-contrib-python==4.10.0.84

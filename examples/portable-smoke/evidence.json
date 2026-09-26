@@ -1,0 +1,1871 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-09-26T12:46:58.403152+00:00",
+  "status": "ok",
+  "input": {
+    "filename": "3fd77908165a4ba9.jpg",
+    "sha256": "55cd5c07c26352c1dd56a7185f8ba9c04e0087e0afec7fed5df15acf2ff7b3c0"
+  },
+  "input_policy": "one local raster image; first frame; EXIF corrected; alpha on white; no alt, labels, metadata, external lookup or additional training",
+  "pipeline": "PP-OCRv5 Korean and Florence-2-base run sequentially in separate environments; evidence preserved separately",
+  "ocr": {
+    "status": "ok",
+    "created_at_utc": "2026-09-26T12:46:34.561102+00:00",
+    "detection_model": "PP-OCRv5_mobile_det",
+    "recognition_model": "korean_PP-OCRv5_mobile_rec",
+    "device": "cpu",
+    "no_additional_training": true,
+    "coordinate_system": "EXIF-corrected original image pixels",
+    "confidence_note": "Recognizer scores are not calibrated probabilities that a phrase is correct.",
+    "load_seconds": 1.8572318999795243,
+    "seconds": 9.538823000038974,
+    "image": {
+      "width": 720,
+      "height": 390,
+      "source_format": "JPEG",
+      "frame": 0,
+      "exif_corrected": true,
+      "alpha_background": "white"
+    },
+    "lines": [
+      {
+        "id": 0,
+        "text": "2026년 3분기 임산부·영유아 비대면 건강 교실 운영",
+        "confidence": 0.9847095608711243,
+        "box": [
+          [
+            47,
+            20
+          ],
+          [
+            648,
+            20
+          ],
+          [
+            648,
+            48
+          ],
+          [
+            47,
+            48
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 1,
+        "text": "기간",
+        "confidence": 0.9994271993637085,
+        "box": [
+          [
+            48,
+            59
+          ],
+          [
+            108,
+            59
+          ],
+          [
+            108,
+            80
+          ],
+          [
+            48,
+            80
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 2,
+        "text": "3월,6월,9월,11월/분기별1회(총 4회)",
+        "confidence": 0.9786989092826843,
+        "box": [
+          [
+            110,
+            63
+          ],
+          [
+            337,
+            63
+          ],
+          [
+            337,
+            77
+          ],
+          [
+            110,
+            77
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 3,
+        "text": "대상",
+        "confidence": 0.9994746446609497,
+        "box": [
+          [
+            48,
+            87
+          ],
+          [
+            108,
+            90
+          ],
+          [
+            107,
+            111
+          ],
+          [
+            47,
+            108
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 4,
+        "text": "교육 제공 시점 기준 1년 이내에 임신 또는 출산한 관내 거주자",
+        "confidence": 0.9152788519859314,
+        "box": [
+          [
+            114,
+            93
+          ],
+          [
+            449,
+            93
+          ],
+          [
+            449,
+            107
+          ],
+          [
+            114,
+            107
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 5,
+        "text": "방법",
+        "confidence": 0.9981918334960938,
+        "box": [
+          [
+            49,
+            119
+          ],
+          [
+            101,
+            119
+          ],
+          [
+            101,
+            141
+          ],
+          [
+            49,
+            141
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 6,
+        "text": "유튜브 활용 온라인 교육 ※대상 인원에게 문자로유튜브 URL발송",
+        "confidence": 0.8969196677207947,
+        "box": [
+          [
+            114,
+            121
+          ],
+          [
+            481,
+            122
+          ],
+          [
+            481,
+            139
+          ],
+          [
+            114,
+            138
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 7,
+        "text": "내용",
+        "confidence": 0.999781608581543,
+        "box": [
+          [
+            48,
+            149
+          ],
+          [
+            101,
+            149
+          ],
+          [
+            101,
+            171
+          ],
+          [
+            48,
+            171
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 8,
+        "text": "-임산부운동(필라테스,요가)",
+        "confidence": 0.9741880893707275,
+        "box": [
+          [
+            114,
+            150
+          ],
+          [
+            283,
+            150
+          ],
+          [
+            283,
+            165
+          ],
+          [
+            114,
+            165
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 9,
+        "text": "",
+        "confidence": 0.0,
+        "box": [
+          [
+            622,
+            149
+          ],
+          [
+            661,
+            138
+          ],
+          [
+            668,
+            164
+          ],
+          [
+            629,
+            175
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 10,
+        "text": "·수유의 종류 및 방법,영유아 이유식 진행방법",
+        "confidence": 0.954873263835907,
+        "box": [
+          [
+            118,
+            168
+          ],
+          [
+            367,
+            168
+          ],
+          [
+            367,
+            182
+          ],
+          [
+            118,
+            182
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 11,
+        "text": "-신생아육아방법,수면교육,목욕법,영유아안전교육등",
+        "confidence": 0.9732211232185364,
+        "box": [
+          [
+            115,
+            182
+          ],
+          [
+            430,
+            183
+          ],
+          [
+            430,
+            200
+          ],
+          [
+            115,
+            199
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 12,
+        "text": "교육차수",
+        "confidence": 0.9997090697288513,
+        "box": [
+          [
+            64,
+            212
+          ],
+          [
+            118,
+            212
+          ],
+          [
+            118,
+            231
+          ],
+          [
+            64,
+            231
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 13,
+        "text": "교육일정",
+        "confidence": 0.9998362064361572,
+        "box": [
+          [
+            165,
+            212
+          ],
+          [
+            217,
+            212
+          ],
+          [
+            217,
+            231
+          ],
+          [
+            165,
+            231
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 14,
+        "text": "교육내용",
+        "confidence": 0.9999856948852539,
+        "box": [
+          [
+            361,
+            212
+          ],
+          [
+            412,
+            212
+          ],
+          [
+            412,
+            231
+          ],
+          [
+            361,
+            231
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 15,
+        "text": "-임산부매트필라테스",
+        "confidence": 0.9955564737319946,
+        "box": [
+          [
+            261,
+            241
+          ],
+          [
+            384,
+            241
+          ],
+          [
+            384,
+            258
+          ],
+          [
+            261,
+            258
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 16,
+        "text": "3기",
+        "confidence": 0.9965715408325195,
+        "box": [
+          [
+            78,
+            266
+          ],
+          [
+            104,
+            266
+          ],
+          [
+            104,
+            286
+          ],
+          [
+            78,
+            286
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 17,
+        "text": "9.14.(월)",
+        "confidence": 0.9956191778182983,
+        "box": [
+          [
+            161,
+            258
+          ],
+          [
+            218,
+            258
+          ],
+          [
+            218,
+            276
+          ],
+          [
+            161,
+            276
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 18,
+        "text": "-신생아실전케어AtoZ속성편",
+        "confidence": 0.9872899651527405,
+        "box": [
+          [
+            261,
+            258
+          ],
+          [
+            431,
+            258
+          ],
+          [
+            431,
+            275
+          ],
+          [
+            261,
+            275
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 19,
+        "text": "~9.28.(월)",
+        "confidence": 0.9236781001091003,
+        "box": [
+          [
+            159,
+            274
+          ],
+          [
+            222,
+            276
+          ],
+          [
+            221,
+            295
+          ],
+          [
+            158,
+            292
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 20,
+        "text": "-신생아실 간호사가 알려주는 수유의 모든 것",
+        "confidence": 0.9542158246040344,
+        "box": [
+          [
+            261,
+            275
+          ],
+          [
+            504,
+            275
+          ],
+          [
+            504,
+            292
+          ],
+          [
+            261,
+            292
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 21,
+        "text": "-신생아리듬마사지및영아놀이법",
+        "confidence": 0.9862849712371826,
+        "box": [
+          [
+            260,
+            291
+          ],
+          [
+            454,
+            293
+          ],
+          [
+            454,
+            310
+          ],
+          [
+            260,
+            309
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 22,
+        "text": "문의처",
+        "confidence": 0.9958105683326721,
+        "box": [
+          [
+            56,
+            326
+          ],
+          [
+            107,
+            326
+          ],
+          [
+            107,
+            344
+          ],
+          [
+            56,
+            344
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 23,
+        "text": "건강증진과042-288-8090",
+        "confidence": 0.998259961605072,
+        "box": [
+          [
+            109,
+            329
+          ],
+          [
+            271,
+            329
+          ],
+          [
+            271,
+            343
+          ],
+          [
+            109,
+            343
+          ]
+        ],
+        "view": "whole"
+      },
+      {
+        "id": 24,
+        "text": "*만족도 조사 참여 시,소정의 선물이 제공됩니다.",
+        "confidence": 0.985061526298523,
+        "box": [
+          [
+            16,
+            368
+          ],
+          [
+            280,
+            368
+          ],
+          [
+            280,
+            382
+          ],
+          [
+            16,
+            382
+          ]
+        ],
+        "view": "whole"
+      }
+    ],
+    "raw": [
+      {
+        "res": {
+          "input_path": null,
+          "page_index": null,
+          "model_settings": {
+            "use_doc_preprocessor": false,
+            "use_textline_orientation": false
+          },
+          "dt_polys": [
+            [
+              [
+                47,
+                20
+              ],
+              [
+                648,
+                20
+              ],
+              [
+                648,
+                48
+              ],
+              [
+                47,
+                48
+              ]
+            ],
+            [
+              [
+                48,
+                59
+              ],
+              [
+                108,
+                59
+              ],
+              [
+                108,
+                80
+              ],
+              [
+                48,
+                80
+              ]
+            ],
+            [
+              [
+                110,
+                63
+              ],
+              [
+                337,
+                63
+              ],
+              [
+                337,
+                77
+              ],
+              [
+                110,
+                77
+              ]
+            ],
+            [
+              [
+                48,
+                87
+              ],
+              [
+                108,
+                90
+              ],
+              [
+                107,
+                111
+              ],
+              [
+                47,
+                108
+              ]
+            ],
+            [
+              [
+                114,
+                93
+              ],
+              [
+                449,
+                93
+              ],
+              [
+                449,
+                107
+              ],
+              [
+                114,
+                107
+              ]
+            ],
+            [
+              [
+                49,
+                119
+              ],
+              [
+                101,
+                119
+              ],
+              [
+                101,
+                141
+              ],
+              [
+                49,
+                141
+              ]
+            ],
+            [
+              [
+                114,
+                121
+              ],
+              [
+                481,
+                122
+              ],
+              [
+                481,
+                139
+              ],
+              [
+                114,
+                138
+              ]
+            ],
+            [
+              [
+                48,
+                149
+              ],
+              [
+                101,
+                149
+              ],
+              [
+                101,
+                171
+              ],
+              [
+                48,
+                171
+              ]
+            ],
+            [
+              [
+                114,
+                150
+              ],
+              [
+                283,
+                150
+              ],
+              [
+                283,
+                165
+              ],
+              [
+                114,
+                165
+              ]
+            ],
+            [
+              [
+                622,
+                149
+              ],
+              [
+                661,
+                138
+              ],
+              [
+                668,
+                164
+              ],
+              [
+                629,
+                175
+              ]
+            ],
+            [
+              [
+                118,
+                168
+              ],
+              [
+                367,
+                168
+              ],
+              [
+                367,
+                182
+              ],
+              [
+                118,
+                182
+              ]
+            ],
+            [
+              [
+                115,
+                182
+              ],
+              [
+                430,
+                183
+              ],
+              [
+                430,
+                200
+              ],
+              [
+                115,
+                199
+              ]
+            ],
+            [
+              [
+                64,
+                212
+              ],
+              [
+                118,
+                212
+              ],
+              [
+                118,
+                231
+              ],
+              [
+                64,
+                231
+              ]
+            ],
+            [
+              [
+                165,
+                212
+              ],
+              [
+                217,
+                212
+              ],
+              [
+                217,
+                231
+              ],
+              [
+                165,
+                231
+              ]
+            ],
+            [
+              [
+                361,
+                212
+              ],
+              [
+                412,
+                212
+              ],
+              [
+                412,
+                231
+              ],
+              [
+                361,
+                231
+              ]
+            ],
+            [
+              [
+                261,
+                241
+              ],
+              [
+                384,
+                241
+              ],
+              [
+                384,
+                258
+              ],
+              [
+                261,
+                258
+              ]
+            ],
+            [
+              [
+                78,
+                266
+              ],
+              [
+                104,
+                266
+              ],
+              [
+                104,
+                286
+              ],
+              [
+                78,
+                286
+              ]
+            ],
+            [
+              [
+                161,
+                258
+              ],
+              [
+                218,
+                258
+              ],
+              [
+                218,
+                276
+              ],
+              [
+                161,
+                276
+              ]
+            ],
+            [
+              [
+                261,
+                258
+              ],
+              [
+                431,
+                258
+              ],
+              [
+                431,
+                275
+              ],
+              [
+                261,
+                275
+              ]
+            ],
+            [
+              [
+                159,
+                274
+              ],
+              [
+                222,
+                276
+              ],
+              [
+                221,
+                295
+              ],
+              [
+                158,
+                292
+              ]
+            ],
+            [
+              [
+                261,
+                275
+              ],
+              [
+                504,
+                275
+              ],
+              [
+                504,
+                292
+              ],
+              [
+                261,
+                292
+              ]
+            ],
+            [
+              [
+                260,
+                291
+              ],
+              [
+                454,
+                293
+              ],
+              [
+                454,
+                310
+              ],
+              [
+                260,
+                309
+              ]
+            ],
+            [
+              [
+                56,
+                326
+              ],
+              [
+                107,
+                326
+              ],
+              [
+                107,
+                344
+              ],
+              [
+                56,
+                344
+              ]
+            ],
+            [
+              [
+                109,
+                329
+              ],
+              [
+                271,
+                329
+              ],
+              [
+                271,
+                343
+              ],
+              [
+                109,
+                343
+              ]
+            ],
+            [
+              [
+                16,
+                368
+              ],
+              [
+                280,
+                368
+              ],
+              [
+                280,
+                382
+              ],
+              [
+                16,
+                382
+              ]
+            ]
+          ],
+          "text_det_params": {
+            "limit_side_len": 64,
+            "limit_type": "min",
+            "thresh": 0.3,
+            "max_side_limit": 4000,
+            "box_thresh": 0.6,
+            "unclip_ratio": 1.5
+          },
+          "text_type": "general",
+          "textline_orientation_angles": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "text_rec_score_thresh": 0.0,
+          "return_word_box": false,
+          "rec_texts": [
+            "2026년 3분기 임산부·영유아 비대면 건강 교실 운영",
+            "기간",
+            "3월,6월,9월,11월/분기별1회(총 4회)",
+            "대상",
+            "교육 제공 시점 기준 1년 이내에 임신 또는 출산한 관내 거주자",
+            "방법",
+            "유튜브 활용 온라인 교육 ※대상 인원에게 문자로유튜브 URL발송",
+            "내용",
+            "-임산부운동(필라테스,요가)",
+            "",
+            "·수유의 종류 및 방법,영유아 이유식 진행방법",
+            "-신생아육아방법,수면교육,목욕법,영유아안전교육등",
+            "교육차수",
+            "교육일정",
+            "교육내용",
+            "-임산부매트필라테스",
+            "3기",
+            "9.14.(월)",
+            "-신생아실전케어AtoZ속성편",
+            "~9.28.(월)",
+            "-신생아실 간호사가 알려주는 수유의 모든 것",
+            "-신생아리듬마사지및영아놀이법",
+            "문의처",
+            "건강증진과042-288-8090",
+            "*만족도 조사 참여 시,소정의 선물이 제공됩니다."
+          ],
+          "rec_scores": [
+            0.9847095608711243,
+            0.9994271993637085,
+            0.9786989092826843,
+            0.9994746446609497,
+            0.9152788519859314,
+            0.9981918334960938,
+            0.8969196677207947,
+            0.999781608581543,
+            0.9741880893707275,
+            0.0,
+            0.954873263835907,
+            0.9732211232185364,
+            0.9997090697288513,
+            0.9998362064361572,
+            0.9999856948852539,
+            0.9955564737319946,
+            0.9965715408325195,
+            0.9956191778182983,
+            0.9872899651527405,
+            0.9236781001091003,
+            0.9542158246040344,
+            0.9862849712371826,
+            0.9958105683326721,
+            0.998259961605072,
+            0.985061526298523
+          ],
+          "rec_polys": [
+            [
+              [
+                47,
+                20
+              ],
+              [
+                648,
+                20
+              ],
+              [
+                648,
+                48
+              ],
+              [
+                47,
+                48
+              ]
+            ],
+            [
+              [
+                48,
+                59
+              ],
+              [
+                108,
+                59
+              ],
+              [
+                108,
+                80
+              ],
+              [
+                48,
+                80
+              ]
+            ],
+            [
+              [
+                110,
+                63
+              ],
+              [
+                337,
+                63
+              ],
+              [
+                337,
+                77
+              ],
+              [
+                110,
+                77
+              ]
+            ],
+            [
+              [
+                48,
+                87
+              ],
+              [
+                108,
+                90
+              ],
+              [
+                107,
+                111
+              ],
+              [
+                47,
+                108
+              ]
+            ],
+            [
+              [
+                114,
+                93
+              ],
+              [
+                449,
+                93
+              ],
+              [
+                449,
+                107
+              ],
+              [
+                114,
+                107
+              ]
+            ],
+            [
+              [
+                49,
+                119
+              ],
+              [
+                101,
+                119
+              ],
+              [
+                101,
+                141
+              ],
+              [
+                49,
+                141
+              ]
+            ],
+            [
+              [
+                114,
+                121
+              ],
+              [
+                481,
+                122
+              ],
+              [
+                481,
+                139
+              ],
+              [
+                114,
+                138
+              ]
+            ],
+            [
+              [
+                48,
+                149
+              ],
+              [
+                101,
+                149
+              ],
+              [
+                101,
+                171
+              ],
+              [
+                48,
+                171
+              ]
+            ],
+            [
+              [
+                114,
+                150
+              ],
+              [
+                283,
+                150
+              ],
+              [
+                283,
+                165
+              ],
+              [
+                114,
+                165
+              ]
+            ],
+            [
+              [
+                622,
+                149
+              ],
+              [
+                661,
+                138
+              ],
+              [
+                668,
+                164
+              ],
+              [
+                629,
+                175
+              ]
+            ],
+            [
+              [
+                118,
+                168
+              ],
+              [
+                367,
+                168
+              ],
+              [
+                367,
+                182
+              ],
+              [
+                118,
+                182
+              ]
+            ],
+            [
+              [
+                115,
+                182
+              ],
+              [
+                430,
+                183
+              ],
+              [
+                430,
+                200
+              ],
+              [
+                115,
+                199
+              ]
+            ],
+            [
+              [
+                64,
+                212
+              ],
+              [
+                118,
+                212
+              ],
+              [
+                118,
+                231
+              ],
+              [
+                64,
+                231
+              ]
+            ],
+            [
+              [
+                165,
+                212
+              ],
+              [
+                217,
+                212
+              ],
+              [
+                217,
+                231
+              ],
+              [
+                165,
+                231
+              ]
+            ],
+            [
+              [
+                361,
+                212
+              ],
+              [
+                412,
+                212
+              ],
+              [
+                412,
+                231
+              ],
+              [
+                361,
+                231
+              ]
+            ],
+            [
+              [
+                261,
+                241
+              ],
+              [
+                384,
+                241
+              ],
+              [
+                384,
+                258
+              ],
+              [
+                261,
+                258
+              ]
+            ],
+            [
+              [
+                78,
+                266
+              ],
+              [
+                104,
+                266
+              ],
+              [
+                104,
+                286
+              ],
+              [
+                78,
+                286
+              ]
+            ],
+            [
+              [
+                161,
+                258
+              ],
+              [
+                218,
+                258
+              ],
+              [
+                218,
+                276
+              ],
+              [
+                161,
+                276
+              ]
+            ],
+            [
+              [
+                261,
+                258
+              ],
+              [
+                431,
+                258
+              ],
+              [
+                431,
+                275
+              ],
+              [
+                261,
+                275
+              ]
+            ],
+            [
+              [
+                159,
+                274
+              ],
+              [
+                222,
+                276
+              ],
+              [
+                221,
+                295
+              ],
+              [
+                158,
+                292
+              ]
+            ],
+            [
+              [
+                261,
+                275
+              ],
+              [
+                504,
+                275
+              ],
+              [
+                504,
+                292
+              ],
+              [
+                261,
+                292
+              ]
+            ],
+            [
+              [
+                260,
+                291
+              ],
+              [
+                454,
+                293
+              ],
+              [
+                454,
+                310
+              ],
+              [
+                260,
+                309
+              ]
+            ],
+            [
+              [
+                56,
+                326
+              ],
+              [
+                107,
+                326
+              ],
+              [
+                107,
+                344
+              ],
+              [
+                56,
+                344
+              ]
+            ],
+            [
+              [
+                109,
+                329
+              ],
+              [
+                271,
+                329
+              ],
+              [
+                271,
+                343
+              ],
+              [
+                109,
+                343
+              ]
+            ],
+            [
+              [
+                16,
+                368
+              ],
+              [
+                280,
+                368
+              ],
+              [
+                280,
+                382
+              ],
+              [
+                16,
+                382
+              ]
+            ]
+          ],
+          "rec_boxes": [
+            [
+              47,
+              20,
+              648,
+              48
+            ],
+            [
+              48,
+              59,
+              108,
+              80
+            ],
+            [
+              110,
+              63,
+              337,
+              77
+            ],
+            [
+              47,
+              87,
+              108,
+              111
+            ],
+            [
+              114,
+              93,
+              449,
+              107
+            ],
+            [
+              49,
+              119,
+              101,
+              141
+            ],
+            [
+              114,
+              121,
+              481,
+              139
+            ],
+            [
+              48,
+              149,
+              101,
+              171
+            ],
+            [
+              114,
+              150,
+              283,
+              165
+            ],
+            [
+              622,
+              138,
+              668,
+              175
+            ],
+            [
+              118,
+              168,
+              367,
+              182
+            ],
+            [
+              115,
+              182,
+              430,
+              200
+            ],
+            [
+              64,
+              212,
+              118,
+              231
+            ],
+            [
+              165,
+              212,
+              217,
+              231
+            ],
+            [
+              361,
+              212,
+              412,
+              231
+            ],
+            [
+              261,
+              241,
+              384,
+              258
+            ],
+            [
+              78,
+              266,
+              104,
+              286
+            ],
+            [
+              161,
+              258,
+              218,
+              276
+            ],
+            [
+              261,
+              258,
+              431,
+              275
+            ],
+            [
+              158,
+              274,
+              222,
+              295
+            ],
+            [
+              261,
+              275,
+              504,
+              292
+            ],
+            [
+              260,
+              291,
+              454,
+              310
+            ],
+            [
+              56,
+              326,
+              107,
+              344
+            ],
+            [
+              109,
+              329,
+              271,
+              343
+            ],
+            [
+              16,
+              368,
+              280,
+              382
+            ]
+          ]
+        }
+      }
+    ],
+    "settings": {
+      "threads": 4,
+      "mkldnn": false,
+      "doc_orientation": false,
+      "doc_unwarping": false,
+      "textline_orientation": false,
+      "offline": true,
+      "weights_source": "explicit local model directories",
+      "view": "whole image; no upscaling, tiling or manual correction"
+    },
+    "versions": {
+      "paddleocr": "3.3.2",
+      "paddlepaddle": "3.2.2",
+      "paddlex": "3.3.13",
+      "Pillow": "12.3.0",
+      "numpy": "2.4.6",
+      "opencv-contrib-python": "4.10.0.84"
+    },
+    "worker_exit_code": 0,
+    "worker_wall_seconds": 13.451447800034657
+  },
+  "caption": {
+    "status": "ok",
+    "created_at_utc": "2026-09-26T12:46:48.009328+00:00",
+    "model": "microsoft/Florence-2-base",
+    "variant": "0.23B pretrained, not base-ft",
+    "task": "<MORE_DETAILED_CAPTION>",
+    "device": "cuda",
+    "weights_source": "local directory",
+    "no_additional_training": true,
+    "load_seconds": 1.39835769997444,
+    "peak_gpu_allocated_mb": 618.07275390625,
+    "seconds": 4.44402519997675,
+    "image": {
+      "width": 720,
+      "height": 390,
+      "source_format": "JPEG",
+      "frame": 0,
+      "exif_corrected": true,
+      "alpha_background": "white"
+    },
+    "raw": "</s><s>The image is a screenshot of a webpage in Korean. The background is pink and the text is written in black. On the right side of the image, there is an illustration of a girl holding a tablet and a video player. The girl is wearing a blue dress and has long brown hair. She is smiling and appears to be happy.\n\nOn the left side, there are three options for the user to choose from. The options are written in Korean and English. The first option is \"2026리스타에세요\", the second option is for \"9.14\", and the third option is from \"9-28.8\".\n\nAt the bottom of the page, there has a link to a website or app that provides information about the user's experience in the Korean language.</s>",
+    "parsed": {
+      "<MORE_DETAILED_CAPTION>": "The image is a screenshot of a webpage in Korean. The background is pink and the text is written in black. On the right side of the image, there is an illustration of a girl holding a tablet and a video player. The girl is wearing a blue dress and has long brown hair. She is smiling and appears to be happy.\n\nOn the left side, there are three options for the user to choose from. The options are written in Korean and English. The first option is \"2026리스타에세요\", the second option is for \"9.14\", and the third option is from \"9-28.8\".\n\nAt the bottom of the page, there has a link to a website or app that provides information about the user's experience in the Korean language."
+    },
+    "caption": "The image is a screenshot of a webpage in Korean. The background is pink and the text is written in black. On the right side of the image, there is an illustration of a girl holding a tablet and a video player. The girl is wearing a blue dress and has long brown hair. She is smiling and appears to be happy.\n\nOn the left side, there are three options for the user to choose from. The options are written in Korean and English. The first option is \"2026리스타에세요\", the second option is for \"9.14\", and the third option is from \"9-28.8\".\n\nAt the bottom of the page, there has a link to a website or app that provides information about the user's experience in the Korean language.",
+    "dtype": "torch.float16",
+    "settings": {
+      "max_new_tokens": 256,
+      "num_beams": 3,
+      "do_sample": false,
+      "attention": "eager",
+      "threads": 4,
+      "offline": true
+    },
+    "versions": {
+      "torch": "2.4.1+cu121",
+      "torchvision": "0.19.1+cu121",
+      "transformers": "4.46.3",
+      "Pillow": "11.3.0",
+      "numpy": "1.26.4",
+      "timm": "1.0.12",
+      "einops": "0.8.1",
+      "safetensors": "0.8.0",
+      "huggingface-hub": "0.36.2",
+      "tokenizers": "0.20.3"
+    },
+    "worker_exit_code": 0,
+    "worker_wall_seconds": 10.562514999997802
+  },
+  "final_alt": null,
+  "final_llm_judgement_implemented": false,
+  "limitations": [
+    "Caption can omit details or hallucinate.",
+    "Korean transcription is provided by the explicit Korean OCR model, not guaranteed by Florence.",
+    "Whole-image baseline only; no enhanced tiling or reading-order reconstruction.",
+    "OCR confidence is not a calibrated correctness probability.",
+    "No page metadata, semantic cross-check, final alt generation, or browsing agent."
+  ]
+}

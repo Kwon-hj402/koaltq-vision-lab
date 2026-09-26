@@ -1,0 +1,15 @@
+.venv*/
+venv/
+__pycache__/
+*.pyc
+models/
+.cache/
+.env
+.env.*
+runs/
+smoke-output/
+*.safetensors
+*.pth
+*.pt
+*.gguf
+*.zip

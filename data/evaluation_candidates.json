@@ -1,0 +1,186 @@
+{
+  "verified_at": "2026-09-26",
+  "strict_bk21_if4_note": "No candidate is certified to meet the user's strict 2018 BK21 IF4 oral criterion in this audit. Do not relabel venue membership/Highlight/Findings as oral.",
+  "locally_executed": false,
+  "candidates": [
+    {
+      "id": "dnr",
+      "name": "Draft and Refine with Visual Experts",
+      "year": 2026,
+      "venue": "CVPR main conference",
+      "format": "author repository: Highlight; oral unverified",
+      "training_free": "Exhaustive expert selection only; learned selector excluded",
+      "extra_vision": true,
+      "code": "https://github.com/EavnJeong/Draft-and-Refine-with-Visual-Experts",
+      "code_status": "Implementation files and README inspected; not executed",
+      "paper": "https://arxiv.org/abs/2511.11005",
+      "proceedings": "https://openaccess.thecvf.com/CVPR2026?day=2026-06-06",
+      "fit": "Captioning and VQA; visual experts and iterative refinement",
+      "korean_evidence": "not established",
+      "caveat": "Multiple VLM invocations; model-specific rendering; optional learned selector; local 6GB feasibility untested"
+    },
+    {
+      "id": "deepscan",
+      "name": "DeepScan: A Training-Free Framework for Visually Grounded Reasoning in Large Vision-Language Models",
+      "year": 2026,
+      "venue": "CVPR main conference",
+      "format": "oral unverified",
+      "training_free": true,
+      "extra_vision": true,
+      "code": "https://github.com/YChenL/DeepScan",
+      "code_status": "Implementation and instructions inspected; not executed",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_DeepScan_A_Training-Free_Framework_for_Visually_Grounded_Reasoning_in_Large_CVPR_2026_paper.pdf",
+      "fit": "Question-driven multi-scale evidence search",
+      "korean_evidence": "not established",
+      "caveat": "BLIP-ITM, LangSAM/GroundingDINO, SAM2, Qwen backend; README example uses two RTX4090s"
+    },
+    {
+      "id": "ecrd",
+      "name": "See It, Say It, Sorted",
+      "year": 2026,
+      "venue": "CVPR main conference",
+      "format": "oral unverified",
+      "training_free": true,
+      "extra_vision": "Optional GRIT visual decider; otherwise evidence-constrained decoding",
+      "code": "https://github.com/uuuuZYC/ECRD",
+      "code_status": "Core and Qwen example inspected; not executed",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_See_It_Say_It_Sorted_An_Iterative_Training-Free_Framework_for_CVPR_2026_paper.html",
+      "fit": "Evidence pool and selective visual rechecking",
+      "korean_evidence": "not established",
+      "caveat": "Reasoning task; no comprehensive Korean OCR guarantee; Transformers integration not direct llama.cpp plugin"
+    },
+    {
+      "id": "causallens",
+      "name": "CausalLens",
+      "year": 2026,
+      "venue": "CVPR main conference",
+      "format": "oral unverified",
+      "training_free": true,
+      "extra_vision": false,
+      "code": "https://github.com/jijy20/CausalLens",
+      "code_status": "Official repo and LLaVA/Qwen2-VL paths inspected; not executed",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Ji_CausalLens_Sensitivity-Guided_Multi-Head_Causal_Intervention_for_Hallucination_Mitigation_in_Large_CVPR_2026_paper.html",
+      "fit": "Auxiliary internal decoding correction",
+      "korean_evidence": "not established",
+      "caveat": "Does not add OCR/detection; Gemma integration unverified"
+    },
+    {
+      "id": "pas",
+      "name": "PAS: Prelim Attention Score",
+      "year": 2026,
+      "venue": "CVPR main conference",
+      "format": "oral unverified",
+      "training_free": true,
+      "extra_vision": false,
+      "code": "https://github.com/lanl/pas",
+      "code_status": "src/pas and caption/evaluation scripts inspected; not executed",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Hoang_PAS_Prelim_Attention_Score_for_Detecting_Object_Hallucinations_in_Large_CVPR_2026_paper.html",
+      "fit": "Auxiliary hallucination detection signal",
+      "korean_evidence": "not established",
+      "caveat": "Detection, not correction or factual guarantee; threshold portability untested"
+    },
+    {
+      "id": "flb",
+      "name": "First Logit Boosting",
+      "year": 2026,
+      "venue": "CVPR main conference",
+      "format": "oral unverified",
+      "training_free": true,
+      "extra_vision": false,
+      "code": "https://github.com/jiwooha20/FLB",
+      "code_status": "experiments and vcd_utils present; README start/CHAIR docs pending; not executed",
+      "paper": "https://arxiv.org/abs/2604.00455",
+      "proceedings": "https://openaccess.thecvf.com/CVPR2026?day=2026-06-06",
+      "fit": "Low-overhead auxiliary decoder correction",
+      "korean_evidence": "not established",
+      "caveat": "English first-token observations may not transfer to Korean tokenizer"
+    },
+    {
+      "id": "kvsmooth",
+      "name": "KVSmooth",
+      "year": 2026,
+      "venue": "CVPR main conference",
+      "format": "oral unverified",
+      "training_free": true,
+      "extra_vision": false,
+      "code": null,
+      "code_status": "Official source code not verified; same-name unrelated repo excluded",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiang_KVSmooth_Mitigating_Hallucination_in_Multi-modal_Large_Language_Models_through_Key-Value_CVPR_2026_paper.html",
+      "fit": "KV-cache smoothing for generation drift",
+      "korean_evidence": "not established",
+      "caveat": "Fails verified-code inclusion requirement at current audit"
+    },
+    {
+      "id": "visual_funnel",
+      "name": "Visual Funnel",
+      "year": 2026,
+      "venue": "CVPR Findings",
+      "format": "Findings; not main/oral evidence",
+      "training_free": true,
+      "extra_vision": true,
+      "code": null,
+      "code_status": "Official source code not verified",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2026F/html/Jung_Visual_Funnel_Resolving_Contextual_Blindness_in_Multimodal_Large_Language_Models_CVPRF_2026_paper.html",
+      "fit": "Hierarchical crops preserving context",
+      "korean_evidence": "not established",
+      "caveat": "Question-driven VQA; IF4 and code requirement not established"
+    }
+  ],
+  "older_alternatives": [
+    {
+      "name": "Patch Matters",
+      "year": 2025,
+      "venue": "CVPR",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2025/papers/Peng_Patch_Matters_Training-free_Fine-grained_Image_Caption_Enhancement_via_Local_Perception_CVPR_2025_paper.pdf",
+      "code": "https://github.com/GeWu-Lab/Patch-Matters",
+      "reason": "Direct comprehensive captioning; divide/aggregate/filter; outside 2026"
+    },
+    {
+      "name": "HALC",
+      "year": 2024,
+      "venue": "ICML",
+      "paper": "https://proceedings.mlr.press/v235/chen24bi.html",
+      "code": "https://github.com/BillChan226/HALC",
+      "reason": "Grounding/focal contrast/beam search; outside 2026"
+    },
+    {
+      "name": "Woodpecker",
+      "year": 2024,
+      "venue": "Science China Information Sciences",
+      "paper": "https://arxiv.org/abs/2310.16045",
+      "code": "https://github.com/VITA-MLLM/Woodpecker",
+      "reason": "Post-hoc visual claim correction; outside 2026 conference scope"
+    }
+  ],
+  "context_sources": [
+    {
+      "title": "AIDA official problem",
+      "url": "https://aida.kisti.re.kr/competition/main/problem/PROB_000000000004610/detail.do"
+    },
+    {
+      "title": "AIDA official overview API",
+      "url": "https://aida.kisti.re.kr/competition/main/problem/loadOverview.do?probId=PROB_000000000004610",
+      "local_snapshot": "work/evaluation_sources/aida_overview_2026-09-26.json"
+    },
+    {
+      "title": "User-specified BK21 compilation",
+      "url": "https://gist.github.com/Pusnow/6eb933355b5cb8d31ef1abcb3c3e1206"
+    },
+    {
+      "title": "W3C functional images",
+      "url": "https://www.w3.org/WAI/tutorials/images/functional/"
+    },
+    {
+      "title": "W3C images of text",
+      "url": "https://www.w3.org/WAI/tutorials/images/textual/"
+    },
+    {
+      "title": "W3C alt decision tree",
+      "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/"
+    },
+    {
+      "title": "CHAIR original",
+      "url": "https://aclanthology.org/D18-1437/"
+    }
+  ]
+}

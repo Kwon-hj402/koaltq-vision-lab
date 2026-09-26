@@ -1,0 +1,35 @@
+{
+  "tasks": {
+    "<MORE_DETAILED_CAPTION>": {
+      "raw": "</s><s>The image is a logo or emblem with a white background. On the left side of the image, there is a blue circle with a red circle in the center. Inside the circle, there are two curved lines that form a wave-like shape. The blue circle is slightly larger than the red circle and is slightly smaller than the white circle. On top of the blue circle, the words \"아리스타에세요\" (meaning \"love\" in Korean) are written in a modern, sans-serif font. The words are arranged in a way that they are slightly overlapping each other. The overall design is simple and minimalistic.</s>",
+      "parsed": {
+        "<MORE_DETAILED_CAPTION>": "The image is a logo or emblem with a white background. On the left side of the image, there is a blue circle with a red circle in the center. Inside the circle, there are two curved lines that form a wave-like shape. The blue circle is slightly larger than the red circle and is slightly smaller than the white circle. On top of the blue circle, the words \"아리스타에세요\" (meaning \"love\" in Korean) are written in a modern, sans-serif font. The words are arranged in a way that they are slightly overlapping each other. The overall design is simple and minimalistic."
+      }
+    },
+    "<DENSE_REGION_CAPTION>": {
+      "raw": "</s><s>poster<loc_0><loc_0><loc_998><loc_998></s>",
+      "parsed": {
+        "<DENSE_REGION_CAPTION>": {
+          "bboxes": [
+            [
+              0.09049999713897705,
+              0.027499999850988388,
+              180.72850036621094,
+              54.91749954223633
+            ]
+          ],
+          "labels": [
+            "poster"
+          ]
+        }
+      }
+    }
+  },
+  "seconds": 5.432624300010502,
+  "image_size": [
+    181,
+    55
+  ],
+  "metadata_used": false,
+  "label_used": false
+}

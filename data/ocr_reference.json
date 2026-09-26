@@ -1,0 +1,480 @@
+{
+  "created_at": "2026-09-26",
+  "method": "직접 이미지 판독으로 assistant가 선정·전사한 핵심문구. 인간 전문가 정답이나 전체 OCR ground truth가 아니며 소규모 진단만 가능.",
+  "selection_before_ocr_review": true,
+  "ocr_outputs_consulted": false,
+  "existing_alt_or_labels_consulted": false,
+  "n_images": 30,
+  "n_scorable": 29,
+  "n_reference_strings": 72,
+  "evaluation_notes": [
+    "원본 전체 CER이 아니라 선택 핵심문구 회수율을 계산할 것.",
+    "NFC 및 공백 정규화 기준을 고정; 구두점/대소문자 제거 여부는 별도 명시.",
+    "읽기 순서·문장 관계·사진 설명·잘못 추가한 텍스트의 품질은 이 회수율로 평가되지 않음.",
+    "불완전한 전사나 선택 편향 가능성이 있으므로 사용자/독립 평가자의 재검토가 필요.",
+    "전사 필드는 보이는 문구이며 날짜·기관 사실을 외부 검증한 것은 아님."
+  ],
+  "items": [
+    {
+      "file": "026769b1356f3283.png",
+      "stem": "026769b1356f3283",
+      "stratum": "logo",
+      "reference_strings": [
+        "문화체육관광부",
+        "국립중앙도서관"
+      ],
+      "status": "scorable",
+      "selection_reason": "기관의 상위 부처와 기관명을 식별하는 두 줄을 선택.",
+      "notes": "작은 회색 글자지만 직접 판독 가능.",
+      "viewed_asset": "outputs/assets/026769b1356f3283.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "075ba88c36bea11a.do",
+      "stem": "075ba88c36bea11a",
+      "stratum": "logo",
+      "reference_strings": [
+        "보건복지부"
+      ],
+      "status": "scorable",
+      "selection_reason": "정부기관 로고의 명칭을 선택.",
+      "notes": "",
+      "viewed_asset": "outputs/assets/075ba88c36bea11a.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "0e1b6909831958ac.png",
+      "stem": "0e1b6909831958ac",
+      "stratum": "logo",
+      "reference_strings": [
+        "NVIDIA"
+      ],
+      "status": "scorable",
+      "selection_reason": "로고의 유일한 브랜드 문자열을 선택.",
+      "notes": "대소문자는 시각적 표기를 기준으로 대문자 전사.",
+      "viewed_asset": "outputs/assets/0e1b6909831958ac.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "1e071b0427c69490.png",
+      "stem": "1e071b0427c69490",
+      "stratum": "logo",
+      "reference_strings": [
+        "MIRIAN"
+      ],
+      "status": "scorable",
+      "selection_reason": "로고의 라틴 문자 이름을 선택.",
+      "notes": "A가 삼각형으로 디자인된 글자이며 보이는 로고를 직접 읽음.",
+      "viewed_asset": "outputs/assets/1e071b0427c69490.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "423177cbdda8d724.gif",
+      "stem": "423177cbdda8d724",
+      "stratum": "logo",
+      "reference_strings": [
+        "국립암센터"
+      ],
+      "status": "scorable",
+      "selection_reason": "로고의 한국어 기관명을 선택.",
+      "notes": "작은 영어 부제는 핵심문구 평가 대상에서 제외.",
+      "viewed_asset": "outputs/assets/423177cbdda8d724.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "d5aeb9aec8a6aac3.png",
+      "stem": "d5aeb9aec8a6aac3",
+      "stratum": "logo",
+      "reference_strings": [
+        "DONG-GU",
+        "Daegu Metropolitan City"
+      ],
+      "status": "scorable",
+      "selection_reason": "지역명과 도시 소속을 나타내는 두 줄을 선택.",
+      "notes": "",
+      "viewed_asset": "outputs/assets/d5aeb9aec8a6aac3.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "stem": "1b7d42dd2f95b6e1",
+      "stratum": "text_banner",
+      "reference_strings": [
+        "레드플래그 10",
+        "1366",
+        "112"
+      ],
+      "status": "scorable",
+      "selection_reason": "주제명과 실제 상담·신고 번호를 선택.",
+      "notes": "상단 부처 로고와 상세 안내는 전사하지 않음.",
+      "viewed_asset": "outputs/assets/1b7d42dd2f95b6e1.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "1d3b9f31517547fe.jpg",
+      "stem": "1d3b9f31517547fe",
+      "stratum": "text_banner",
+      "reference_strings": [
+        "NAVER",
+        "정책브리핑",
+        "뉴스스탠드 구독"
+      ],
+      "status": "scorable",
+      "selection_reason": "플랫폼·콘텐츠명·구독 행동 문구를 선택.",
+      "notes": "",
+      "viewed_asset": "outputs/assets/1d3b9f31517547fe.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "38f9fbfe72f770f3.jpg",
+      "stem": "38f9fbfe72f770f3",
+      "stratum": "text_banner",
+      "reference_strings": [
+        "공공재정 부정청구",
+        "신고센터 운영",
+        "2020. 1. 1."
+      ],
+      "status": "scorable",
+      "selection_reason": "신고 주제와 운영 안내, 적용 시작 날짜를 선택.",
+      "notes": "아래 본문에 실제 보이는 날짜를 옮김.",
+      "viewed_asset": "outputs/assets/38f9fbfe72f770f3.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "4741d9518dea78ff.jpg",
+      "stem": "4741d9518dea78ff",
+      "stratum": "text_banner",
+      "reference_strings": [
+        "배고픔엔",
+        "증명서가",
+        "필요 없습니다"
+      ],
+      "status": "scorable",
+      "selection_reason": "큰 글자의 핵심 정책 메시지를 세 줄 그대로 선택.",
+      "notes": "가방 로고와 작은 문구는 제외.",
+      "viewed_asset": "outputs/assets/4741d9518dea78ff.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "569b18fe5cf1b3f9.jpg",
+      "stem": "569b18fe5cf1b3f9",
+      "stratum": "text_banner",
+      "reference_strings": [
+        "2026 대구 도시디자인 공모전",
+        "9. 28.(월) ~10. 2.(금)",
+        "대구대공원 슬로건 및 BI"
+      ],
+      "status": "scorable",
+      "selection_reason": "행사명·접수 기간·공모 주제를 선택.",
+      "notes": "숫자와 요일은 이미지에서 직접 읽었으며 실제 달력 검증을 포함하지 않음.",
+      "viewed_asset": "outputs/assets/569b18fe5cf1b3f9.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "ad9f57c142a01c88.jpg",
+      "stem": "ad9f57c142a01c88",
+      "stratum": "text_banner",
+      "reference_strings": [
+        "2026년",
+        "대구광역시 사회조사"
+      ],
+      "status": "scorable",
+      "selection_reason": "조사 연도와 조사명을 선택.",
+      "notes": "",
+      "viewed_asset": "outputs/assets/ad9f57c142a01c88.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "046bf6ae3c5e646b.es",
+      "stem": "046bf6ae3c5e646b",
+      "stratum": "mixed",
+      "reference_strings": [
+        "아동권리 사연 공모전",
+        "2026. 8. 3.(월) ~ 8. 23.(일)",
+        "2026. 8. 26.(수)"
+      ],
+      "status": "scorable",
+      "selection_reason": "공모 이름·이벤트 기간·당첨자 발표일을 선택.",
+      "notes": "작은 날짜까지 직접 판독 가능. 상품별 세부 문구는 제외.",
+      "viewed_asset": "outputs/assets/046bf6ae3c5e646b.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "2426950fc41b9a93.png",
+      "stem": "2426950fc41b9a93",
+      "stratum": "mixed",
+      "reference_strings": [
+        "초등방학 틈새돌봄 안내",
+        "1주일 1만원 이내",
+        "1522-1318"
+      ],
+      "status": "scorable",
+      "selection_reason": "서비스명·이용요금·문의번호를 선택.",
+      "notes": "제목의 줄바꿈은 문자열에서 공백으로 나타냄.",
+      "viewed_asset": "outputs/assets/2426950fc41b9a93.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "3fd77908165a4ba9.jpg",
+      "stem": "3fd77908165a4ba9",
+      "stratum": "mixed",
+      "reference_strings": [
+        "임산부·영유아 비대면 건강 교실",
+        "9. 14.(월) ~9. 28.(월)",
+        "042-288-8090"
+      ],
+      "status": "scorable",
+      "selection_reason": "교육 대상·주제와 일정·문의번호를 선택.",
+      "notes": "표 안 일정의 줄바꿈을 공백으로 나타냄.",
+      "viewed_asset": "outputs/assets/3fd77908165a4ba9.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "425f8567e6c2156b.jpg",
+      "stem": "425f8567e6c2156b",
+      "stratum": "mixed",
+      "reference_strings": [
+        "국민의 멜로디",
+        "징글 공모전",
+        "국민주권정부"
+      ],
+      "status": "scorable",
+      "selection_reason": "행사명과 행사 목적의 정부 명칭을 선택.",
+      "notes": "영문 원형 배지의 작은 글씨는 제외.",
+      "viewed_asset": "outputs/assets/425f8567e6c2156b.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "7a9e3ca7407f9a30.jpg",
+      "stem": "7a9e3ca7407f9a30",
+      "stratum": "mixed",
+      "reference_strings": [
+        "평생소득",
+        "안전망,",
+        "국민연금"
+      ],
+      "status": "scorable",
+      "selection_reason": "핵심 정책 메시지를 큰 글자 세 줄로 선택.",
+      "notes": "사진 속 인물의 신분은 전사 판단에 사용하지 않음.",
+      "viewed_asset": "outputs/assets/7a9e3ca7407f9a30.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "b182f126d1b1dbba.jpg",
+      "stem": "b182f126d1b1dbba",
+      "stratum": "mixed",
+      "reference_strings": [
+        "족보박물관",
+        "문체부 평가 4회 연속 인증기관 선정",
+        "2025년"
+      ],
+      "status": "scorable",
+      "selection_reason": "기관명·선정 성과·최하단 최근 인증 연도를 선택.",
+      "notes": "마지막 줄에서 직접 확인한 연도이며 외부 이력 조회 없음.",
+      "viewed_asset": "outputs/assets/b182f126d1b1dbba.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "01fee160037c164e.do",
+      "stem": "01fee160037c164e",
+      "stratum": "layout",
+      "reference_strings": [
+        "APEC 2025 KOREA",
+        "Connect, Innovate, Prosper",
+        "APEC 2025 SOM 3"
+      ],
+      "status": "scorable",
+      "selection_reason": "웹페이지의 행사명·슬로건·하단 일정 명칭을 선택.",
+      "notes": "화면 타이머의 숫자는 시시각각 변하는 부가값이라 제외.",
+      "viewed_asset": "outputs/assets/01fee160037c164e.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "0be9f0f533833af2.jpg",
+      "stem": "0be9f0f533833af2",
+      "stratum": "layout",
+      "reference_strings": [
+        "위해요소",
+        "안전점검·단속",
+        "2026년 8월 24일 ~ 9월 23일"
+      ],
+      "status": "scorable",
+      "selection_reason": "오른쪽 안내의 주제와 점검 기간을 선택.",
+      "notes": "왼쪽의 작은 항목 전체를 정답화하지 않음.",
+      "viewed_asset": "outputs/assets/0be9f0f533833af2.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "0c65e63384de3f64.png",
+      "stem": "0c65e63384de3f64",
+      "stratum": "layout",
+      "reference_strings": [
+        "세종대왕기념관",
+        "홍릉근린공원",
+        "콘텐츠 인재캠퍼스"
+      ],
+      "status": "scorable",
+      "selection_reason": "지도에서 가림 없이 읽히는 주요 장소명을 선택.",
+      "notes": "핀으로 일부가 가려진 중앙 기관명은 제외.",
+      "viewed_asset": "outputs/assets/0c65e63384de3f64.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "25198da01a56c796.png",
+      "stem": "25198da01a56c796",
+      "stratum": "layout",
+      "reference_strings": [
+        "민원 배려창구",
+        "통합제증명발급",
+        "무인민원 발급기"
+      ],
+      "status": "scorable",
+      "selection_reason": "민원실 배치도에서 창구·서비스·시설명을 선택.",
+      "notes": "전화 내선번호보다 민원 동선 이해에 필요한 텍스트를 선택.",
+      "viewed_asset": "outputs/assets/25198da01a56c796.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "28b16068d4379176.png",
+      "stem": "28b16068d4379176",
+      "stratum": "layout",
+      "reference_strings": [
+        "2024 새해농업인실용교육",
+        "과정별 세부일정",
+        "3개 과정 18개소 2,910명"
+      ],
+      "status": "scorable",
+      "selection_reason": "교육 이름과 일정표 제목·전체 규모를 선택.",
+      "notes": "작은 표 셀 전체에 대한 검증 정답이 아님.",
+      "viewed_asset": "outputs/assets/28b16068d4379176.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "658a87ad149352ab.jpg",
+      "stem": "658a87ad149352ab",
+      "stratum": "layout",
+      "reference_strings": [
+        "신고서류 확인 및 시스템 입력",
+        "기안 및 결재",
+        "신고 결과 통보"
+      ],
+      "status": "scorable",
+      "selection_reason": "절차도에서 의미를 결정하는 세 처리 단계를 선택.",
+      "notes": "화살표 순서는 별도 구조 문제로 본 문자열 점수에 포함하지 않음.",
+      "viewed_asset": "outputs/assets/658a87ad149352ab.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "11cc05715bac383f.png",
+      "stem": "11cc05715bac383f",
+      "stratum": "challenge",
+      "reference_strings": [
+        "3"
+      ],
+      "status": "scorable",
+      "selection_reason": "16×16 배지의 유일한 숫자를 선택.",
+      "notes": "작지만 숫자 3을 직접 판독할 수 있음.",
+      "viewed_asset": "outputs/assets/11cc05715bac383f.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "1515dfefb89fa6d5.gif",
+      "stem": "1515dfefb89fa6d5",
+      "stratum": "challenge",
+      "reference_strings": [
+        "new"
+      ],
+      "status": "scorable",
+      "selection_reason": "22×6 배지의 유일한 문자열을 선택.",
+      "notes": "소문자 new를 직접 판독. 이후 평가는 대소문자 정규화 여부 명시 필요.",
+      "viewed_asset": "outputs/assets/1515dfefb89fa6d5.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "58a031d1909dc03e.do",
+      "stem": "58a031d1909dc03e",
+      "stratum": "challenge",
+      "reference_strings": [
+        "치매안심 재산관리 서비스",
+        "1355",
+        "1899-9988"
+      ],
+      "status": "scorable",
+      "selection_reason": "고해상도 포스터의 서비스명·두 문의번호를 선택.",
+      "notes": "자동 축소된 미리보기에서도 명확히 읽힘. 전체 본문 전사 아님.",
+      "viewed_asset": "outputs/assets/58a031d1909dc03e.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "6f96819d13a5746b.do",
+      "stem": "6f96819d13a5746b",
+      "stratum": "challenge",
+      "reference_strings": [
+        "동구 핫플",
+        "대구 제2빙상장",
+        "ep.16"
+      ],
+      "status": "scorable",
+      "selection_reason": "동영상 썸네일의 시리즈명·장소·회차를 선택.",
+      "notes": "디자인 글자 직접 판독; 인물 이름은 추정하지 않음.",
+      "viewed_asset": "outputs/assets/6f96819d13a5746b.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "c218978fb8f2c443.gif",
+      "stem": "c218978fb8f2c443",
+      "stratum": "challenge",
+      "reference_strings": [],
+      "status": "unscorable",
+      "selection_reason": "10×10 문서 모양 아이콘으로 보이며 판독 가능한 문자열이 없어 회수율 분모에서 제외.",
+      "notes": "도형 안 가로획을 문자로 확정할 수 없음. OCR false-positive 탐색에만 활용 가능.",
+      "viewed_asset": "outputs/assets/c218978fb8f2c443.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    },
+    {
+      "file": "f87a726b3de847c3.do",
+      "stem": "f87a726b3de847c3",
+      "stratum": "challenge",
+      "reference_strings": [
+        "12세 남성청소년도",
+        "HPV 무료 예방접종!",
+        "2014. 1. 1. ~ 12. 31. 출생자"
+      ],
+      "status": "scorable",
+      "selection_reason": "예방접종 대상·혜택·출생일 범위를 선택.",
+      "notes": "의학적 조언이 아닌 이미지의 문구를 그대로 전사.",
+      "viewed_asset": "outputs/assets/f87a726b3de847c3.png",
+      "directly_viewed": true,
+      "reference_source": "assistant visual transcription, no OCR output / alt / label consulted"
+    }
+  ]
+}

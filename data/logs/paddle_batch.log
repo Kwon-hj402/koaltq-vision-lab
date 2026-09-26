@@ -1,0 +1,64 @@
+Connectivity check to the model hoster has been skipped because `DISABLE_MODEL_SOURCE_CHECK` is enabled.
+INFO: Could not find files for the given pattern(s).
+${ORIGINAL_WORKSPACE}\work\paddle_env\Lib\site-packages\paddle\utils\cpp_extension\extension_utils.py:718: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+Creating model: ('PP-OCRv5_mobile_det', None)
+Using official model (PP-OCRv5_mobile_det), the model files will be automatically downloaded and saved in `${ORIGINAL_WORKSPACE}\work\models\paddlex\official_models\PP-OCRv5_mobile_det`.
+
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]
+Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:01,  4.34it/s]
+Fetching 6 files:  83%|████████▎ | 5/6 [00:00<00:00, 16.30it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:02<00:00,  2.40it/s]
+Creating model: ('korean_PP-OCRv5_mobile_rec', None)
+Using official model (korean_PP-OCRv5_mobile_rec), the model files will be automatically downloaded and saved in `${ORIGINAL_WORKSPACE}\work\models\paddlex\official_models\korean_PP-OCRv5_mobile_rec`.
+
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]
+Fetching 6 files:  17%|█▋        | 1/6 [00:00<00:01,  4.27it/s]
+Fetching 6 files:  83%|████████▎ | 5/6 [00:00<00:00, 16.41it/s]
+Fetching 6 files: 100%|██████████| 6/6 [00:02<00:00,  2.29it/s]
+LOADED 7.365087900077924
+0 039c94d89a6db2c3 2.993056599982083 4 
+1 18e9f9bdfa0ef112.png 0.031238800031132996 0 
+2 21f0660741e35439.jpg 0.4415864999173209 0 
+3 2704361fd844b918.jpg 0.3618471999652684 0 
+4 7eb29474dd9cd8e3.jpg 0.34799229993950576 0 
+5 9c17cdeeba6b0782.jpg 1.8006159000797197 4 
+6 1138e6cad536ac89.png 0.016578800044953823 0 
+7 14e1ab1c400daf72.png 0.16374590003397316 1 
+8 28310e5cc65c488e.gif 0.172011399990879 1 
+9 3b117c7e08f4d107.png 0.012254399945959449 0 
+10 428f1b4c5969909c.png 0.01232690003234893 0 
+11 c0394af33514ebb1.png 0.19200789998285472 1 
+12 026769b1356f3283.png 0.3741365000605583 2 
+13 075ba88c36bea11a.do 0.20779130002483726 1 
+14 0e1b6909831958ac.png 0.48269279999658465 2 
+15 1e071b0427c69490.png 0.1813710000133142 1 
+16 423177cbdda8d724.gif 0.8284797000233084 3 
+17 d5aeb9aec8a6aac3.png 0.5024275999749079 2 
+18 1b7d42dd2f95b6e1.jpg 2.807231300044805 11 
+19 1d3b9f31517547fe.jpg 1.2573372999904677 2 
+20 38f9fbfe72f770f3.jpg 3.4513615999603644 14 
+21 4741d9518dea78ff.jpg 1.4000828000716865 7 
+22 569b18fe5cf1b3f9.jpg 2.0892083999933675 5 
+23 ad9f57c142a01c88.jpg 3.1333541999338195 8 
+24 046bf6ae3c5e646b.es 7.613584600039758 22 
+25 2426950fc41b9a93.png 11.607273300061934 35 
+26 3fd77908165a4ba9.jpg 8.183009000029415 25 
+27 425f8567e6c2156b.jpg 1.183964499970898 2 
+28 7a9e3ca7407f9a30.jpg 0.75577309995424 4 
+29 b182f126d1b1dbba.jpg 5.741496800095774 12 
+30 01fee160037c164e.do 11.7279234000016 45 
+31 0be9f0f533833af2.jpg 8.823784200008959 45 
+32 0c65e63384de3f64.png 13.129319799947552 76 
+33 25198da01a56c796.png 8.300995099940337 41 
+34 28b16068d4379176.png 26.00278870004695 142 
+35 658a87ad149352ab.jpg 2.508577900007367 9 
+36 11cc05715bac383f.png 0.16401160007808357 1 
+37 1515dfefb89fa6d5.gif 0.012174399918876588 0 
+Resized image size (4961x7016) exceeds max_side_limit of 4000. Resizing to fit within limit.
+38 58a031d1909dc03e.do 36.80154130002484 63 
+Resized image size (7257x4082) exceeds max_side_limit of 4000. Resizing to fit within limit.
+39 6f96819d13a5746b.do 12.10934389999602 8 
+40 c218978fb8f2c443.gif 0.01758230000268668 0 
+41 f87a726b3de847c3.do 17.038401099969633 27 
+DONE 42

@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-09-26",
+  "verification": "importlib.metadata in the existing local execution environments; fresh dependency resolution and clean installation were not tested",
+  "python": "3.11.9",
+  "os": "Windows",
+  "florence": {
+    "torch": "2.4.1+cu121",
+    "torchvision": "0.19.1+cu121",
+    "transformers": "4.46.3",
+    "Pillow": "11.3.0",
+    "numpy": "1.26.4",
+    "timm": "1.0.12",
+    "einops": "0.8.1",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "0.36.2",
+    "tokenizers": "0.20.3"
+  },
+  "paddle_cpu": {
+    "paddlepaddle": "3.2.2",
+    "paddleocr": "3.3.2",
+    "paddlex": "3.3.13",
+    "Pillow": "12.3.0",
+    "numpy": "2.4.6",
+    "opencv-contrib-python": "4.10.0.84"
+  }
+}

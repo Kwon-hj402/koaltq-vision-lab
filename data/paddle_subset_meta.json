@@ -1,0 +1,12 @@
+{
+  "model": "PP-OCRv5 mobile detection + Korean mobile recognition",
+  "paddle": "3.2.2",
+  "paddleocr": "3.3.2",
+  "device": "CPU",
+  "cpu_threads": 4,
+  "load_seconds": 7.365087900077924,
+  "orientation": false,
+  "unwarping": false,
+  "mkldnn": false,
+  "input_policy": "first frame EXIF corrected alpha on white; native size; no alt/context/label"
+}

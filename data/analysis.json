@@ -1,0 +1,1945 @@
+{
+  "keyphrase_method": "NFC + Unicode alphanumeric only + casefold; exact substring within concatenated engine reading-order strings; assistant transcribed selected phrases; not full CER or human expert accuracy",
+  "metrics": {
+    "easy": {
+      "hits": 46,
+      "total": 72,
+      "recall": 0.6388888888888888,
+      "by_stratum": {
+        "logo": [
+          6,
+          8
+        ],
+        "text_banner": [
+          14,
+          17
+        ],
+        "mixed": [
+          11,
+          18
+        ],
+        "layout": [
+          11,
+          18
+        ],
+        "challenge": [
+          4,
+          11
+        ]
+      }
+    },
+    "paddle": {
+      "hits": 57,
+      "total": 72,
+      "recall": 0.7916666666666666,
+      "by_stratum": {
+        "logo": [
+          7,
+          8
+        ],
+        "text_banner": [
+          15,
+          17
+        ],
+        "mixed": [
+          15,
+          18
+        ],
+        "layout": [
+          16,
+          18
+        ],
+        "challenge": [
+          4,
+          11
+        ]
+      }
+    },
+    "enhanced": {
+      "hits": 48,
+      "total": 72,
+      "recall": 0.6666666666666666,
+      "by_stratum": {
+        "logo": [
+          6,
+          8
+        ],
+        "text_banner": [
+          14,
+          17
+        ],
+        "mixed": [
+          13,
+          18
+        ],
+        "layout": [
+          11,
+          18
+        ],
+        "challenge": [
+          4,
+          11
+        ]
+      }
+    },
+    "paddle_enhanced": {
+      "hits": 56,
+      "total": 72,
+      "recall": 0.7777777777777778,
+      "by_stratum": {
+        "logo": [
+          7,
+          8
+        ],
+        "text_banner": [
+          15,
+          17
+        ],
+        "mixed": [
+          15,
+          18
+        ],
+        "layout": [
+          16,
+          18
+        ],
+        "challenge": [
+          3,
+          11
+        ]
+      }
+    },
+    "native_union": {
+      "hits": 58,
+      "total": 72,
+      "recall": 0.8055555555555556,
+      "meaning": "any engine contains phrase; evidence availability, not adjudicated correctness"
+    },
+    "enhanced_union": {
+      "hits": 59,
+      "total": 72,
+      "recall": 0.8194444444444444,
+      "meaning": "any engine contains phrase; evidence availability, not adjudicated correctness"
+    }
+  },
+  "statistics": {
+    "patch": {
+      "records": 299,
+      "successful": 299,
+      "errors": [],
+      "median_seconds": 0.278,
+      "mean_seconds": 0.28251505016722406,
+      "sum_seconds": 84.47200000000004,
+      "p95_seconds": 0.312,
+      "peak_gpu_allocated_mb": 755.8,
+      "ocr_nonempty": 0
+    },
+    "patch_regions": {
+      "records": 42,
+      "successful": 42,
+      "errors": [],
+      "median_seconds": 0.486,
+      "mean_seconds": 0.5191666666666667,
+      "sum_seconds": 21.804999999999996,
+      "p95_seconds": 0.752,
+      "peak_gpu_allocated_mb": 755.8,
+      "ocr_nonempty": 0
+    },
+    "easy": {
+      "records": 299,
+      "successful": 299,
+      "errors": [],
+      "median_seconds": 0.07269339996855706,
+      "mean_seconds": 0.26216505451889455,
+      "sum_seconds": 78.38735130114947,
+      "p95_seconds": 1.1476720999926329,
+      "peak_gpu_allocated_mb": 2688.1787109375,
+      "ocr_nonempty": 208
+    },
+    "paddle_subset": {
+      "records": 42,
+      "successful": 42,
+      "errors": [],
+      "median_seconds": 1.2206508999806829,
+      "mean_seconds": 4.642435288098308,
+      "sum_seconds": 194.98228210012894,
+      "p95_seconds": 17.038401099969633,
+      "peak_gpu_allocated_mb": 0,
+      "ocr_nonempty": 32
+    },
+    "paddle_all": {
+      "records": 299,
+      "successful": 299,
+      "errors": [],
+      "median_seconds": 0.7148354999953881,
+      "mean_seconds": 2.728639357528621,
+      "sum_seconds": 815.8631679010577,
+      "p95_seconds": 12.75063909997698,
+      "peak_gpu_allocated_mb": 0,
+      "ocr_nonempty": 230
+    },
+    "florence": {
+      "records": 42,
+      "successful": 42,
+      "errors": [],
+      "median_seconds": 5.924635900009889,
+      "mean_seconds": 6.323766780956205,
+      "sum_seconds": 265.5982048001606,
+      "p95_seconds": 8.72993899998255,
+      "peak_gpu_allocated_mb": 618.0751953125,
+      "ocr_nonempty": 0
+    },
+    "enhanced": {
+      "records": 85,
+      "successful": 85,
+      "errors": [],
+      "median_seconds": 0.08921210002154112,
+      "mean_seconds": 0.6331004129407708,
+      "sum_seconds": 53.81353509996552,
+      "p95_seconds": 2.188643499976024,
+      "peak_gpu_allocated_mb": 2688.1787109375,
+      "ocr_nonempty": 57
+    },
+    "paddle_enhanced": {
+      "records": 42,
+      "successful": 42,
+      "errors": [],
+      "median_seconds": 1.4852660500328057,
+      "mean_seconds": 9.31838711427935,
+      "sum_seconds": 391.37225879973266,
+      "p95_seconds": 43.82414070004597,
+      "peak_gpu_allocated_mb": 0,
+      "ocr_nonempty": 34
+    }
+  },
+  "details": [
+    {
+      "model": "easy",
+      "file": "026769b1356f3283.png",
+      "reference": "문화체육관광부",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "026769b1356f3283.png",
+      "reference": "국립중앙도서관",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "075ba88c36bea11a.do",
+      "reference": "보건복지부",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "0e1b6909831958ac.png",
+      "reference": "NVIDIA",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "1e071b0427c69490.png",
+      "reference": "MIRIAN",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "423177cbdda8d724.gif",
+      "reference": "국립암센터",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "d5aeb9aec8a6aac3.png",
+      "reference": "DONG-GU",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "d5aeb9aec8a6aac3.png",
+      "reference": "Daegu Metropolitan City",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "레드플래그 10",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "1366",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "112",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "NAVER",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "정책브리핑",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "뉴스스탠드 구독",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "공공재정 부정청구",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "신고센터 운영",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "2020. 1. 1.",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "배고픔엔",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "증명서가",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "필요 없습니다",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "2026 대구 도시디자인 공모전",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "9. 28.(월) ~10. 2.(금)",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "대구대공원 슬로건 및 BI",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "ad9f57c142a01c88.jpg",
+      "reference": "2026년",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "ad9f57c142a01c88.jpg",
+      "reference": "대구광역시 사회조사",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "아동권리 사연 공모전",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "2026. 8. 3.(월) ~ 8. 23.(일)",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "2026. 8. 26.(수)",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "2426950fc41b9a93.png",
+      "reference": "초등방학 틈새돌봄 안내",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "2426950fc41b9a93.png",
+      "reference": "1주일 1만원 이내",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "2426950fc41b9a93.png",
+      "reference": "1522-1318",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "임산부·영유아 비대면 건강 교실",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "9. 14.(월) ~9. 28.(월)",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "042-288-8090",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "국민의 멜로디",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "징글 공모전",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "국민주권정부",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "평생소득",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "안전망,",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "국민연금",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "족보박물관",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "문체부 평가 4회 연속 인증기관 선정",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "2025년",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "01fee160037c164e.do",
+      "reference": "APEC 2025 KOREA",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "01fee160037c164e.do",
+      "reference": "Connect, Innovate, Prosper",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "01fee160037c164e.do",
+      "reference": "APEC 2025 SOM 3",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "위해요소",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "안전점검·단속",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "2026년 8월 24일 ~ 9월 23일",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "0c65e63384de3f64.png",
+      "reference": "세종대왕기념관",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "0c65e63384de3f64.png",
+      "reference": "홍릉근린공원",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "0c65e63384de3f64.png",
+      "reference": "콘텐츠 인재캠퍼스",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "25198da01a56c796.png",
+      "reference": "민원 배려창구",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "25198da01a56c796.png",
+      "reference": "통합제증명발급",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "25198da01a56c796.png",
+      "reference": "무인민원 발급기",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "28b16068d4379176.png",
+      "reference": "2024 새해농업인실용교육",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "28b16068d4379176.png",
+      "reference": "과정별 세부일정",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "28b16068d4379176.png",
+      "reference": "3개 과정 18개소 2,910명",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "신고서류 확인 및 시스템 입력",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "기안 및 결재",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "신고 결과 통보",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "11cc05715bac383f.png",
+      "reference": "3",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "1515dfefb89fa6d5.gif",
+      "reference": "new",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "58a031d1909dc03e.do",
+      "reference": "치매안심 재산관리 서비스",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "58a031d1909dc03e.do",
+      "reference": "1355",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "58a031d1909dc03e.do",
+      "reference": "1899-9988",
+      "found": true
+    },
+    {
+      "model": "easy",
+      "file": "6f96819d13a5746b.do",
+      "reference": "동구 핫플",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "6f96819d13a5746b.do",
+      "reference": "대구 제2빙상장",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "6f96819d13a5746b.do",
+      "reference": "ep.16",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "f87a726b3de847c3.do",
+      "reference": "12세 남성청소년도",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "f87a726b3de847c3.do",
+      "reference": "HPV 무료 예방접종!",
+      "found": false
+    },
+    {
+      "model": "easy",
+      "file": "f87a726b3de847c3.do",
+      "reference": "2014. 1. 1. ~ 12. 31. 출생자",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "026769b1356f3283.png",
+      "reference": "문화체육관광부",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "026769b1356f3283.png",
+      "reference": "국립중앙도서관",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "075ba88c36bea11a.do",
+      "reference": "보건복지부",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "0e1b6909831958ac.png",
+      "reference": "NVIDIA",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "1e071b0427c69490.png",
+      "reference": "MIRIAN",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "423177cbdda8d724.gif",
+      "reference": "국립암센터",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "d5aeb9aec8a6aac3.png",
+      "reference": "DONG-GU",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "d5aeb9aec8a6aac3.png",
+      "reference": "Daegu Metropolitan City",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "레드플래그 10",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "1366",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "112",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "NAVER",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "정책브리핑",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "뉴스스탠드 구독",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "공공재정 부정청구",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "신고센터 운영",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "2020. 1. 1.",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "배고픔엔",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "증명서가",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "필요 없습니다",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "2026 대구 도시디자인 공모전",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "9. 28.(월) ~10. 2.(금)",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "대구대공원 슬로건 및 BI",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "ad9f57c142a01c88.jpg",
+      "reference": "2026년",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "ad9f57c142a01c88.jpg",
+      "reference": "대구광역시 사회조사",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "아동권리 사연 공모전",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "2026. 8. 3.(월) ~ 8. 23.(일)",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "2026. 8. 26.(수)",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "2426950fc41b9a93.png",
+      "reference": "초등방학 틈새돌봄 안내",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "2426950fc41b9a93.png",
+      "reference": "1주일 1만원 이내",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "2426950fc41b9a93.png",
+      "reference": "1522-1318",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "임산부·영유아 비대면 건강 교실",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "9. 14.(월) ~9. 28.(월)",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "042-288-8090",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "국민의 멜로디",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "징글 공모전",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "국민주권정부",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "평생소득",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "안전망,",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "국민연금",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "족보박물관",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "문체부 평가 4회 연속 인증기관 선정",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "2025년",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "01fee160037c164e.do",
+      "reference": "APEC 2025 KOREA",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "01fee160037c164e.do",
+      "reference": "Connect, Innovate, Prosper",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "01fee160037c164e.do",
+      "reference": "APEC 2025 SOM 3",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "위해요소",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "안전점검·단속",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "2026년 8월 24일 ~ 9월 23일",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "0c65e63384de3f64.png",
+      "reference": "세종대왕기념관",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "0c65e63384de3f64.png",
+      "reference": "홍릉근린공원",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "0c65e63384de3f64.png",
+      "reference": "콘텐츠 인재캠퍼스",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "25198da01a56c796.png",
+      "reference": "민원 배려창구",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "25198da01a56c796.png",
+      "reference": "통합제증명발급",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "25198da01a56c796.png",
+      "reference": "무인민원 발급기",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "28b16068d4379176.png",
+      "reference": "2024 새해농업인실용교육",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "28b16068d4379176.png",
+      "reference": "과정별 세부일정",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "28b16068d4379176.png",
+      "reference": "3개 과정 18개소 2,910명",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "신고서류 확인 및 시스템 입력",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "기안 및 결재",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "신고 결과 통보",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "11cc05715bac383f.png",
+      "reference": "3",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "1515dfefb89fa6d5.gif",
+      "reference": "new",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "58a031d1909dc03e.do",
+      "reference": "치매안심 재산관리 서비스",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "58a031d1909dc03e.do",
+      "reference": "1355",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "58a031d1909dc03e.do",
+      "reference": "1899-9988",
+      "found": true
+    },
+    {
+      "model": "paddle",
+      "file": "6f96819d13a5746b.do",
+      "reference": "동구 핫플",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "6f96819d13a5746b.do",
+      "reference": "대구 제2빙상장",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "6f96819d13a5746b.do",
+      "reference": "ep.16",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "f87a726b3de847c3.do",
+      "reference": "12세 남성청소년도",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "f87a726b3de847c3.do",
+      "reference": "HPV 무료 예방접종!",
+      "found": false
+    },
+    {
+      "model": "paddle",
+      "file": "f87a726b3de847c3.do",
+      "reference": "2014. 1. 1. ~ 12. 31. 출생자",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "026769b1356f3283.png",
+      "reference": "문화체육관광부",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "026769b1356f3283.png",
+      "reference": "국립중앙도서관",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "075ba88c36bea11a.do",
+      "reference": "보건복지부",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "0e1b6909831958ac.png",
+      "reference": "NVIDIA",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "1e071b0427c69490.png",
+      "reference": "MIRIAN",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "423177cbdda8d724.gif",
+      "reference": "국립암센터",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "d5aeb9aec8a6aac3.png",
+      "reference": "DONG-GU",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "d5aeb9aec8a6aac3.png",
+      "reference": "Daegu Metropolitan City",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "레드플래그 10",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "1366",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "112",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "NAVER",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "정책브리핑",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "뉴스스탠드 구독",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "공공재정 부정청구",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "신고센터 운영",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "2020. 1. 1.",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "배고픔엔",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "증명서가",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "필요 없습니다",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "2026 대구 도시디자인 공모전",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "9. 28.(월) ~10. 2.(금)",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "대구대공원 슬로건 및 BI",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "ad9f57c142a01c88.jpg",
+      "reference": "2026년",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "ad9f57c142a01c88.jpg",
+      "reference": "대구광역시 사회조사",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "아동권리 사연 공모전",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "2026. 8. 3.(월) ~ 8. 23.(일)",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "2026. 8. 26.(수)",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "2426950fc41b9a93.png",
+      "reference": "초등방학 틈새돌봄 안내",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "2426950fc41b9a93.png",
+      "reference": "1주일 1만원 이내",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "2426950fc41b9a93.png",
+      "reference": "1522-1318",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "임산부·영유아 비대면 건강 교실",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "9. 14.(월) ~9. 28.(월)",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "042-288-8090",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "국민의 멜로디",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "징글 공모전",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "국민주권정부",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "평생소득",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "안전망,",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "국민연금",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "족보박물관",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "문체부 평가 4회 연속 인증기관 선정",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "2025년",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "01fee160037c164e.do",
+      "reference": "APEC 2025 KOREA",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "01fee160037c164e.do",
+      "reference": "Connect, Innovate, Prosper",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "01fee160037c164e.do",
+      "reference": "APEC 2025 SOM 3",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "위해요소",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "안전점검·단속",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "2026년 8월 24일 ~ 9월 23일",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "0c65e63384de3f64.png",
+      "reference": "세종대왕기념관",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "0c65e63384de3f64.png",
+      "reference": "홍릉근린공원",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "0c65e63384de3f64.png",
+      "reference": "콘텐츠 인재캠퍼스",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "25198da01a56c796.png",
+      "reference": "민원 배려창구",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "25198da01a56c796.png",
+      "reference": "통합제증명발급",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "25198da01a56c796.png",
+      "reference": "무인민원 발급기",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "28b16068d4379176.png",
+      "reference": "2024 새해농업인실용교육",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "28b16068d4379176.png",
+      "reference": "과정별 세부일정",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "28b16068d4379176.png",
+      "reference": "3개 과정 18개소 2,910명",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "신고서류 확인 및 시스템 입력",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "기안 및 결재",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "신고 결과 통보",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "11cc05715bac383f.png",
+      "reference": "3",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "1515dfefb89fa6d5.gif",
+      "reference": "new",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "58a031d1909dc03e.do",
+      "reference": "치매안심 재산관리 서비스",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "58a031d1909dc03e.do",
+      "reference": "1355",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "58a031d1909dc03e.do",
+      "reference": "1899-9988",
+      "found": true
+    },
+    {
+      "model": "enhanced",
+      "file": "6f96819d13a5746b.do",
+      "reference": "동구 핫플",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "6f96819d13a5746b.do",
+      "reference": "대구 제2빙상장",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "6f96819d13a5746b.do",
+      "reference": "ep.16",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "f87a726b3de847c3.do",
+      "reference": "12세 남성청소년도",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "f87a726b3de847c3.do",
+      "reference": "HPV 무료 예방접종!",
+      "found": false
+    },
+    {
+      "model": "enhanced",
+      "file": "f87a726b3de847c3.do",
+      "reference": "2014. 1. 1. ~ 12. 31. 출생자",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "026769b1356f3283.png",
+      "reference": "문화체육관광부",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "026769b1356f3283.png",
+      "reference": "국립중앙도서관",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "075ba88c36bea11a.do",
+      "reference": "보건복지부",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "0e1b6909831958ac.png",
+      "reference": "NVIDIA",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "1e071b0427c69490.png",
+      "reference": "MIRIAN",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "423177cbdda8d724.gif",
+      "reference": "국립암센터",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "d5aeb9aec8a6aac3.png",
+      "reference": "DONG-GU",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "d5aeb9aec8a6aac3.png",
+      "reference": "Daegu Metropolitan City",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "레드플래그 10",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "1366",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "reference": "112",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "NAVER",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "정책브리핑",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "1d3b9f31517547fe.jpg",
+      "reference": "뉴스스탠드 구독",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "공공재정 부정청구",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "신고센터 운영",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "38f9fbfe72f770f3.jpg",
+      "reference": "2020. 1. 1.",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "배고픔엔",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "증명서가",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "4741d9518dea78ff.jpg",
+      "reference": "필요 없습니다",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "2026 대구 도시디자인 공모전",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "9. 28.(월) ~10. 2.(금)",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "569b18fe5cf1b3f9.jpg",
+      "reference": "대구대공원 슬로건 및 BI",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "ad9f57c142a01c88.jpg",
+      "reference": "2026년",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "ad9f57c142a01c88.jpg",
+      "reference": "대구광역시 사회조사",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "아동권리 사연 공모전",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "2026. 8. 3.(월) ~ 8. 23.(일)",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "046bf6ae3c5e646b.es",
+      "reference": "2026. 8. 26.(수)",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "2426950fc41b9a93.png",
+      "reference": "초등방학 틈새돌봄 안내",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "2426950fc41b9a93.png",
+      "reference": "1주일 1만원 이내",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "2426950fc41b9a93.png",
+      "reference": "1522-1318",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "임산부·영유아 비대면 건강 교실",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "9. 14.(월) ~9. 28.(월)",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "3fd77908165a4ba9.jpg",
+      "reference": "042-288-8090",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "국민의 멜로디",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "징글 공모전",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "425f8567e6c2156b.jpg",
+      "reference": "국민주권정부",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "평생소득",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "안전망,",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "7a9e3ca7407f9a30.jpg",
+      "reference": "국민연금",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "족보박물관",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "문체부 평가 4회 연속 인증기관 선정",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "b182f126d1b1dbba.jpg",
+      "reference": "2025년",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "01fee160037c164e.do",
+      "reference": "APEC 2025 KOREA",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "01fee160037c164e.do",
+      "reference": "Connect, Innovate, Prosper",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "01fee160037c164e.do",
+      "reference": "APEC 2025 SOM 3",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "위해요소",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "안전점검·단속",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "0be9f0f533833af2.jpg",
+      "reference": "2026년 8월 24일 ~ 9월 23일",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "0c65e63384de3f64.png",
+      "reference": "세종대왕기념관",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "0c65e63384de3f64.png",
+      "reference": "홍릉근린공원",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "0c65e63384de3f64.png",
+      "reference": "콘텐츠 인재캠퍼스",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "25198da01a56c796.png",
+      "reference": "민원 배려창구",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "25198da01a56c796.png",
+      "reference": "통합제증명발급",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "25198da01a56c796.png",
+      "reference": "무인민원 발급기",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "28b16068d4379176.png",
+      "reference": "2024 새해농업인실용교육",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "28b16068d4379176.png",
+      "reference": "과정별 세부일정",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "28b16068d4379176.png",
+      "reference": "3개 과정 18개소 2,910명",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "신고서류 확인 및 시스템 입력",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "기안 및 결재",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "658a87ad149352ab.jpg",
+      "reference": "신고 결과 통보",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "11cc05715bac383f.png",
+      "reference": "3",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "1515dfefb89fa6d5.gif",
+      "reference": "new",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "58a031d1909dc03e.do",
+      "reference": "치매안심 재산관리 서비스",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "58a031d1909dc03e.do",
+      "reference": "1355",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "58a031d1909dc03e.do",
+      "reference": "1899-9988",
+      "found": true
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "6f96819d13a5746b.do",
+      "reference": "동구 핫플",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "6f96819d13a5746b.do",
+      "reference": "대구 제2빙상장",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "6f96819d13a5746b.do",
+      "reference": "ep.16",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "f87a726b3de847c3.do",
+      "reference": "12세 남성청소년도",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "f87a726b3de847c3.do",
+      "reference": "HPV 무료 예방접종!",
+      "found": false
+    },
+    {
+      "model": "paddle_enhanced",
+      "file": "f87a726b3de847c3.do",
+      "reference": "2014. 1. 1. ~ 12. 31. 출생자",
+      "found": false
+    }
+  ]
+}

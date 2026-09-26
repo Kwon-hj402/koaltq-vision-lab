@@ -1,0 +1,548 @@
+[
+  {
+    "file": "039c94d89a6db2c3",
+    "path": "dataset/images\\039c94d89a6db2c3",
+    "size": [
+      1600,
+      1067
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "ab7bf08547e2e0c983a4ea89696e39eb36ab401e704292d8ffcf5b004171e292",
+    "contact_index": 7,
+    "stratum": "photo"
+  },
+  {
+    "file": "18e9f9bdfa0ef112.png",
+    "path": "dataset/images\\18e9f9bdfa0ef112.png",
+    "size": [
+      120,
+      120
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "8d2891a6029a766d594ad2e658e0aa10eaadf802fd0468f9dce8f948a1e9dc4c",
+    "contact_index": 44,
+    "stratum": "photo"
+  },
+  {
+    "file": "21f0660741e35439.jpg",
+    "path": "dataset/images\\21f0660741e35439.jpg",
+    "size": [
+      800,
+      450
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "d025f1c20bd61e6c8f672f2a6a81b6bd5c14064a611796e8f8f12a83a5bddcba",
+    "contact_index": 62,
+    "stratum": "photo"
+  },
+  {
+    "file": "2704361fd844b918.jpg",
+    "path": "dataset/images\\2704361fd844b918.jpg",
+    "size": [
+      720,
+      431
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "2d375f1d4b47b75b30136272a8746bea07c7163c40ae8bc0f8a888e3c21e4107",
+    "contact_index": 72,
+    "stratum": "photo"
+  },
+  {
+    "file": "7eb29474dd9cd8e3.jpg",
+    "path": "dataset/images\\7eb29474dd9cd8e3.jpg",
+    "size": [
+      720,
+      386
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "3fc49bda9a8b02a2bfbe9a0a0ac041b4b1b2551ea87484f2876539bdda598c11",
+    "contact_index": 197,
+    "stratum": "photo"
+  },
+  {
+    "file": "9c17cdeeba6b0782.jpg",
+    "path": "dataset/images\\9c17cdeeba6b0782.jpg",
+    "size": [
+      720,
+      480
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "75d416272101f2f247634caf0a9f314311c76ad035e0b68afec247f073447c69",
+    "contact_index": 230,
+    "stratum": "photo"
+  },
+  {
+    "file": "1138e6cad536ac89.png",
+    "path": "dataset/images\\1138e6cad536ac89.png",
+    "size": [
+      35,
+      47
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "c6757ba6893bebbb7c970587ad88015ef45fc0f83ee051dce19715102ea34322",
+    "contact_index": 27,
+    "stratum": "icon"
+  },
+  {
+    "file": "14e1ab1c400daf72.png",
+    "path": "dataset/images\\14e1ab1c400daf72.png",
+    "size": [
+      54,
+      45
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "900e988e48692fc84adbe36b6358837ad400901799740ad23a3f33faacab68a5",
+    "contact_index": 34,
+    "stratum": "icon"
+  },
+  {
+    "file": "28310e5cc65c488e.gif",
+    "path": "dataset/images\\28310e5cc65c488e.gif",
+    "size": [
+      24,
+      25
+    ],
+    "format": "GIF",
+    "frames": 1,
+    "sha256": "8b63c106d32358d24402754ab32e20b641462f562e38b492167371e99d9d2288",
+    "contact_index": 75,
+    "stratum": "icon"
+  },
+  {
+    "file": "3b117c7e08f4d107.png",
+    "path": "dataset/images\\3b117c7e08f4d107.png",
+    "size": [
+      60,
+      50
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "fa6fae3534966977fdb8feb88851d4a7fb8ead428805f50c3f36460654ed2a88",
+    "contact_index": 99,
+    "stratum": "icon"
+  },
+  {
+    "file": "428f1b4c5969909c.png",
+    "path": "dataset/images\\428f1b4c5969909c.png",
+    "size": [
+      54,
+      45
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "6ae334d3904084e1a2672cae6379b8f5416b2a779acf3c0ebf9f7016e149d957",
+    "contact_index": 113,
+    "stratum": "icon"
+  },
+  {
+    "file": "c0394af33514ebb1.png",
+    "path": "dataset/images\\c0394af33514ebb1.png",
+    "size": [
+      160,
+      160
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "8c4677ae0a03a99a8d6d2ebe2640050b9b83507fcdce29ab66eca1b8d3881459",
+    "contact_index": 264,
+    "stratum": "icon"
+  },
+  {
+    "file": "026769b1356f3283.png",
+    "path": "dataset/images\\026769b1356f3283.png",
+    "size": [
+      181,
+      55
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "2bb00229d9e66f4665bff939beaad11e0992efd25fb63fc7b97a7acb86a2566e",
+    "contact_index": 5,
+    "stratum": "logo"
+  },
+  {
+    "file": "075ba88c36bea11a.do",
+    "path": "dataset/images\\075ba88c36bea11a.do",
+    "size": [
+      240,
+      240
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "642963a936ace77688e1e1dad4654270f84e54574eb7ec0144475e1ec9b9d7f5",
+    "contact_index": 12,
+    "stratum": "logo"
+  },
+  {
+    "file": "0e1b6909831958ac.png",
+    "path": "dataset/images\\0e1b6909831958ac.png",
+    "size": [
+      370,
+      250
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "e60f91a72f8ff8d93ba20eb061023dcdffc2dca0dbb50db12d791408c66e045a",
+    "contact_index": 21,
+    "stratum": "logo"
+  },
+  {
+    "file": "1e071b0427c69490.png",
+    "path": "dataset/images\\1e071b0427c69490.png",
+    "size": [
+      155,
+      40
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "ceb5f0c5ccae0d8311b1e0009fc4b68e4bffb435ba99eb4cb996211ff6d1eeec",
+    "contact_index": 51,
+    "stratum": "logo"
+  },
+  {
+    "file": "423177cbdda8d724.gif",
+    "path": "dataset/images\\423177cbdda8d724.gif",
+    "size": [
+      121,
+      37
+    ],
+    "format": "GIF",
+    "frames": 1,
+    "sha256": "caf5215cb2539918dc06886dfa9d163481c37e8528908b6de9ccae8a6c3fa869",
+    "contact_index": 110,
+    "stratum": "logo"
+  },
+  {
+    "file": "d5aeb9aec8a6aac3.png",
+    "path": "dataset/images\\d5aeb9aec8a6aac3.png",
+    "size": [
+      216,
+      46
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "322778cad149b7e53fc892bac18d1b702ec247cbe2a0f5189e898da199c32b03",
+    "contact_index": 279,
+    "stratum": "logo"
+  },
+  {
+    "file": "1b7d42dd2f95b6e1.jpg",
+    "path": "dataset/images\\1b7d42dd2f95b6e1.jpg",
+    "size": [
+      345,
+      299
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "5a7adec2ccec1e782f3beacea01102ae927b5e8e55739b22dac577a77455e19c",
+    "contact_index": 48,
+    "stratum": "text_banner"
+  },
+  {
+    "file": "1d3b9f31517547fe.jpg",
+    "path": "dataset/images\\1d3b9f31517547fe.jpg",
+    "size": [
+      792,
+      148
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "470228c996392da02fd53c1480f3833036bf2de17b7acba0900361712e63b3d4",
+    "contact_index": 50,
+    "stratum": "text_banner"
+  },
+  {
+    "file": "38f9fbfe72f770f3.jpg",
+    "path": "dataset/images\\38f9fbfe72f770f3.jpg",
+    "size": [
+      345,
+      299
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "12deebbc760fd0a60ae8170306fe05ac97570acba3c964001f74b577f5d4c64e",
+    "contact_index": 96,
+    "stratum": "text_banner"
+  },
+  {
+    "file": "4741d9518dea78ff.jpg",
+    "path": "dataset/images\\4741d9518dea78ff.jpg",
+    "size": [
+      400,
+      225
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "2e5d05df37eaf8580a3a18a2c5b5d11909b62eaa9a158526f719d876a3c2995b",
+    "contact_index": 117,
+    "stratum": "text_banner"
+  },
+  {
+    "file": "569b18fe5cf1b3f9.jpg",
+    "path": "dataset/images\\569b18fe5cf1b3f9.jpg",
+    "size": [
+      800,
+      450
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "f9d9e3874257c1861964bdd2ecdabfb03990b1e67418be80b94a230e67e0f206",
+    "contact_index": 137,
+    "stratum": "text_banner"
+  },
+  {
+    "file": "ad9f57c142a01c88.jpg",
+    "path": "dataset/images\\ad9f57c142a01c88.jpg",
+    "size": [
+      800,
+      450
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "f17ea4ace4d09596d206f6281684f5d8ce6849f9aa2287ca4fcffe6471e7c6bf",
+    "contact_index": 244,
+    "stratum": "text_banner"
+  },
+  {
+    "file": "046bf6ae3c5e646b.es",
+    "path": "dataset/images\\046bf6ae3c5e646b.es",
+    "size": [
+      400,
+      499
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "8a89ce59262935561322d4842398899ae7b2900674902db20f0da4bf476d521e",
+    "contact_index": 9,
+    "stratum": "mixed"
+  },
+  {
+    "file": "2426950fc41b9a93.png",
+    "path": "dataset/images\\2426950fc41b9a93.png",
+    "size": [
+      1757,
+      944
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "20a70aedff4ccb97925c4dec29a48200c90da8e69bb6ec8e0caf93ec9a4e66ea",
+    "contact_index": 65,
+    "stratum": "mixed"
+  },
+  {
+    "file": "3fd77908165a4ba9.jpg",
+    "path": "dataset/images\\3fd77908165a4ba9.jpg",
+    "size": [
+      720,
+      390
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "55cd5c07c26352c1dd56a7185f8ba9c04e0087e0afec7fed5df15acf2ff7b3c0",
+    "contact_index": 105,
+    "stratum": "mixed"
+  },
+  {
+    "file": "425f8567e6c2156b.jpg",
+    "path": "dataset/images\\425f8567e6c2156b.jpg",
+    "size": [
+      720,
+      409
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "b2a555f557b4d0010aaac156f45521653ddd556d5ebd5c17b5fc74d9febb8948",
+    "contact_index": 112,
+    "stratum": "mixed"
+  },
+  {
+    "file": "7a9e3ca7407f9a30.jpg",
+    "path": "dataset/images\\7a9e3ca7407f9a30.jpg",
+    "size": [
+      400,
+      225
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "d8405604577aa7ca5f6d88c32f1f0eba14e95eea54860b2dff718b66be0bb24e",
+    "contact_index": 187,
+    "stratum": "mixed"
+  },
+  {
+    "file": "b182f126d1b1dbba.jpg",
+    "path": "dataset/images\\b182f126d1b1dbba.jpg",
+    "size": [
+      920,
+      497
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "e04b66b874cfd47bca2268d80dd58ba2eb1d1a6df38cf363daa2addf8560b393",
+    "contact_index": 252,
+    "stratum": "mixed"
+  },
+  {
+    "file": "01fee160037c164e.do",
+    "path": "dataset/images\\01fee160037c164e.do",
+    "size": [
+      1920,
+      953
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "7a54b6fd37bbe02c35180ea5ddb08b5465e64a649390f4804734a12c9ca08ceb",
+    "contact_index": 4,
+    "stratum": "layout"
+  },
+  {
+    "file": "0be9f0f533833af2.jpg",
+    "path": "dataset/images\\0be9f0f533833af2.jpg",
+    "size": [
+      720,
+      449
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "bf652cd109cbd19aebe62b71484227bac0de70e2653bc0f3c18c16889eb3f684",
+    "contact_index": 17,
+    "stratum": "layout"
+  },
+  {
+    "file": "0c65e63384de3f64.png",
+    "path": "dataset/images\\0c65e63384de3f64.png",
+    "size": [
+      1125,
+      467
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "b9ff72005cc41ecf2f6e6713faf64b283d936866ec043b31a964ffd5d0715b9a",
+    "contact_index": 19,
+    "stratum": "layout"
+  },
+  {
+    "file": "25198da01a56c796.png",
+    "path": "dataset/images\\25198da01a56c796.png",
+    "size": [
+      868,
+      448
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "715785fbcdbb7dd686c1c4ccedf7a0152ef850ec62d1553aa8754a0367e2cfe4",
+    "contact_index": 67,
+    "stratum": "layout"
+  },
+  {
+    "file": "28b16068d4379176.png",
+    "path": "dataset/images\\28b16068d4379176.png",
+    "size": [
+      700,
+      495
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "6bab7e8cf458456e72d77f7b5023375dee56da72d1803efaadda16e0c7e073d0",
+    "contact_index": 77,
+    "stratum": "layout"
+  },
+  {
+    "file": "658a87ad149352ab.jpg",
+    "path": "dataset/images\\658a87ad149352ab.jpg",
+    "size": [
+      915,
+      500
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "9dd9165b3c5682ba24a7722e6f740aa08b9a00ccb0fcaa6405ee0fd9cf84c1e3",
+    "contact_index": 160,
+    "stratum": "layout"
+  },
+  {
+    "file": "11cc05715bac383f.png",
+    "path": "dataset/images\\11cc05715bac383f.png",
+    "size": [
+      16,
+      16
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "cbae54ed444777db225a211d0cec7ccb6579e6aec911dfe363adebd179042897",
+    "contact_index": 29,
+    "stratum": "challenge"
+  },
+  {
+    "file": "1515dfefb89fa6d5.gif",
+    "path": "dataset/images\\1515dfefb89fa6d5.gif",
+    "size": [
+      22,
+      6
+    ],
+    "format": "GIF",
+    "frames": 1,
+    "sha256": "9df8c15c0813856e9e0f6575bbcb7cf6ca7f4fa2bd5544a91ec35ce1e7e9a6bc",
+    "contact_index": 36,
+    "stratum": "challenge"
+  },
+  {
+    "file": "58a031d1909dc03e.do",
+    "path": "dataset/images\\58a031d1909dc03e.do",
+    "size": [
+      4961,
+      7016
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "15fcb8c399b7a0a2e1a80e1b4e4b2079af4a527caf8a996e694ffded9f13b5ca",
+    "contact_index": 139,
+    "stratum": "challenge"
+  },
+  {
+    "file": "6f96819d13a5746b.do",
+    "path": "dataset/images\\6f96819d13a5746b.do",
+    "size": [
+      7257,
+      4082
+    ],
+    "format": "JPEG",
+    "frames": 1,
+    "sha256": "a7d7d3304e771e45e8009d2ac19a89e6320bac6d72a7f3a22c6c7d2e507a2c9f",
+    "contact_index": 173,
+    "stratum": "challenge"
+  },
+  {
+    "file": "c218978fb8f2c443.gif",
+    "path": "dataset/images\\c218978fb8f2c443.gif",
+    "size": [
+      10,
+      10
+    ],
+    "format": "GIF",
+    "frames": 1,
+    "sha256": "56d17c6193c4194133b7fa0a51a57103e8bea0ccb8753231a32b97081c69e609",
+    "contact_index": 267,
+    "stratum": "challenge"
+  },
+  {
+    "file": "f87a726b3de847c3.do",
+    "path": "dataset/images\\f87a726b3de847c3.do",
+    "size": [
+      2481,
+      3508
+    ],
+    "format": "PNG",
+    "frames": 1,
+    "sha256": "e3d57750918a684cb1be6b60b12e78e03514ac3fdc35d8f4cb1c501400c10b23",
+    "contact_index": 293,
+    "stratum": "challenge"
+  }
+]

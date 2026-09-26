@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-09-26",
+  "file": "outputs/literature.html",
+  "browser": "Chrome",
+  "desktop": {"viewport_width": 1249, "document_width": 1234, "visual_review": "clean white layout; header, introduction and contents readable"},
+  "mobile": {"viewport_width": 390, "document_width": 375, "body_width": 375, "overflowing_elements_outside_table_wrappers": 0, "table_wrapper_width": 331, "visual_review": "readable title and body; tables scroll within their wrappers"},
+  "structure": {"sections": 8, "tables": 8, "references": 98, "duplicate_ids": 0, "broken_internal_anchors": 0, "external_css_js": 0},
+  "relative_links_pending_parent_outputs": ["report.html", "results.html"],
+  "paper_format_addendum": {
+    "source": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf",
+    "method": "full programme exact title search; each title occurs once in poster lists and not in separate oral lists",
+    "entries": [
+      {"name": "DnR", "page": 66, "poster": 426, "highlight": true},
+      {"name": "DeepScan", "page": 67, "poster": 457},
+      {"name": "PAS", "page": 65, "poster": 375},
+      {"name": "First Logit Boosting", "page": 65, "poster": 372},
+      {"name": "KVSmooth", "page": 103, "poster": 367}
+    ]
+  }
+}

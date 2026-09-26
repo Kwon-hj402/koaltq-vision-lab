@@ -1,0 +1,22 @@
+{
+  "model": "EasyOCR1.7.2 CRAFT + korean_g2",
+  "version": "1.7.2",
+  "torch": "2.4.1+cu121",
+  "device": "cuda",
+  "load_seconds": 11.109976300038397,
+  "settings": {
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "decoder": "greedy",
+    "paragraph": false,
+    "canvas_size": 2560,
+    "mag_ratio": 1,
+    "text_threshold": 0.7,
+    "low_text": 0.4,
+    "link_threshold": 0.4,
+    "batch_size": 1
+  },
+  "input_policy": "first frame EXIF corrected, alpha on white; native pixel size; no alt/context/label"
+}

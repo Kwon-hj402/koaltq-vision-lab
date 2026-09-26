@@ -1,0 +1,967 @@
+{
+  "checked_at": "2026-09-26",
+  "scope": "subset.json에 사전 선정된 42개 이미지 전체의 원본과 Patch-ioner whole_image caption을 직접 대조",
+  "method": "assistant 시각 점검이며 전문가 검증이나 자동 정확도 측정이 아님. 표본 밖으로 일반화하지 않음.",
+  "definitions": {
+    "alignment": "핵심대상 맞음=전체 핵심대상/장면 종류가 맞음(세부정보 완전성 뜻 아님); 부분적=실제 일부 요소만 반영하거나 주요 내용과 형식 누락; 불일치=중심 대상·장면·매체가 다름",
+    "unsupported": "이미지에서 확인되지 않는 객체·행동·장면 설정 또는 명백한 대상 오인 있음. 단순 누락은 포함하지 않음; 색상/인원 오류는 factual_errors에 별도 기록",
+    "limits": "GIF는 view_image가 표시한 화면을 점검. 일부 큰 이미지는 도구가 축소해 표시. 매우 작은 아이콘의 기능은 확정하지 않음. 기존 alt와 정답 label 미사용. 투명 이미지 9장은 흰 배경 알파 합성으로 재점검했으며 작은 아이콘 일부는 nearest 확대 확인."
+  },
+  "summary_by_stratum": {
+    "photo": {
+      "n": 6,
+      "alignment": {
+        "부분적": 4,
+        "불일치": 1,
+        "핵심대상 맞음": 1
+      },
+      "unsupported_object_action_or_scene": 4
+    },
+    "icon": {
+      "n": 6,
+      "alignment": {
+        "불일치": 3,
+        "부분적": 3
+      },
+      "unsupported_object_action_or_scene": 6
+    },
+    "logo": {
+      "n": 6,
+      "alignment": {
+        "불일치": 6
+      },
+      "unsupported_object_action_or_scene": 6
+    },
+    "text_banner": {
+      "n": 6,
+      "alignment": {
+        "불일치": 3,
+        "부분적": 3
+      },
+      "unsupported_object_action_or_scene": 6
+    },
+    "mixed": {
+      "n": 6,
+      "alignment": {
+        "불일치": 5,
+        "부분적": 1
+      },
+      "unsupported_object_action_or_scene": 6
+    },
+    "layout": {
+      "n": 6,
+      "alignment": {
+        "부분적": 1,
+        "불일치": 5
+      },
+      "unsupported_object_action_or_scene": 6
+    },
+    "challenge": {
+      "n": 6,
+      "alignment": {
+        "불일치": 4,
+        "부분적": 2
+      },
+      "unsupported_object_action_or_scene": 4
+    }
+  },
+  "records": [
+    {
+      "i": 0,
+      "file": "039c94d89a6db2c3",
+      "path": "dataset/images\\039c94d89a6db2c3",
+      "stratum": "photo",
+      "caption": "a man sitting in a chair with a glass of wine . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "와인잔을 들고 있다는 설명은 이미지에서 확인되지 않는다."
+      ],
+      "missing": [
+        "손에 든 마이크",
+        "말하는 인물의 모습"
+      ],
+      "note": "인물과 의자라는 큰 구성은 맞지만 마이크를 와인잔으로 바꿔 묘사했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 1,
+      "file": "18e9f9bdfa0ef112.png",
+      "path": "dataset/images\\18e9f9bdfa0ef112.png",
+      "stratum": "photo",
+      "caption": "a smiling man smiling while holding a large piece of food . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "큰 음식 조각을 들고 있다는 근거가 없다."
+      ],
+      "missing": [
+        "정장 차림의 인물 얼굴 중심 초상"
+      ],
+      "note": "웃는 인물은 맞지만 손과 음식이 보이지 않는 초상 사진에 음식 행동을 추가했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 2,
+      "file": "21f0660741e35439.jpg",
+      "path": "dataset/images\\21f0660741e35439.jpg",
+      "stratum": "photo",
+      "caption": "a bunch of equipment sitting on the floor in a room . ",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "missing": [
+        "심하게 탄 전동 이동기구와 잔해",
+        "검게 그을린 벽과 바닥"
+      ],
+      "note": "실내 바닥의 장비라는 표현은 대략 맞으나 화재 흔적이라는 중심 정보를 놓쳤다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 3,
+      "file": "2704361fd844b918.jpg",
+      "path": "dataset/images\\2704361fd844b918.jpg",
+      "stratum": "photo",
+      "caption": "a person in a suit holding a video game controller . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "중심 대상을 사람으로 묘사했다.",
+        "비디오게임 컨트롤러를 들고 있다는 근거가 없다."
+      ],
+      "missing": [
+        "팔을 든 휴머노이드 로봇",
+        "휴대전화로 촬영하는 관람객",
+        "전시장"
+      ],
+      "note": "전시장의 로봇을 정장 입은 사람으로 바꾸고 컨트롤러를 추가했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 4,
+      "file": "7eb29474dd9cd8e3.jpg",
+      "path": "dataset/images\\7eb29474dd9cd8e3.jpg",
+      "stratum": "photo",
+      "caption": "a construction site in the middle of a dirt road . ",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "missing": [
+        "노출된 여러 배관",
+        "굴착기",
+        "출입구 옆 사람과 주황색 안전 콘"
+      ],
+      "note": "파헤쳐진 도로의 공사 현장이라는 핵심은 맞지만 배관과 주변 세부정보는 빠졌다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 5,
+      "file": "9c17cdeeba6b0782.jpg",
+      "path": "dataset/images\\9c17cdeeba6b0782.jpg",
+      "stratum": "photo",
+      "caption": "a group of people posing for a picture with their tennis rackets . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "테니스 라켓이 있다는 근거가 없다."
+      ],
+      "missing": [
+        "실내 행사 단체사진",
+        "배경 현수막의 취업지원사업 입교식 문구"
+      ],
+      "note": "단체사진은 맞지만 라켓을 추가했으며 행사 현수막 정보는 빠졌다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 6,
+      "file": "1138e6cad536ac89.png",
+      "path": "dataset/images\\1138e6cad536ac89.png",
+      "stratum": "icon",
+      "caption": "a man holding a pink frisbee in front of a large clock . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "사람·분홍색 프리스비·시계는 보이지 않는다."
+      ],
+      "missing": [
+        "노란 태양 모양의 날씨 아이콘"
+      ],
+      "note": "단순 날씨 아이콘을 사람과 물체가 있는 장면으로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 7,
+      "file": "14e1ab1c400daf72.png",
+      "path": "dataset/images\\14e1ab1c400daf72.png",
+      "stratum": "icon",
+      "caption": "a desk with a computer and a sign that says \" stop \" ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "책상과 STOP 문구가 있다는 근거가 없다."
+      ],
+      "missing": [
+        "선그래프가 있는 모니터 아이콘"
+      ],
+      "note": "흰 바탕 알파 합성으로 모니터와 그래프를 재확인했다. 컴퓨터라는 일부 요소는 맞지만 책상과 STOP 문구를 추가했다.",
+      "review_uncertainty": "흰 바탕 알파 합성 재확인 완료.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 8,
+      "file": "28310e5cc65c488e.gif",
+      "path": "dataset/images\\28310e5cc65c488e.gif",
+      "stratum": "icon",
+      "caption": "a sign that says \" stop \" and \" no parking \" ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "STOP 및 NO PARKING 문구는 없다."
+      ],
+      "missing": [
+        "사각형 안 오른쪽 방향 꺾쇠"
+      ],
+      "note": "오른쪽 이동 화살표를 교통 표지와 문구로 바꿨다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 9,
+      "file": "3b117c7e08f4d107.png",
+      "path": "dataset/images\\3b117c7e08f4d107.png",
+      "stratum": "icon",
+      "caption": "a red stop sign with a clock on it ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "정지 표지와 시계는 보이지 않는다."
+      ],
+      "missing": [
+        "주황색 태양 모양 날씨 아이콘"
+      ],
+      "note": "태양 아이콘을 정지 표지로 묘사했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 10,
+      "file": "428f1b4c5969909c.png",
+      "path": "dataset/images\\428f1b4c5969909c.png",
+      "stratum": "icon",
+      "caption": "a hand holding a black and white sign with a pair of scissors . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "표지를 들거나 가위가 있다는 근거는 없다."
+      ],
+      "missing": [
+        "악수하는 두 손의 아이콘"
+      ],
+      "note": "흰 바탕 알파 합성으로 악수 아이콘임을 재확인했다. 손이라는 일부 요소는 맞지만 표지·가위를 추가하고 악수를 놓쳤다.",
+      "review_uncertainty": "투명 영역을 검정으로 보여준 최초 도구 표시를 흰 바탕 알파 합성으로 교정하여 재점검함.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 11,
+      "file": "c0394af33514ebb1.png",
+      "path": "dataset/images\\c0394af33514ebb1.png",
+      "stratum": "icon",
+      "caption": "a car with a picture of a man on the back of it . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "차 뒤에 사람 사진이 있다는 근거가 없다."
+      ],
+      "missing": [
+        "전기 플러그와 전선",
+        "차량·충전 관련 아이콘 형태"
+      ],
+      "note": "자동차는 맞지만 사람 사진을 추가하고 전기 플러그를 놓쳤다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 12,
+      "file": "026769b1356f3283.png",
+      "path": "dataset/images\\026769b1356f3283.png",
+      "stratum": "logo",
+      "caption": "a red and white sign with a man on it ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "사람이 있다는 근거가 없다."
+      ],
+      "missing": [
+        "정부 상징",
+        "문화체육관광부 국립중앙도서관 문구"
+      ],
+      "note": "기관 로고와 기관명을 사람 있는 표지로 묘사했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 13,
+      "file": "075ba88c36bea11a.do",
+      "path": "dataset/images\\075ba88c36bea11a.do",
+      "stratum": "logo",
+      "caption": "a red and white sign with a blue and black cat on it . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "고양이가 있다는 근거가 없다."
+      ],
+      "missing": [
+        "정부 상징",
+        "보건복지부 문구"
+      ],
+      "note": "보건복지부 로고의 도형을 고양이로 묘사했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 14,
+      "file": "0e1b6909831958ac.png",
+      "path": "dataset/images\\0e1b6909831958ac.png",
+      "stratum": "logo",
+      "caption": "a close up of a street sign with a jet in the background ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "거리 표지와 배경 제트기는 보이지 않는다."
+      ],
+      "missing": [
+        "NVIDIA 영문 로고",
+        "초록색 눈 모양 상징"
+      ],
+      "note": "기업 로고를 거리 표지와 비행 장면으로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 15,
+      "file": "1e071b0427c69490.png",
+      "path": "dataset/images\\1e071b0427c69490.png",
+      "stratum": "logo",
+      "caption": "a close up of a street sign with a person on it ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "거리 표지에 사람이 있다는 근거가 없다."
+      ],
+      "missing": [
+        "MIRIAN 영문 로고",
+        "파란색 도형"
+      ],
+      "note": "단순 영문 로고를 사람 있는 거리 표지로 묘사했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 16,
+      "file": "423177cbdda8d724.gif",
+      "path": "dataset/images\\423177cbdda8d724.gif",
+      "stratum": "logo",
+      "caption": "a yellow and red traffic sign and a man ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "교통 표지와 사람은 보이지 않는다."
+      ],
+      "missing": [
+        "국립암센터 / NATIONAL CANCER CENTER 문구",
+        "다색 상징"
+      ],
+      "note": "기관 로고의 글자를 읽지 않고 교통 표지 장면으로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 17,
+      "file": "d5aeb9aec8a6aac3.png",
+      "path": "dataset/images\\d5aeb9aec8a6aac3.png",
+      "stratum": "logo",
+      "caption": "a stop sign with graffiti on it and a man walking behind it . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "정지 표지·낙서·뒤에서 걷는 사람은 보이지 않는다."
+      ],
+      "missing": [
+        "DONG-GU / Daegu Metropolitan City 문구",
+        "초록·파랑·빨강 상징"
+      ],
+      "note": "지자체 로고를 정지 표지와 보행자 장면으로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 18,
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "path": "dataset/images\\1b7d42dd2f95b6e1.jpg",
+      "stratum": "text_banner",
+      "caption": "a close up of a red and yellow fire hydrant ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "소화전은 보이지 않는다."
+      ],
+      "missing": [
+        "교제폭력·스토킹 레드플래그 10",
+        "여성긴급전화 1366",
+        "경찰 긴급신고 112"
+      ],
+      "note": "글자 중심 안내문을 소화전으로 생성해 주제와 연락처를 모두 놓쳤다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 19,
+      "file": "1d3b9f31517547fe.jpg",
+      "path": "dataset/images\\1d3b9f31517547fe.jpg",
+      "stratum": "text_banner",
+      "caption": "a close up of a tennis player swinging a racket ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "테니스 선수와 라켓은 없다."
+      ],
+      "missing": [
+        "NAVER에서도 정책브리핑 뉴스를 만나보세요",
+        "뉴스스탠드 구독 안내"
+      ],
+      "note": "텍스트 배너를 테니스 동작으로 묘사했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 20,
+      "file": "38f9fbfe72f770f3.jpg",
+      "path": "dataset/images\\38f9fbfe72f770f3.jpg",
+      "stratum": "text_banner",
+      "caption": "a close up of a bunch of different colored food ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "여러 색 음식은 보이지 않는다."
+      ],
+      "missing": [
+        "공공재정 부정청구 신고센터 운영",
+        "신고대상과 온라인·방문/우편·팩스 신고방법"
+      ],
+      "note": "공공재정 신고 안내의 글자와 구조를 음식으로 묘사했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 21,
+      "file": "4741d9518dea78ff.jpg",
+      "path": "dataset/images\\4741d9518dea78ff.jpg",
+      "stratum": "text_banner",
+      "caption": "a bag of luggage is sitting in a store . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "보이는 종이봉투를 여행용 짐(luggage)으로 특정할 근거가 없다."
+      ],
+      "missing": [
+        "배고픔엔 증명서가 필요 없습니다 문구",
+        "그냥드림 표시가 있는 종이봉투"
+      ],
+      "note": "봉투가 놓인 부분은 일부 잡았으나 핵심 안내 문구를 누락하고 봉투의 용도를 잘못 특정했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 22,
+      "file": "569b18fe5cf1b3f9.jpg",
+      "path": "dataset/images\\569b18fe5cf1b3f9.jpg",
+      "stratum": "text_banner",
+      "caption": "an elephant and a baby elephant standing in a field . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "실제 들판에 서 있다는 장면 설정은 이미지에 없다."
+      ],
+      "missing": [
+        "2026 대구 도시디자인 공모전",
+        "9.28~10.2 일정",
+        "대구대공원 슬로건 및 BI 아이디어 안내",
+        "여러 동물 실루엣의 그래픽"
+      ],
+      "note": "코끼리 실루엣은 맞지만 공모전 포스터를 실제 동물 장면처럼 묘사했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 23,
+      "file": "ad9f57c142a01c88.jpg",
+      "path": "dataset/images\\ad9f57c142a01c88.jpg",
+      "stratum": "text_banner",
+      "caption": "a man in a red shirt is holding a green and white sign . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "초록·흰색 표지를 들고 있다는 근거가 없다."
+      ],
+      "missing": [
+        "2026년 대구광역시 사회조사",
+        "조사원 가정 방문과 협조 요청",
+        "달력 모양 안내판과 확성기 삽화"
+      ],
+      "note": "붉은 상의의 인물 삽화는 일부 반영했으나 중심 텍스트와 조사 내용을 놓쳤다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 24,
+      "file": "046bf6ae3c5e646b.es",
+      "path": "dataset/images\\046bf6ae3c5e646b.es",
+      "stratum": "mixed",
+      "caption": "a child holding a book with a stuffed animal on it . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "아이가 책을 들고 있고 책에 봉제인형이 있다는 장면은 없다."
+      ],
+      "missing": [
+        "아동권리 사연 공모전",
+        "응모 내용·기간·발표일·경품 안내",
+        "QR코드"
+      ],
+      "note": "공모전 안내 포스터를 아이가 책을 든 장면으로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 25,
+      "file": "2426950fc41b9a93.png",
+      "path": "dataset/images\\2426950fc41b9a93.png",
+      "stratum": "mixed",
+      "caption": "a small child 's hand is holding a colorful stuffed animal . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "아이 손이 색색의 봉제인형을 들고 있다는 근거가 없다."
+      ],
+      "missing": [
+        "초등방학 틈새돌봄 안내",
+        "대상·이용시간·요금·문의전화 1522-1318"
+      ],
+      "note": "돌봄 안내의 표 구조와 본문을 놓치고 주변 삽화를 봉제인형 장면으로 바꿨다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 26,
+      "file": "3fd77908165a4ba9.jpg",
+      "path": "dataset/images\\3fd77908165a4ba9.jpg",
+      "stratum": "mixed",
+      "caption": "a small child holding a pink and black and white picture of a computer . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "아이가 컴퓨터 사진을 들고 있다는 근거가 없다."
+      ],
+      "missing": [
+        "2026년 3분기 임산부·영유아 비대면 건강교실",
+        "9.14~9.28 교육 일정",
+        "교육내용과 문의전화"
+      ],
+      "note": "임산부 삽화와 휴대전화를 다른 인물·기기로 바꾸고 교육 안내를 누락했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 27,
+      "file": "425f8567e6c2156b.jpg",
+      "path": "dataset/images\\425f8567e6c2156b.jpg",
+      "stratum": "mixed",
+      "caption": "a man sitting in a chair holding a laptop computer . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "의자에 앉아 노트북을 들고 있다는 근거가 없다."
+      ],
+      "missing": [
+        "국민의 멜로디 징글 공모전",
+        "가수·연주자와 악기·마이크"
+      ],
+      "note": "음악 공모전 배너와 연주자들을 노트북 사용하는 한 사람으로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 28,
+      "file": "7a9e3ca7407f9a30.jpg",
+      "path": "dataset/images\\7a9e3ca7407f9a30.jpg",
+      "stratum": "mixed",
+      "caption": "a man and woman are holding a baby . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "남녀가 아기를 안고 있다는 구체적 행동은 보이지 않는다."
+      ],
+      "missing": [
+        "평생소득 안전망, 국민연금 문구",
+        "여러 세대의 가족과 임산부"
+      ],
+      "note": "사람들이 있는 가족 사진이라는 부분은 맞지만 아이의 나이와 안는 행동을 만들어냈다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 29,
+      "file": "b182f126d1b1dbba.jpg",
+      "path": "dataset/images\\b182f126d1b1dbba.jpg",
+      "stratum": "mixed",
+      "caption": "a large vase with a large clock on it . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "꽃병과 큰 시계가 있다는 근거가 없다."
+      ],
+      "missing": [
+        "족보박물관 문체부 평가 4회 연속 인증기관 선정",
+        "금색 트로피",
+        "2017·2019·2022·2025 인증 이력"
+      ],
+      "note": "트로피를 꽃병과 시계로 잘못 묘사하고 성과 안내 내용을 누락했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 30,
+      "file": "01fee160037c164e.do",
+      "path": "dataset/images\\01fee160037c164e.do",
+      "stratum": "layout",
+      "caption": "a beach with many kites flying over the water . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "물 위에 여러 연이 날고 있다는 근거가 없다."
+      ],
+      "missing": [
+        "APEC 2025 KOREA 웹페이지 화면",
+        "해변·야경·불꽃놀이의 3분할 사진",
+        "상단 메뉴·표어·카운트다운"
+      ],
+      "note": "왼쪽 해변만 일부 잡았고 전체 화면 구조와 글자를 놓치며 연을 추가했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 31,
+      "file": "0be9f0f533833af2.jpg",
+      "path": "dataset/images\\0be9f0f533833af2.jpg",
+      "stratum": "layout",
+      "caption": "a colorful double decker bus driving down a street . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "2층 버스가 주행한다는 장면은 없다."
+      ],
+      "missing": [
+        "아이 안전·건강·성장·정서 관련 안전점검 안내",
+        "위해요소 안전점검·단속",
+        "2026.8.24~9.23 기간"
+      ],
+      "note": "도로 모양 인포그래픽을 실제 버스 주행 장면으로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 32,
+      "file": "0c65e63384de3f64.png",
+      "path": "dataset/images\\0c65e63384de3f64.png",
+      "stratum": "layout",
+      "caption": "a large amount of different colored buses on a city street . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "다양한 색의 여러 버스가 실제 거리에 있다는 묘사는 지도에서 확인되지 않는다."
+      ],
+      "missing": [
+        "지도라는 매체",
+        "한국과학기술정보연구원 위치 핀",
+        "주변 도로·건물·홍릉근린공원"
+      ],
+      "note": "지도에 표시된 버스정류장 아이콘 등을 버스가 있는 실제 거리로 해석했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 33,
+      "file": "25198da01a56c796.png",
+      "path": "dataset/images\\25198da01a56c796.png",
+      "stratum": "layout",
+      "caption": "a white and blue bus on a city street . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "흰색·파란색 버스와 도시 거리는 없다."
+      ],
+      "missing": [
+        "민원실 안내 배치도",
+        "번호가 있는 창구와 민원 배려창구",
+        "부서별 전화번호·출입문 위치"
+      ],
+      "note": "창구 배치도를 버스로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 34,
+      "file": "28b16068d4379176.png",
+      "path": "dataset/images\\28b16068d4379176.png",
+      "stratum": "layout",
+      "caption": "a large passenger train parked at a station . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "여객열차와 역은 보이지 않는다."
+      ],
+      "missing": [
+        "2024 새해농업인실용교육 과정별 세부일정",
+        "교육 기간",
+        "과정·일시·장소·인원·강사 등의 표"
+      ],
+      "note": "표 구조를 열차로 오인해 교육 일정 정보를 모두 누락했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 35,
+      "file": "658a87ad149352ab.jpg",
+      "path": "dataset/images\\658a87ad149352ab.jpg",
+      "stratum": "layout",
+      "caption": "two colorful and blue trains are on a building . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "두 열차와 건물은 보이지 않는다."
+      ],
+      "missing": [
+        "신고인→처리기관의 업무 흐름도",
+        "신고→접수→서류 확인/시스템 입력→기안/결재→결과 통보"
+      ],
+      "note": "화살표와 사각형으로 구성된 절차도를 열차 장면으로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 36,
+      "file": "11cc05715bac383f.png",
+      "path": "dataset/images\\11cc05715bac383f.png",
+      "stratum": "challenge",
+      "caption": "a red stop sign with a graffiti on it ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "정지 표지와 낙서가 있다는 근거가 없다."
+      ],
+      "missing": [
+        "빨간 배경의 흰색 숫자 3"
+      ],
+      "note": "16×16 숫자 표식을 정지 표지와 낙서로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 37,
+      "file": "1515dfefb89fa6d5.gif",
+      "path": "dataset/images\\1515dfefb89fa6d5.gif",
+      "stratum": "challenge",
+      "caption": "a red and white sign with a red and black background ",
+      "alignment": "불일치",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "검정 배경이라는 색상 묘사는 화면에서 확인되지 않는다."
+      ],
+      "missing": [
+        "빨간 new 글자"
+      ],
+      "note": "작은 NEW 표시의 글자를 읽지 못하고 색상·표지의 일반 묘사만 생성했다.",
+      "review_uncertainty": "매우 작은 GIF의 단일 표시 화면을 점검했으며 애니메이션 전체는 점검하지 않았다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 38,
+      "file": "58a031d1909dc03e.do",
+      "path": "dataset/images\\58a031d1909dc03e.do",
+      "stratum": "challenge",
+      "caption": "a group of people standing next to a large colorful wall with a large clock on it . ",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "큰 시계가 달린 알록달록한 벽은 보이지 않는다."
+      ],
+      "missing": [
+        "치매안심 재산관리 서비스",
+        "대상·이용절차·신청방법",
+        "문의전화 1355 및 1899-9988"
+      ],
+      "note": "어르신 집단 삽화는 일부 잡았으나 존재하지 않는 시계와 벽을 추가하고 서비스 정보를 누락했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 39,
+      "file": "6f96819d13a5746b.do",
+      "path": "dataset/images\\6f96819d13a5746b.do",
+      "stratum": "challenge",
+      "caption": "a young person riding skis on a snow covered slope . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "눈 덮인 경사면에서 스키를 탄다는 장면은 없다."
+      ],
+      "missing": [
+        "실내 빙상장",
+        "스케이트를 들고 있는 인물",
+        "대구 제2빙상장·동구 핫플·ep.16 문구"
+      ],
+      "note": "실내 빙상장 썸네일을 야외 스키 장면으로 바꿨다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 40,
+      "file": "c218978fb8f2c443.gif",
+      "path": "dataset/images\\c218978fb8f2c443.gif",
+      "stratum": "challenge",
+      "caption": "a sign that says \" the time \" is \" on the wall . ",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "the time이라는 문구와 벽은 보이지 않는다."
+      ],
+      "missing": [
+        "작은 회색 문서/겹친 창 형태 아이콘"
+      ],
+      "note": "아주 작은 아이콘에 영문 문구와 벽을 만들어냈다.",
+      "review_uncertainty": "10px 수준 아이콘이라 세부 기능은 확정하지 않는다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 41,
+      "file": "f87a726b3de847c3.do",
+      "path": "dataset/images\\f87a726b3de847c3.do",
+      "stratum": "challenge",
+      "caption": "two young men playing soccer in a game . ",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "축구하는 인물은 세 명인데 두 명이라고 했다."
+      ],
+      "missing": [
+        "12세 남성청소년 HPV 무료 예방접종",
+        "대상 출생기간·기관·4가 백신·2회/6개월 간격",
+        "QR코드"
+      ],
+      "note": "축구 삽화는 반영했지만 인원수를 틀리고 예방접종 안내의 핵심 정보를 모두 놓쳤다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지와 whole_image caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    }
+  ],
+  "caption_source_branch": "CapDec CLS global; get_cls_capt=True. Gaussian full-image pooling 및 region captions 평가 수치가 아님.",
+  "correction_log": [
+    "투명 이미지9장을 흰 바탕 알파 합성으로 재확인. 428f 악수 아이콘의 핵심일치 판단을 불일치에서 부분적으로 정정,14e1모니터 설명 정정. 없는 표지/가위/STOP 주장에 대한 unsupported 여부는 유지."
+  ]
+}

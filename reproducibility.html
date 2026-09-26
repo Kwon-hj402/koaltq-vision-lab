@@ -1,0 +1,24 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>팀원 PC에서 실행하고 결과를 확인하는 방법</title><link rel="stylesheet" href="team-notes.css?v=4"></head><body><main><header><div class="eyebrow">KOALTQ VISION LAB / TEAM WORKSPACE</div><h1>팀원 PC에서 실행하고 결과를 확인하는 방법</h1><p class="meta">2026.09.26 실험 · 한국어 웹 이미지의 그림 설명과 OCR 비교</p><nav><a href="index.html">시작</a><a href="report.html">진행 설명</a><a href="gallery.html">43개 예시</a><a href="results.html">299개 결과</a><a href="code.html">코드 설명</a><a href="reproducibility.html">실행 방법</a><a href="https://github.com/Kwon-hj402/koaltq-vision-lab">GitHub 저장소</a></nav></header><h2>먼저 저장된 결과만 확인할 수 있다</h2><ul class="facts"><li>모델을 설치하지 않아도 Pages에서 보고서·43개 예시·299개 결과를 열람할 수 있다.</li><li>저장소를 내려받으면 아래 명령으로 원시 결과 재집계와 내부 링크 검사를 실행한다.</li><li>Pages는 정적 열람용이다. 아래 추론 명령은 팀원 PC에서 실행한다.</li></ul><pre><code>python scripts/score_saved.py
+python scripts/validate_site.py
+python -m http.server 8000</code></pre>
+<h2>새 코드로 실제 한 장을 다시 실행하였다</h2><ul class="facts"><li>대회 샘플 3fd77908165a4ba9.jpg를 입력하였다. 기존 alt·정답·주변 문맥은 주지 않았다.</li><li>PP-OCRv5가 25줄을 반환하고 Florence가 상세 설명을 생성하였다. 두 작업 모두 정상 종료하였다.</li><li>OCR는 CPU, Florence는 CUDA를 사용하였다. 기존 캐시로 offline 실행하였다.</li><li>OCR 추론 9.54초, Florence 추론 4.44초였다. 모델 로딩은 각각 1.86초, 1.40초로 따로 기록하였다.</li><li>Florence는 포스터를 webpage처럼 설명하는 오류가 있었다. 두 모델 출력은 검증된 정답이 아니라 비교할 근거이다.</li><li>새 가상환경의 전체 설치 성공이나 다른 운영체제 동작까지 검증한 것은 아니다.</li></ul>
+<p><a href="examples/portable-smoke/result.html"><b>이 코드로 생성한 실제 결과 열기 →</b></a> · <a href="examples/portable-smoke/evidence.json">전체 JSON</a></p>
+<h2>1. Florence와 OCR의 환경을 분리한다</h2><p>조정기는 Python 표준 라이브러리만 사용한다. 각 모델을 별도 환경의 Python으로 순서대로 호출한다. 아래 버전은 이번 PC에서 사용한 환경을 기준으로 기록하였다.</p><pre><code>py -3.11 -m venv .venv-florence
+py -3.11 -m venv .venv-paddle
+
+# NVIDIA CUDA 12.1용으로 로컬에서 사용한 PyTorch 빌드를 먼저 선택하는 예
+.\.venv-florence\Scripts\python.exe -m pip install torch==2.4.1 torchvision==0.19.1 --index-url https://download.pytorch.org/whl/cu121
+.\.venv-florence\Scripts\python.exe -m pip install -r requirements/florence.txt
+.\.venv-paddle\Scripts\python.exe -m pip install -r requirements/paddle-cpu.txt
+</code></pre><h2>2. 이미지 한 장을 전달한다</h2><p>sample.png와 Python 경로를 자신의 파일에 맞게 바꾼다. 가중치는 저장소에 포함하지 않았으며 첫 실행에서 공식 모델을 내려받는다. GPU가 없는 환경의 옵션, 캐시 구성, 알려진 제약은 상세 안내에 설명하였다.</p><pre><code>python src/describe_image.py &quot;sample.png&quot; `
+  --output &quot;runs/sample&quot; `
+  --florence-python &quot;.venv-florence/Scripts/python.exe&quot; `
+  --paddle-python &quot;.venv-paddle/Scripts/python.exe&quot; `
+  --florence-model &quot;microsoft/Florence-2-base&quot; `
+  --hf-cache &quot;models/huggingface&quot; `
+  --paddle-cache &quot;models/paddlex&quot; `
+  --caption-device cuda `
+  --ocr-device cpu
+</code></pre><h2>3. 결과를 확인한다</h2><ul class="facts"><li><code>runs/sample/result.html</code>을 열어 입력 이미지, Florence 설명, OCR 원문·점수·좌표를 확인한다.</li><li><code>caption.json</code>과 <code>ocr.json</code>은 모델별 원출력이다.</li><li><code>evidence.json</code>은 두 결과와 설정·시간·버전을 모은다.</li><li>CLI는 기본 전체 이미지 추출이다. 이전의 모든 전처리 변형·299개 일괄 실행·Gemma 최종 판정을 수행하지 않는다.</li></ul>
+<p><a href="https://github.com/Kwon-hj402/koaltq-vision-lab/blob/main/docs/RUNNING.md">상세 실행 안내: 설치·오프라인 캐시·옵션·한계</a> · <a href="https://github.com/Kwon-hj402/koaltq-vision-lab/tree/main/src">실행 코드</a></p>
+<h2>당시 실험과 새 실행기를 구분하였다</h2><ul class="facts"><li><a href="retest_20260926_205941/report.html">기존 4모델 재실행 결과</a>는 이전 작업 환경에서 수행한 기록이다.</li><li><a href="experiments/README.md">experiments</a>는 당시 코드 스냅샷이다. 원래 폴더 구조와 외부 모델 소스에 의존한다.</li><li>팀원이 새로 한 장을 실행할 때는 <code>src/describe_image.py</code>를 사용한다.</li></ul><footer>공개 모델의 추론 결과이다. 생성 성공과 설명 정확성은 다르며 최종 LLM 판정은 아직 구현하지 않았다.</footer></main></body></html>

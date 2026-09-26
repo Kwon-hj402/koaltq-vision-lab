@@ -1,0 +1,298 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../report.css"><title>단일 이미지 재실행</title><main><header><h1>단일 이미지 재실행</h1><p>원문 출력이며 정답 description이나 대회 품질판정 결과가 아닙니다.</p></header><img src="input.png" alt="재실행 입력" style="max-width:650px;width:100%"><h2>patch</h2><pre>{
+  &quot;model&quot;: &quot;Ruggero1912/Patch-ioner_talk2dino_capdec_COCO_Captions&quot;,
+  &quot;device&quot;: &quot;cuda&quot;,
+  &quot;gpu&quot;: &quot;NVIDIA GeForce GTX 1660&quot;,
+  &quot;torch&quot;: &quot;2.4.1+cu121&quot;,
+  &quot;image_size&quot;: [
+    181,
+    55
+  ],
+  &quot;preprocessing&quot;: &quot;Official image_transforms_no_crop: resize full image to 518x518&quot;,
+  &quot;box_source&quot;: &quot;single full-frame Gaussian patch pool for comparison&quot;,
+  &quot;pooling&quot;: &quot;Gaussian patch pooling, variance=0.5&quot;,
+  &quot;whole_image&quot;: &quot;a red and white sign with a man on it &quot;,
+  &quot;regions&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;box_xyxy&quot;: [
+        0,
+        0,
+        181,
+        55
+      ],
+      &quot;caption&quot;: &quot;a sign that says \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; \&quot; &quot;
+    }
+  ],
+  &quot;inference_seconds&quot;: 0.741,
+  &quot;model_load_seconds&quot;: 2.539,
+  &quot;peak_gpu_allocated_mb&quot;: 755.8,
+  &quot;peak_gpu_reserved_mb&quot;: 852.0,
+  &quot;created_at&quot;: &quot;2026-09-26T20:59:50.815155+09:00&quot;,
+  &quot;metadata_used&quot;: false,
+  &quot;label_used&quot;: false
+}</pre><h2>easy</h2><pre>{
+  &quot;seconds&quot;: 0.23108189995400608,
+  &quot;lines&quot;: [
+    {
+      &quot;box&quot;: [
+        [
+          59,
+          9
+        ],
+        [
+          149,
+          9
+        ],
+        [
+          149,
+          29
+        ],
+        [
+          59,
+          29
+        ]
+      ],
+      &quot;text&quot;: &quot;문화체육관광부&quot;,
+      &quot;confidence&quot;: 0.9696720614250838
+    },
+    {
+      &quot;box&quot;: [
+        [
+          58,
+          26
+        ],
+        [
+          178,
+          26
+        ],
+        [
+          178,
+          50
+        ],
+        [
+          58,
+          50
+        ]
+      ],
+      &quot;text&quot;: &quot;국립중앙도서관&quot;,
+      &quot;confidence&quot;: 0.9327418699297174
+    }
+  ],
+  &quot;image_size&quot;: [
+    181,
+    55
+  ],
+  &quot;metadata_used&quot;: false,
+  &quot;label_used&quot;: false
+}</pre><h2>paddle</h2><pre>{
+  &quot;seconds&quot;: 0.4250152000458911,
+  &quot;lines&quot;: [
+    {
+      &quot;text&quot;: &quot;문화체육관광부&quot;,
+      &quot;confidence&quot;: 0.9991151094436646,
+      &quot;box&quot;: [
+        [
+          59,
+          10
+        ],
+        [
+          147,
+          8
+        ],
+        [
+          147,
+          27
+        ],
+        [
+          59,
+          28
+        ]
+      ]
+    },
+    {
+      &quot;text&quot;: &quot;국립중앙도서관&quot;,
+      &quot;confidence&quot;: 0.9970363974571228,
+      &quot;box&quot;: [
+        [
+          59,
+          27
+        ],
+        [
+          177,
+          27
+        ],
+        [
+          177,
+          47
+        ],
+        [
+          59,
+          47
+        ]
+      ]
+    }
+  ],
+  &quot;raw&quot;: {
+    &quot;res&quot;: {
+      &quot;input_path&quot;: null,
+      &quot;page_index&quot;: null,
+      &quot;model_settings&quot;: {
+        &quot;use_doc_preprocessor&quot;: false,
+        &quot;use_textline_orientation&quot;: false
+      },
+      &quot;dt_polys&quot;: [
+        [
+          [
+            59,
+            10
+          ],
+          [
+            147,
+            8
+          ],
+          [
+            147,
+            27
+          ],
+          [
+            59,
+            28
+          ]
+        ],
+        [
+          [
+            59,
+            27
+          ],
+          [
+            177,
+            27
+          ],
+          [
+            177,
+            47
+          ],
+          [
+            59,
+            47
+          ]
+        ]
+      ],
+      &quot;text_det_params&quot;: {
+        &quot;limit_side_len&quot;: 64,
+        &quot;limit_type&quot;: &quot;min&quot;,
+        &quot;thresh&quot;: 0.3,
+        &quot;max_side_limit&quot;: 4000,
+        &quot;box_thresh&quot;: 0.6,
+        &quot;unclip_ratio&quot;: 1.5
+      },
+      &quot;text_type&quot;: &quot;general&quot;,
+      &quot;textline_orientation_angles&quot;: [
+        -1,
+        -1
+      ],
+      &quot;text_rec_score_thresh&quot;: 0.0,
+      &quot;return_word_box&quot;: false,
+      &quot;rec_texts&quot;: [
+        &quot;문화체육관광부&quot;,
+        &quot;국립중앙도서관&quot;
+      ],
+      &quot;rec_scores&quot;: [
+        0.9991151094436646,
+        0.9970363974571228
+      ],
+      &quot;rec_polys&quot;: [
+        [
+          [
+            59,
+            10
+          ],
+          [
+            147,
+            8
+          ],
+          [
+            147,
+            27
+          ],
+          [
+            59,
+            28
+          ]
+        ],
+        [
+          [
+            59,
+            27
+          ],
+          [
+            177,
+            27
+          ],
+          [
+            177,
+            47
+          ],
+          [
+            59,
+            47
+          ]
+        ]
+      ],
+      &quot;rec_boxes&quot;: [
+        [
+          59,
+          8,
+          147,
+          28
+        ],
+        [
+          59,
+          27,
+          177,
+          47
+        ]
+      ]
+    }
+  },
+  &quot;image_size&quot;: [
+    181,
+    55
+  ],
+  &quot;metadata_used&quot;: false,
+  &quot;label_used&quot;: false
+}</pre><h2>florence</h2><pre>{
+  &quot;tasks&quot;: {
+    &quot;&lt;MORE_DETAILED_CAPTION&gt;&quot;: {
+      &quot;raw&quot;: &quot;&lt;/s&gt;&lt;s&gt;The image is a logo or emblem with a white background. On the left side of the image, there is a blue circle with a red circle in the center. Inside the circle, there are two curved lines that form a wave-like shape. The blue circle is slightly larger than the red circle and is slightly smaller than the white circle. On top of the blue circle, the words \&quot;아리스타에세요\&quot; (meaning \&quot;love\&quot; in Korean) are written in a modern, sans-serif font. The words are arranged in a way that they are slightly overlapping each other. The overall design is simple and minimalistic.&lt;/s&gt;&quot;,
+      &quot;parsed&quot;: {
+        &quot;&lt;MORE_DETAILED_CAPTION&gt;&quot;: &quot;The image is a logo or emblem with a white background. On the left side of the image, there is a blue circle with a red circle in the center. Inside the circle, there are two curved lines that form a wave-like shape. The blue circle is slightly larger than the red circle and is slightly smaller than the white circle. On top of the blue circle, the words \&quot;아리스타에세요\&quot; (meaning \&quot;love\&quot; in Korean) are written in a modern, sans-serif font. The words are arranged in a way that they are slightly overlapping each other. The overall design is simple and minimalistic.&quot;
+      }
+    },
+    &quot;&lt;DENSE_REGION_CAPTION&gt;&quot;: {
+      &quot;raw&quot;: &quot;&lt;/s&gt;&lt;s&gt;poster&lt;loc_0&gt;&lt;loc_0&gt;&lt;loc_998&gt;&lt;loc_998&gt;&lt;/s&gt;&quot;,
+      &quot;parsed&quot;: {
+        &quot;&lt;DENSE_REGION_CAPTION&gt;&quot;: {
+          &quot;bboxes&quot;: [
+            [
+              0.09049999713897705,
+              0.027499999850988388,
+              180.72850036621094,
+              54.91749954223633
+            ]
+          ],
+          &quot;labels&quot;: [
+            &quot;poster&quot;
+          ]
+        }
+      }
+    }
+  },
+  &quot;seconds&quot;: 5.432624300010502,
+  &quot;image_size&quot;: [
+    181,
+    55
+  ],
+  &quot;metadata_used&quot;: false,
+  &quot;label_used&quot;: false
+}</pre></main></html>

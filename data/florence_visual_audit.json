@@ -1,0 +1,1266 @@
+{
+  "checked_at": "2026-09-26",
+  "model": "Florence-2-base",
+  "scored_task": "<MORE_DETAILED_CAPTION>",
+  "source_file": "work/experiments/florence_subset.jsonl",
+  "source_completed_rows": 42,
+  "scope": "사전 선정 42장 전체 직접확인 이미지 기반 detailed caption 독립 판정",
+  "method": "assistant 시각 점검이며 전문가 검증 또는 자동 정확도 측정이 아님. Patch 점수 개선을 목표로 판정하지 않음. dense caption은 아래 일부 사례만 정성적으로 확인했으며 점수에 포함하지 않음.",
+  "definitions": {
+    "alignment": "핵심대상 맞음=전체 핵심대상/장면 종류가 맞음(세부정보 완전성 뜻 아님); 부분적=실제 일부 요소만 반영하거나 주요 내용과 형식 누락; 불일치=중심 대상·장면·매체가 다름",
+    "unsupported": "이미지에서 확인되지 않는 객체·행동·물리적 장면 설정 또는 명백한 대상 오인 있음. 단순 누락은 포함하지 않음. 수량·속성·레이아웃·제목/주제·문자전사 오류는 factual_errors에 별도 기록하며 해당 오류만으로 unsupported를 true로 하지 않음.",
+    "fabricated_text": "실제 없는 문자열·잘못된 명칭·날짜·번역 등 명시적으로 생성한 텍스트 오류가 있음. 단순 한글 누락은 포함하지 않음.",
+    "important": "모델 원문에 포함된 Asian/성별/연령/감정/인명은 검증된 이미지 사실이 아니다. uncertain_inferences에 분리하고 보고서 본문의 사실로 재사용하지 않는다.",
+    "limits": "일부 큰 이미지는 도구가 축소 표시. GIF는 표시된 프레임만 점검. 투명 이미지 9장은 흰 배경 알파 합성 재검토;7/10 등 작은 아이콘은 nearest 확대도 확인. 표본 밖 성능 일반화 금지."
+  },
+  "summary_by_stratum": {
+    "photo": {
+      "n": 6,
+      "alignment": {
+        "핵심대상 맞음": 5,
+        "불일치": 1
+      },
+      "unsupported_object_action_or_scene": 3,
+      "fabricated_or_incorrect_transcribed_text": 0,
+      "other_factual_error": 3
+    },
+    "icon": {
+      "n": 6,
+      "alignment": {
+        "핵심대상 맞음": 4,
+        "불일치": 1,
+        "부분적": 1
+      },
+      "unsupported_object_action_or_scene": 2,
+      "fabricated_or_incorrect_transcribed_text": 1,
+      "other_factual_error": 4
+    },
+    "logo": {
+      "n": 6,
+      "alignment": {
+        "부분적": 3,
+        "핵심대상 맞음": 3
+      },
+      "unsupported_object_action_or_scene": 0,
+      "fabricated_or_incorrect_transcribed_text": 4,
+      "other_factual_error": 6
+    },
+    "text_banner": {
+      "n": 6,
+      "alignment": {
+        "부분적": 6
+      },
+      "unsupported_object_action_or_scene": 3,
+      "fabricated_or_incorrect_transcribed_text": 6,
+      "other_factual_error": 6
+    },
+    "mixed": {
+      "n": 6,
+      "alignment": {
+        "부분적": 6
+      },
+      "unsupported_object_action_or_scene": 4,
+      "fabricated_or_incorrect_transcribed_text": 5,
+      "other_factual_error": 6
+    },
+    "layout": {
+      "n": 6,
+      "alignment": {
+        "핵심대상 맞음": 2,
+        "부분적": 4
+      },
+      "unsupported_object_action_or_scene": 3,
+      "fabricated_or_incorrect_transcribed_text": 3,
+      "other_factual_error": 6
+    },
+    "challenge": {
+      "n": 6,
+      "alignment": {
+        "핵심대상 맞음": 2,
+        "불일치": 2,
+        "부분적": 2
+      },
+      "unsupported_object_action_or_scene": 1,
+      "fabricated_or_incorrect_transcribed_text": 4,
+      "other_factual_error": 6
+    }
+  },
+  "records": [
+    {
+      "i": 0,
+      "file": "039c94d89a6db2c3",
+      "path": "dataset/images\\039c94d89a6db2c3",
+      "stratum": "photo",
+      "caption": "The image shows an elderly Asian man sitting on a chair and speaking into a microphone. He is wearing a dark blue suit and a pink shirt. He has a pair of glasses on and appears to be in his 60s or 70s. The background is a beige curtain, suggesting that he is in a conference or event setting. The man is holding the microphone in his right hand and is gesturing with his left hand as he speaks. He seems to be giving a speech or presentation.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": true,
+      "unsupported_claims": [
+        "왼손으로 제스처를 한다는 행동은 보이지 않는다."
+      ],
+      "factual_errors": [],
+      "uncertain_inferences": [
+        "Asian, 60~70대라는 인구학적 추정은 검증되지 않았다.",
+        "회의·행사라는 장소 맥락과 배경이 커튼이라는 판단은 추정이다."
+      ],
+      "missing": [],
+      "note": "마이크로 말하는 인물이라는 핵심을 맞혔지만 보이지 않는 왼손 제스처와 구체적 배경 추정을 더했다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 1,
+      "file": "18e9f9bdfa0ef112.png",
+      "path": "dataset/images\\18e9f9bdfa0ef112.png",
+      "stratum": "photo",
+      "caption": "The image is a headshot of a middle-aged Asian man. He is wearing a dark suit and a pink tie. He has short black hair and is smiling at the camera. The background is blurred, but it appears to be an outdoor setting with trees and greenery. The man is looking directly at the viewer with a slight smile on his face.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [],
+      "uncertain_inferences": [
+        "Asian과 middle-aged라는 인구학적 표현은 검증된 정보가 아니다."
+      ],
+      "missing": [],
+      "note": "웃는 정장 인물의 얼굴 중심 초상이라는 핵심이 일치한다. 인구학적 추정은 사실로 채택하지 않는다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 2,
+      "file": "21f0660741e35439.jpg",
+      "path": "dataset/images\\21f0660741e35439.jpg",
+      "stratum": "photo",
+      "caption": "The image shows the aftermath of a car accident. The floor is covered in debris and debris, with a large pile of trash and debris scattered around. The main focus of the image is the wreckage of the car, which appears to be the engine and other parts of the vehicle. The engine is black and has various wires, cables, and other electrical components. There is a red metal rod on the right side of the pile, and a cardboard box on the left side. The background is a concrete wall, and there is a window on the top right corner. The image is taken from a low angle, looking up at the wreckage.",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "자동차 사고 현장 및 자동차 엔진 잔해라는 구체적 설정은 확인되지 않는다.",
+        "오른쪽 위에 창문이 있다는 근거가 없다."
+      ],
+      "factual_errors": [
+        "위를 올려다보는 낮은 각도라는 설명은 내려다보는 사진 구도와 다르다.",
+        "상자는 주로 오른쪽 가장자리에 보이는데 왼쪽이라고 했다."
+      ],
+      "uncertain_inferences": [],
+      "missing": [
+        "심하게 탄 전동 이동기구와 그을린 실내"
+      ],
+      "note": "잔해는 감지했으나 화재 흔적을 자동차 사고·엔진으로 특정했다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 3,
+      "file": "2704361fd844b918.jpg",
+      "path": "dataset/images\\2704361fd844b918.jpg",
+      "stratum": "photo",
+      "caption": "The image shows a robot standing on a blue carpeted floor in an exhibition hall. The robot is wearing a black and white suit with a red bowtie around its neck. It has a round head with a microphone attached to it. In front of the robot, there is a group of people, some of whom are holding cameras and taking pictures. The people in the background appear to be engaged in a conversation with the robot.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": true,
+      "unsupported_claims": [
+        "로봇 머리에 마이크가 부착됐다는 근거가 명확하지 않다."
+      ],
+      "factual_errors": [],
+      "uncertain_inferences": [
+        "관람객들이 로봇과 대화 중이라는 판단은 정지 이미지로 확정되지 않는다."
+      ],
+      "missing": [
+        "로봇이 팔을 들어 보이는 동작"
+      ],
+      "note": "로봇·전시장·촬영 관람객은 맞지만 머리의 마이크와 대화 상황을 추가했다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 4,
+      "file": "7eb29474dd9cd8e3.jpg",
+      "path": "dataset/images\\7eb29474dd9cd8e3.jpg",
+      "stratum": "photo",
+      "caption": "The image shows a construction site with a large pile of rubble and debris. There are two men working on the site, one wearing a yellow shirt and the other wearing a blue shirt. The site appears to be under construction, as there are construction equipment and construction materials scattered around. The ground is covered in dirt and debris, and there are several large pipes and pipes lying on the ground. There is a traffic cone on the right side of the image, and a building on the left side. In the background, there are trees and a yellow excavator. The sky is overcast, suggesting that the photo was taken during the day.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "가까운 건물 출입구는 오른쪽에 있는데 왼쪽 건물이라고 표현했다."
+      ],
+      "uncertain_inferences": [
+        "두 사람이 실제 작업 중인지, 하늘이 흐린지는 이 사진에서 확정하기 어렵다."
+      ],
+      "missing": [],
+      "note": "공사 현장·파이프·굴착기·안전 콘의 핵심을 포착했다. 사람의 작업 여부와 날씨는 추정이다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 5,
+      "file": "9c17cdeeba6b0782.jpg",
+      "path": "dataset/images\\9c17cdeeba6b0782.jpg",
+      "stratum": "photo",
+      "caption": "The image shows a group of people posing for a group photo in a conference room. There are around 20 people in the photo, all dressed in formal attire. They are arranged in a semi-circle, with some sitting on a stage and others standing. The stage is decorated with a purple curtain and a chandelier hanging from the ceiling. In the background, there is a large banner with the text \"2026\" written in Korean. The people are smiling and appear to be happy and excited.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "약20명이라고 했지만 보이는 인원은 그보다 뚜렷이 많다.",
+        "모두 정장이라는 설명은 여러 평상복 인물과 맞지 않는다.",
+        "반원보다 여러 줄의 단체사진 배치에 가깝다."
+      ],
+      "uncertain_inferences": [
+        "행복하고 흥분했다는 감정 상태는 확정할 수 없다."
+      ],
+      "missing": [
+        "현수막의 재외동포청년 취업지원사업 입교식 문구"
+      ],
+      "note": "단체사진과 실내 장식은 잡았지만 인원·복장·배치 일부가 부정확하고 행사명은 읽지 못했다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 6,
+      "file": "1138e6cad536ac89.png",
+      "path": "dataset/images\\1138e6cad536ac89.png",
+      "stratum": "icon",
+      "caption": "The image is a simple illustration of a sun. The sun is in the center of the image and is a bright yellow color. It has eight rays radiating outwards from the center, creating a sunburst effect. The rays are arranged in a symmetrical pattern, with the largest rays at the top and the smallest at the bottom. The background is white, making the sun stand out. The overall design is simple and minimalistic.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "광선 크기가 위에서 크고 아래에서 작다는 구조는 명확하지 않다."
+      ],
+      "uncertain_inferences": [],
+      "missing": [],
+      "note": "노란 해 아이콘을 맞혔다. 아래의 연한 음영은 있으나 구름인지 확정하지 않는다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 7,
+      "file": "14e1ab1c400daf72.png",
+      "path": "dataset/images\\14e1ab1c400daf72.png",
+      "stratum": "icon",
+      "caption": "The image is a black and white line drawing of a computer monitor. The monitor is rectangular in shape and has a stand at the bottom. In the center of the monitor, there is a line graph that appears to be a downward trend. The graph is outlined in black and is slightly tilted to the right. The background of the image is white.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "선그래프를 하향 추세로 단정했지만 굴곡 후 오른쪽 끝이 올라간다."
+      ],
+      "uncertain_inferences": [],
+      "missing": [],
+      "note": "흰 바탕에 알파 합성해 재확인하니 모니터와 선그래프가 실제 존재한다. 그래프 방향 설명만 부정확하다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 8,
+      "file": "28310e5cc65c488e.gif",
+      "path": "dataset/images\\28310e5cc65c488e.gif",
+      "stratum": "icon",
+      "caption": "The image is a black and white photograph of a screw. The screw is in the center of the image and is slightly blurred, making it difficult to make out any details. It appears to be made of metal and has a cylindrical shape with a pointed end. The background is white, making the screw stand out.",
+      "alignment": "불일치",
+      "unsupported": true,
+      "unsupported_claims": [
+        "금속 나사와 나사의 사진이라는 설명은 이미지에 없다."
+      ],
+      "factual_errors": [],
+      "uncertain_inferences": [],
+      "missing": [
+        "사각형 안 오른쪽 꺾쇠 화살표"
+      ],
+      "note": "화살표 아이콘을 금속 나사 사진으로 오인했다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 9,
+      "file": "3b117c7e08f4d107.png",
+      "path": "dataset/images\\3b117c7e08f4d107.png",
+      "stratum": "icon",
+      "caption": "The image is a simple, orange-colored sun icon. It is in the shape of a circle with six rays radiating outwards from the center. The rays are evenly spaced and appear to be made up of small, rectangular shapes. The background is white, making the orange color of the sun stand out. The overall design is simple and minimalistic.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "광선이 여섯 개라는 수량은 보이는 여덟 방향 광선과 다르다."
+      ],
+      "uncertain_inferences": [],
+      "missing": [],
+      "note": "주황색 태양 아이콘은 맞지만 광선 개수를 틀렸다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 10,
+      "file": "428f1b4c5969909c.png",
+      "path": "dataset/images\\428f1b4c5969909c.png",
+      "stratum": "icon",
+      "caption": "The image is a black and white line drawing of two hands shaking. The hands are facing each other and appear to be in a handshake. The background is white, and the hands are outlined in black. The image is simple and minimalistic, with no additional details or shading.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [],
+      "uncertain_inferences": [],
+      "missing": [],
+      "note": "흰 배경에 알파 합성하여 확인한 악수 아이콘과 설명이 일치한다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 11,
+      "file": "c0394af33514ebb1.png",
+      "path": "dataset/images\\c0394af33514ebb1.png",
+      "stratum": "icon",
+      "caption": "The image is a line drawing of a car with a roof rack on top. The car is shown in a simple, minimalist style with no other elements in the image. The roof rack is attached to the top of the car with two horizontal bars. On the right side of the image, there is a red logo with the letter \"D\" in the center. The logo appears to be a stylized letter \"C\" with a curved line running through it. The background is white.",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "전선과 플러그를 차량 루프랙으로 잘못 특정했다."
+      ],
+      "factual_errors": [
+        "빨간 도형은 D/C 문자가 아니라 전기 플러그이다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "전기 플러그와 충전선"
+      ],
+      "note": "자동차는 맞지만 전기 충전 표식을 짐받이와 문자 로고로 바꿨다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 12,
+      "file": "026769b1356f3283.png",
+      "path": "dataset/images\\026769b1356f3283.png",
+      "stratum": "logo",
+      "caption": "The image is a logo or emblem with a white background. On the left side of the image, there is a blue circle with a red circle in the center. Inside the circle, there are two curved lines that form a wave-like shape. The blue circle is slightly larger than the red circle and is slightly smaller than the white circle. On top of the blue circle, the words \"아리스타에세요\" (meaning \"love\" in Korean) are written in a modern, sans-serif font. The words are arranged in a way that they are slightly overlapping each other. The overall design is simple and minimalistic.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "실제 문구는 문화체육관광부 국립중앙도서관이며 생성한 아리스타에세요와 love 번역은 없다.",
+        "문자는 원형 도형 위가 아니라 오른쪽에 있다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "정확한 기관명"
+      ],
+      "note": "정부 상징이 있는 로고 형태는 맞지만 한글 문구와 번역을 만들어냈다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 13,
+      "file": "075ba88c36bea11a.do",
+      "path": "dataset/images\\075ba88c36bea11a.do",
+      "stratum": "logo",
+      "caption": "The image is a square logo with a blue border. In the center of the logo, there is a red and blue spiral design. The spiral is curved and appears to be made up of two parts, with the top part being blue and the bottom part being red. Below the spiral, there are two lines of text in Korean, which translates to \"아리스타에세요\" in English. The text is written in a modern sans-serif font. The overall design is simple and minimalistic.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "보건복지부를 아리스타에세요로 잘못 전사·번역했다.",
+        "원형 상징의 위/아래 색상 관계와 두 줄 텍스트 설명이 부정확하다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "보건복지부 기관명"
+      ],
+      "note": "로고 외형은 잡았으나 기관명을 읽지 못하고 무관한 글자를 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 14,
+      "file": "0e1b6909831958ac.png",
+      "path": "dataset/images\\0e1b6909831958ac.png",
+      "stratum": "logo",
+      "caption": "The image is a logo for a company called NVIDIA. The logo is rectangular in shape and has a green color scheme. On the left side of the logo, there is a stylized letter \"N\" in the center, which is the word \"NVIDIA\". On the right side, the word is written in black capital letters. The word \"Nvidia\" is slightly larger than the rest of the letters and is slightly smaller than the other letters. Below the word, there are two lines of text that read \"nvidia\". The overall design is simple and minimalistic.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "로고 아래 두 줄의 nvidia 텍스트는 없다.",
+        "초록 상징을 N 문자로 단정한 부분과 글자 크기 비교가 부정확하다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [],
+      "note": "NVIDIA 로고를 식별했지만 존재하지 않는 추가 텍스트와 모순된 모양 설명을 붙였다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 15,
+      "file": "1e071b0427c69490.png",
+      "path": "dataset/images\\1e071b0427c69490.png",
+      "stratum": "logo",
+      "caption": "The image is a logo for a company called \"MIRIAN\". The logo is written in black capital letters on a white background. The letters are arranged in a way that they form the word \"M\" in a bold, sans-serif font. In the center of the logo, there is a blue circle with a person's head in the middle, representing the company's logo. The person's face is not visible in the image. The overall design is simple and minimalistic.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "파란 원형 도형을 사람 머리로 특정할 근거는 불충분하다."
+      ],
+      "uncertain_inferences": [
+        "도형의 의미를 사람 머리로 해석한 것은 검증된 정보가 아니다."
+      ],
+      "missing": [],
+      "note": "MIRIAN 로고와 글자를 맞혔으며 파란 추상 도형의 의미를 과도하게 해석했다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 16,
+      "file": "423177cbdda8d724.gif",
+      "path": "dataset/images\\423177cbdda8d724.gif",
+      "stratum": "logo",
+      "caption": "The image is a logo for the National Center Center in South Korea. The logo is rectangular in shape and has a white background. On the left side of the logo, there is a text written in Korean that translates to \"National Center Center\" in English. The text is written in a modern, sans-serif font and is centered on the logo. \n\nOn the right side, there are three colors - red, yellow, green, blue, and orange - arranged in a triangular shape. The colors are overlapping each other, creating a sense of depth and dimension. The red color is on the top left corner, the yellow color is in the middle, and the green color is at the bottom right corner. The blue color is slightly larger than the orange color.\n\nOverall, the logo is simple and clean, with a modern and professional design.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "National Cancer Center/국립암센터를 National Center Center로 잘못 읽었다.",
+        "세 가지 색이라고 한 뒤 다섯 색을 나열한다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "정확한 기관명"
+      ],
+      "note": "기관 로고는 인식했지만 핵심 명칭과 색상 수 설명이 틀렸다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 17,
+      "file": "d5aeb9aec8a6aac3.png",
+      "path": "dataset/images\\d5aeb9aec8a6aac3.png",
+      "stratum": "logo",
+      "caption": "The image is a logo for Dong-Gu, a city in Daegu, South Korea. The logo is divided into two sections. On the left side, there is a green and blue wave-like design with a red circle in the center. The wave is curved and appears to be made up of three colors - green, blue, and red. The red circle is slightly larger than the green wave and is slightly smaller than the blue wave. The text \"DONG-GU\" is written in black capital letters on the right side of the logo. Below the text, it reads \"Daegu Metropolitan City\" in smaller black letters.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "빨간 원은 초록·파랑 도형보다 더 크지 않다."
+      ],
+      "uncertain_inferences": [
+        "Dong-Gu의 행정단위를 city라고 한 설명은 이미지 글자만으로 검증하지 않는다."
+      ],
+      "missing": [],
+      "note": "DONG-GU와 Daegu Metropolitan City는 정확히 읽었으나 도형 크기 관계를 틀렸다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 18,
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "path": "dataset/images\\1b7d42dd2f95b6e1.jpg",
+      "stratum": "text_banner",
+      "caption": "The image is a graphic design with a blue background and white text. The text is written in Korean and translates to \"10 years old\" in English. Below the text, there is a red and white banner with the number 10 in the center. On the right side of the banner, there are two flags - one is the flag of South Korea and the other is the national flag of the United States. At the top left corner of the image, there has a logo of the South Korean flag and a banner that reads \"그리스타에세요\" (meaning \"10\" in Korean). At the bottom right corner, there appears to be a white rectangle with the text \"1366\", \"112\", and \"아린습니다\" written in both English and Korean.",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "대한민국·미국 국기 두 개가 있다는 근거가 없다."
+      ],
+      "factual_errors": [
+        "교제폭력·스토킹 레드플래그 10을 10 years old로 바꿨다.",
+        "그리스타에세요·아린습니다 등 문구는 실제 이미지에 없다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "고위험 징후시 즉시 상담/신고라는 핵심 내용"
+      ],
+      "note": "그래픽 배너와 1366·112 숫자 일부는 잡았지만 주제와 문구를 바꾸고 국기를 추가했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 19,
+      "file": "1d3b9f31517547fe.jpg",
+      "path": "dataset/images\\1d3b9f31517547fe.jpg",
+      "stratum": "text_banner",
+      "caption": "The image is a green background with white text in Korean. The text reads \"NAVER\" in a bold, sans-serif font. Below the text, there is a smaller text in a smaller, cursive font that reads \"아리스타에세요\" which translates to \"Naver\" in English. On the right side of the image, there are two smaller text boxes, one in white and the other in black. The overall design is simple and minimalistic.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "정책브리핑 뉴스·뉴스스탠드 구독 문구를 아리스타에세요로 바꿨다.",
+        "검정색 텍스트 상자와 필기체라는 묘사는 실제 구성과 다르다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "정책브리핑 뉴스 안내",
+        "뉴스스탠드 구독"
+      ],
+      "note": "초록 배너와 NAVER는 맞지만 나머지 한글 및 버튼 구조를 잘못 설명했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 20,
+      "file": "38f9fbfe72f770f3.jpg",
+      "path": "dataset/images\\38f9fbfe72f770f3.jpg",
+      "stratum": "text_banner",
+      "caption": "The image is a graphic design with a blue background and orange text. The text is written in Korean and translates to \"2020. 1.1.0.0\" in English. Below the text, there is an orange button with the text \"그리스타에세요\" (meaning \"I love you\" in Korean). On the left side of the button, there are two icons, one of a target and the other of a building. The target is in the center of the image and the building is on the right side. The overall design is simple and modern.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "공공재정 부정청구 안내를 2020.1.1.0.0이라는 번역으로 대체했다.",
+        "그리스타에세요 / I love you 문구는 실제 이미지에 없다.",
+        "과녁 아이콘의 위치와 다른 작은 도형을 건물로 특정한 부분이 부정확하다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "공공재정 부정청구 신고센터 운영",
+        "신고대상과 방법"
+      ],
+      "note": "배너의 색과 아이콘 일부는 맞지만 핵심 한글을 무관한 문자열로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 21,
+      "file": "4741d9518dea78ff.jpg",
+      "path": "dataset/images\\4741d9518dea78ff.jpg",
+      "stratum": "text_banner",
+      "caption": "The image shows a white paper bag with a black logo on it. The bag is placed on a shelf in a store, and there are several other bags of food items visible in the background. The text on the image reads \"그리스타에세요 - 25-005\" which translates to \"25-005\". The text is written in Korean and is in green color. The background is blurred, but it appears to be a store shelf with other items on it, suggesting that the focus is on the bags.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "실제 문구 대신 그리스타에세요를 만들어냈다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "봉투 안에 음식이 들어 있다는 것은 내부가 보이지 않아 확인되지 않는다."
+      ],
+      "missing": [
+        "배고픔엔 증명서가 필요 없습니다",
+        "그냥드림 표시"
+      ],
+      "note": "종이봉투 사진은 맞지만 배너의 핵심 문구를 읽지 못했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 22,
+      "file": "569b18fe5cf1b3f9.jpg",
+      "path": "dataset/images\\569b18fe5cf1b3f9.jpg",
+      "stratum": "text_banner",
+      "caption": "The image is a graphic design with a white background and colorful illustrations of various animals. In the center, there is a large pink elephant with a green bird perched on its trunk. Surrounding the elephant, there are several smaller animals in different colors - a lion, a fox, a giraffe, a monkey, and a zebra. The animals are arranged in a way that they appear to be interacting with each other. The text on the image reads \"2026 그리스타에세요 가자연용 공장여업 국엑습니다\" which translates to \"20 26 김정엘엔 프로 기립 관아이 거역우 게엠 ꣀ운 화울 ꡰ제 회입 크림 �",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "기린·얼룩말이 있다는 근거가 없다."
+      ],
+      "factual_errors": [
+        "새는 코끼리 몸 위쪽에 있는데 코 위에 앉았다고 했다.",
+        "공모전 제목을 실제와 다른 한글·깨진 문자열로 생성했다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "동물들이 서로 상호작용한다는 것은 도형 배치에 대한 해석이다."
+      ],
+      "missing": [
+        "2026 대구 도시디자인 공모전",
+        "9.28~10.2 일정",
+        "대구대공원 슬로건·BI 아이디어"
+      ],
+      "note": "색색의 동물 그래픽은 맞지만 없는 동물과 잘못된 배치를 추가하고 한글은 왜곡했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 23,
+      "file": "ad9f57c142a01c88.jpg",
+      "path": "dataset/images\\ad9f57c142a01c88.jpg",
+      "stratum": "text_banner",
+      "caption": "The image is an illustration of a calendar with the text \"2026리스타에세요\" written in Korean. The calendar is in the center of the image and has a green background. On the left side of the calendar, there is a man holding a megaphone and speaking into it. He is wearing a red shirt and is standing in front of a desk with a computer monitor and other office supplies. Next to him, there are two other people, a man and a woman, who appear to be engaged in a conversation. The man on the right side is holding a stack of books and the woman on the left is looking at him attentively. The text on the calendar is written in both Korean and English.",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "책상·컴퓨터·사무용품·책 더미는 보이지 않는다."
+      ],
+      "factual_errors": [
+        "확성기 인물의 위치와 옷 색을 잘못 연결했다.",
+        "2026리스타에세요 문구는 실제 이미지에 없다.",
+        "한글과 영어 혼합이라는 설명은 실제 주요 본문과 다르다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "인물들이 대화 중이라는 상황 해석은 확정되지 않는다."
+      ],
+      "missing": [
+        "2026년 대구광역시 사회조사",
+        "조사원 가정 방문과 협조 요청"
+      ],
+      "note": "달력형 안내판 일부는 맞지만 가상의 사무실 사물과 인물 행동을 추가했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 24,
+      "file": "046bf6ae3c5e646b.es",
+      "path": "dataset/images\\046bf6ae3c5e646b.es",
+      "stratum": "mixed",
+      "caption": "The image is an advertisement for a Korean language learning program. The background is a light blue color with a yellow ribbon on the left side. On the right side, there is a white paper with a blue pen resting on top of it. The text on the paper is written in Korean and translates to \"Learn Korean\" in English. Below the text, there are three bullet points in Korean that explain the program's purpose. \n\nAt the bottom of the paper, there has a small illustration of a yellow smiley face with a big smile on its face. The first bullet point reads \"2026.8.3.8 - 8.23.3\" and the second bullet point has a QR code.\n\nThe overall design of the advertisement is simple and modern, with a clean and minimalistic layout.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "한국어 학습 프로그램 광고라는 주제는 실제 아동권리 사연 공모전과 다르다.",
+        "Learn Korean 번역과 2026.8.3.8~8.23.3 전사가 틀렸다.",
+        "글머리표 수와 QR코드의 위치 설명이 맞지 않는다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "아동권리 사연 공모전",
+        "응모 내용·정확한 일정·발표일·경품"
+      ],
+      "note": "펜·봉투·QR코드 등 디자인 요소는 포착했지만 주제를 한국어 학습으로 바꿨다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 25,
+      "file": "2426950fc41b9a93.png",
+      "path": "dataset/images\\2426950fc41b9a93.png",
+      "stratum": "mixed",
+      "caption": "The image is an advertisement for a children's play together event in South Korea. The background is light blue and the text is written in Korean. On the left side of the image, there is a cartoon illustration of a girl and a boy holding hands and smiling at each other. The text on the image reads \"Play Together\" in both English and Korean. \n\nOn the right side, there are three bullet points with information about the event, including the date, time, and location. The first bullet point reads \"09:00-18:00\" and the second bullet point says \"11:00 - 20:00\". The third bullet point states that the event will take place from 09:00 to 18:00.\n\nAt the bottom right corner of the advertisement, there has a small illustration of two children, a boy and a girl, holding hands. The children are smiling and appear to be happy. The advertisement also has a phone and a house in the background.",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "왼쪽에 남녀 아이 둘이 손을 잡고 있다는 모습은 없다."
+      ],
+      "factual_errors": [
+        "초등방학 틈새돌봄 안내를 함께 놀기 행사로 바꿨다.",
+        "오른쪽 항목을 세 개의 날짜/시간/장소 설명으로 잘못 구성했다.",
+        "09:00~18:00과 11:00~20:00 숫자는 있지만 실제 서비스별 구분을 놓쳤다."
+      ],
+      "fabricated_text": false,
+      "uncertain_inferences": [
+        "그려진 아이들의 성별과 행복하다는 감정은 확정된 정보가 아니다."
+      ],
+      "missing": [
+        "이용대상·요금·문의전화",
+        "온종일/점심돌봄 서비스 구분"
+      ],
+      "note": "아동 삽화와 두 시간대는 일부 맞으나 돌봄서비스 내용과 정보 구조를 놓쳤다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 26,
+      "file": "3fd77908165a4ba9.jpg",
+      "path": "dataset/images\\3fd77908165a4ba9.jpg",
+      "stratum": "mixed",
+      "caption": "The image is a screenshot of a webpage in Korean. The background is pink and the text is written in black. On the right side of the image, there is an illustration of a girl holding a tablet and a video player. The girl is wearing a blue dress and has long brown hair. She is smiling and appears to be happy.\n\nOn the left side, there are three options for the user to choose from. The options are written in Korean and English. The first option is \"2026리스타에세요\", the second option is for \"9.14\", and the third option is from \"9-28.8\".\n\nAt the bottom of the page, there has a link to a website or app that provides information about the user's experience in the Korean language.",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "사용자가 고를 웹페이지 옵션 및 사용자 한국어 경험 안내 링크라는 설정은 없다.",
+        "인물이 태블릿과 비디오 플레이어를 들고 있다는 묘사는 실제 휴대전화 삽화와 다르다."
+      ],
+      "factual_errors": [
+        "2026리스타에세요·9-28.8 등은 잘못된 전사이다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "인물의 나이와 기분은 확인되지 않는다."
+      ],
+      "missing": [
+        "임산부·영유아 비대면 건강교실",
+        "대상·방법·일정·문의처"
+      ],
+      "note": "분홍색 한글 안내문과 인물 삽화 일부는 맞지만 웹페이지 기능과 문구를 만들어냈다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 27,
+      "file": "425f8567e6c2156b.jpg",
+      "path": "dataset/images\\425f8567e6c2156b.jpg",
+      "stratum": "mixed",
+      "caption": "The image is a promotional poster for a Korean music festival. It features a group of six people, six men and one woman, standing in front of a colorful background with musical instruments. The group is arranged in a semi-circle, with the man on the left holding a microphone and the woman on the right holding a guitar. The man in the center is wearing a black beanie and glasses, and the man next to him is holding a sheet of music. The other six people in the group are also holding musical instruments, including a drum set, a keyboard, a guitar, and a saxophone. The background is made up of red and pink splashes, giving the image a vibrant and energetic feel. The text on the poster reads \"그리스타에세요\" which translates to \"Music Festival\" in English.",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "키보드·색소폰이 있다는 근거는 없다.",
+        "음악 축제라는 행사 성격은 실제 징글 공모전과 다르다."
+      ],
+      "factual_errors": [
+        "여섯 명, 남성 여섯+여성 하나, 다른 여섯 명 등 인원 설명이 모순된다.",
+        "인물별 악기와 위치 일부가 다르다.",
+        "그리스타에세요 / Music Festival 문구는 실제 포스터에 없다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "성별을 개별 인물의 확정된 속성으로 사용하지 않는다."
+      ],
+      "missing": [
+        "국민의 멜로디 징글 공모전"
+      ],
+      "note": "여러 음악인과 악기라는 시각 내용은 일부 맞지만 행사명·악기·인원 정보를 왜곡했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 28,
+      "file": "7a9e3ca7407f9a30.jpg",
+      "path": "dataset/images\\7a9e3ca7407f9a30.jpg",
+      "stratum": "mixed",
+      "caption": "The image is a promotional poster for a Korean drama. It features a family of four - a man, a woman, and two children - standing in a living room. The man is wearing a military uniform and the woman is holding the child in her arms. The child is sitting on a chair and is looking up at the man with a smile on his face. The background is blurred, but it appears to be a modern living room with a plant in the corner. The text on the left side of the image reads \"그리스타에세요 - 25-023\" in Korean.",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "한국 드라마 홍보 포스터라는 근거가 없다.",
+        "여성이 아이를 팔에 안고 있다는 동작은 보이지 않는다."
+      ],
+      "factual_errors": [
+        "두 아이가 아니라 아이 한 명과 성인들이 보인다.",
+        "그리스타에세요는 실제 문구에 없다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "등장인물들의 실제 가족관계는 확인되지 않는다."
+      ],
+      "missing": [
+        "평생소득 안전망, 국민연금",
+        "임산부와 노년 인물을 포함한 여러 세대"
+      ],
+      "note": "군복 차림 인물과 가족형 사진은 잡았지만 드라마 설정과 안는 행동을 추가했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 29,
+      "file": "b182f126d1b1dbba.jpg",
+      "path": "dataset/images\\b182f126d1b1dbba.jpg",
+      "stratum": "mixed",
+      "caption": "The image is a digital poster with a golden trophy on a black pedestal. The trophy is in the center of the poster and is surrounded by a laurel wreath. The background is a light beige color with a subtle gradient effect. On the left side of the image, there is a text in Korean that translates to \"Congratulations\" in English. Below the text, there are two lines of text in both English and Korean. The text is written in a traditional Korean font and is in a larger font size than the rest of the text. The overall design is simple and elegant.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "실제 주요 제목을 Congratulations로 바꿨다.",
+        "영어·한글 두 줄이라는 설명은 실제 한글 중심의 여러 줄 안내와 다르다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "족보박물관 문체부 평가 4회 연속 인증기관 선정",
+        "2017·2019·2022·2025 인증 이력"
+      ],
+      "note": "트로피·받침대·월계수와 포스터 형태는 맞지만 핵심 성과와 연도를 읽지 못했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 30,
+      "file": "01fee160037c164e.do",
+      "path": "dataset/images\\01fee160037c164e.do",
+      "stratum": "layout",
+      "caption": "The image is a screenshot of the homepage of a website called APEC 2025 Korea. The website has a blue and white color scheme with a navigation bar at the top. The main content of the page is divided into three sections. \n\nThe first section on the left shows a beach with people enjoying the sun and sand. The beach is lined with colorful umbrellas and chairs, and there is a large body of water in the background. The water is calm and reflects the colors of the sky.\n\nIn the center of the image, there are three images of the city skyline at night. The first image on the right shows a cityscape with tall buildings and fireworks exploding in the sky, creating a beautiful display of light and color. The second image in the middle shows the city's skyline with the words \"Connect, Innovate, Prosper\" written in bold letters. The third image shows the same cityscape as the first one, but with a different color scheme. The fourth image shows a close-up of the skyline, showing the buildings and the fireworks. The fifth image shows an aerial view of the beach and the ocean at night, with a few people walking along the shore.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": true,
+      "unsupported_claims": [
+        "실제 세 개 사진 밖의 네 번째·다섯 번째 이미지와 추가 해변 보행 장면을 만들어냈다."
+      ],
+      "factual_errors": [
+        "중앙에 도시 이미지 세 개가 따로 있다는 구조 설명이 실제 전체 3분할과 다르다."
+      ],
+      "fabricated_text": false,
+      "uncertain_inferences": [],
+      "missing": [
+        "카운트다운과 일부 메뉴/사진 제목"
+      ],
+      "note": "APEC 홈페이지·3분할·해변·야경·불꽃놀이는 포착했지만 설명이 길어지며 없는 추가 사진을 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 31,
+      "file": "0be9f0f533833af2.jpg",
+      "path": "dataset/images\\0be9f0f533833af2.jpg",
+      "stratum": "layout",
+      "caption": "The image is an infographic in Korean. It is divided into two sections. \n\nOn the left side of the image, there is a map of a city with various landmarks and points of interest marked on it. The map shows the streets, buildings, and landmarks of the city. There are also illustrations of people, animals, and other objects scattered throughout the map.\n\nIn the center of the map, there are several icons representing different landmarks, such as a building with a blue roof, a tree, and a birdhouse. These icons represent different types of buildings and landmarks. The text on the map reads \"그리스타에세요\" which translates to \"Welcome to the city\" in English. On the right side of this image, on the bottom right corner, there appears to be a poster with a cartoon illustration of a group of people and animals. The poster also has a blue background with white text.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "아이 안전 안내를 도시 방문 안내로 바꾸고 그리스타에세요 / Welcome to the city를 생성했다.",
+        "지도처럼 보이는 길은 안전점검 항목을 연결한 인포그래픽이다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "작은 사물 하나를 birdhouse로 특정한 것은 불확실하다."
+      ],
+      "missing": [
+        "아이의 안전을 먼저 생각해 주세요",
+        "위해요소 안전점검·단속",
+        "2026.8.24~9.23"
+      ],
+      "note": "2분할 인포그래픽과 거리형 배치는 맞지만 주제를 읽지 못해 관광 지도처럼 설명했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 32,
+      "file": "0c65e63384de3f64.png",
+      "path": "dataset/images\\0c65e63384de3f64.png",
+      "stratum": "layout",
+      "caption": "The image is a map of a city with a blue marker in the center. The map is in Korean and shows the layout of the city with various buildings, roads, and other landmarks. The blue marker is located in the middle of the map and is surrounded by a green area. There are also several smaller blue markers scattered throughout the map, indicating the locations of various landmarks and points of interest. On the left side of the image, there is a yellow line that runs through the city, and on the right side, there are several roads and highways. The city appears to be well-maintained and well-manicured, with a few buildings and roads visible.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "중앙 핀은 녹지 안이 아니라 건물 부지에 있다."
+      ],
+      "uncertain_inferences": [
+        "도시가 잘 관리됐다는 상태는 지도만으로 판단할 수 없다."
+      ],
+      "missing": [
+        "한국과학기술정보연구원 명칭",
+        "주요 도로·공원·주변시설 이름"
+      ],
+      "note": "지도와 위치표식·도로 구조는 맞지만 고유명사 정보가 없고 도시 상태를 추정했다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 33,
+      "file": "25198da01a56c796.png",
+      "path": "dataset/images\\25198da01a56c796.png",
+      "stratum": "layout",
+      "caption": "The image is a map of a building in South Korea. The map is divided into two sections, with the top section showing the layout of the building and the bottom section displaying the number of rooms in the building. \n\nThe top section of the map has a list of rooms with their respective names and numbers written in Korean. The rooms are arranged in a grid-like pattern, with each room having a number written in a different language. The numbers range from 0 to 9, with some rooms having numbers written on them. The first room has a blue arrow pointing to the right, indicating the direction of the flow of information. The second room has two rooms, one with a red door and the other with a white door.\n\nThere is also a blue bar on the right side of the image, which is likely used to indicate the location of the rooms. The text on the map is written in both Korean and English.",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "붉은 문과 흰 문이 있는 방 둘이라는 구성은 없다."
+      ],
+      "factual_errors": [
+        "민원창구 1~10을 방 번호 0~9로 설명했다.",
+        "출입문 화살표와 전화번호·부서 표기를 방/흐름으로 잘못 해석했다.",
+        "한글과 영어 병기라는 설명이 맞지 않는다."
+      ],
+      "uncertain_inferences": [],
+      "missing": [
+        "민원실 창구·부서의 실제 명칭과 배치"
+      ],
+      "note": "건물 안내도 형식은 맞지만 번호·창구·전화번호를 방과 문으로 바꿔 설명했다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 34,
+      "file": "28b16068d4379176.png",
+      "path": "dataset/images\\28b16068d4379176.png",
+      "stratum": "layout",
+      "caption": "The image is a table that shows the dates and times of the year 2021 in Korean. The table is divided into two columns, with the first column listing the days of the week and the second column showing the dates of the month. \n\nAt the top of the table, there is a title in Korean that translates to \"2024\" in English. Below the title, there are two illustrations of two children, one holding a basket and the other holding a book. The children are standing on a grassy field with a blue sky and white clouds in the background.\n\nThe table also has a table with columns for the date, time, and location of each day. The dates are written in both Korean and English, and the time is written in a smaller font size. The background of the image is white, and there is an illustration of a green field with trees and mountains in the distance.",
+      "alignment": "부분적",
+      "unsupported": true,
+      "unsupported_claims": [
+        "아이가 책을 들고 있다는 근거가 없다."
+      ],
+      "factual_errors": [
+        "2024 교육 일정을 2021년 표로 설명했다.",
+        "두 열이라는 설명은 실제 여러 열의 표와 다르다.",
+        "날짜·장소·인원·강사 등의 열 관계를 제대로 보존하지 않았다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "새해농업인실용교육 제목",
+        "과정별 정확한 일정·장소·인원"
+      ],
+      "note": "표와 교육형 삽화는 잡았지만 연도와 표 구조를 잘못 설명했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 35,
+      "file": "658a87ad149352ab.jpg",
+      "path": "dataset/images\\658a87ad149352ab.jpg",
+      "stratum": "layout",
+      "caption": "The image is a flowchart or diagram that shows the relationship between two languages in Korean. The flowchart is divided into two sections, with the first section on the left side and the second section in the middle. \n\nThe first section is labeled \"그리스타에세요\" which translates to \"I love you\" in English. The second section has a blue speech bubble with the same language as the first one. The speech bubble has a white background and the text is written in both Korean and English.\n\nThere are two arrows connecting the flowchart, one on each side, indicating the direction of the conversation between the two languages. The first arrow is pointing towards the second language, while the third arrow is towards the third language, which is written below it. The text below the speech bubble reads \"가자연업엑여\" which is a reference to the Korean language.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "신고처리 절차를 언어 간 관계·대화 흐름으로 바꿨다.",
+        "그리스타에세요 / I love you / 가자연업엑여는 실제 문구가 아니다.",
+        "두 화살표라고 하면서 세 번째 화살표를 언급하는 등 관계 설명이 모순된다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "신고·접수·서류확인/시스템 입력·기안/결재·결과통보"
+      ],
+      "note": "흐름도 형태는 맞지만 글자와 단계의 관계를 전혀 다른 의미로 생성했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 36,
+      "file": "11cc05715bac383f.png",
+      "path": "dataset/images\\11cc05715bac383f.png",
+      "stratum": "challenge",
+      "caption": "The image is a red background with a white number 3 in the center. The number 3 is in a bold, sans-serif font and is slightly tilted to the right. The background is made up of small white dots scattered across the image, creating a repeating pattern. The overall design is simple and minimalistic.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "배경에 반복되는 흰 점 패턴이 있다는 묘사는 없다."
+      ],
+      "uncertain_inferences": [],
+      "missing": [],
+      "note": "빨간 배경의 흰색 숫자3은 맞지만 배경 패턴을 덧붙였다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 37,
+      "file": "1515dfefb89fa6d5.gif",
+      "path": "dataset/images\\1515dfefb89fa6d5.gif",
+      "stratum": "challenge",
+      "caption": "The image is a red and white striped pattern. The stripes are evenly spaced and run horizontally across the image. The background is white, and the stripes are a solid shade of red. In the center of the image, there is a large, bold font that appears to be the letters \"H\" or \"J\" in a modern, sans-serif font. The letters are slightly blurred, giving the image a sense of depth and dimension. The overall effect is a bold and striking design.",
+      "alignment": "불일치",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "NEW 글자를 H 또는 J와 가로줄 무늬로 잘못 해석했다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [],
+      "missing": [
+        "NEW 표기"
+      ],
+      "note": "작은 글자 표식의 색만 반영하고 핵심 문자를 읽지 못했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 38,
+      "file": "58a031d1909dc03e.do",
+      "path": "dataset/images\\58a031d1909dc03e.do",
+      "stratum": "challenge",
+      "caption": "The image is an infographic in Korean. It has a light orange background with a white border. The title of the infographic is written in bold black letters at the top. Below the title, there is an illustration of a group of elderly people standing in a line, with their arms around each other. The people are smiling and appear to be happy.\n\nOn the left side of the image, there are illustrations of a man and a woman, and on the right side, there appears to be a man holding a book. The man is wearing a blue shirt and the woman is wearing an orange dress. There are also illustrations of books, papers, and a piggy bank scattered around the image. \n\nAt the bottom of the page, there has a list of information about the infographic, including the date, time, and location of the event, as well as a brief description of each event. There is also a small illustration of an elderly person holding a clipboard and a pen, suggesting that the event is taking place in a public space.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "제목은 검정이 아니라 주황색 계열이다.",
+        "서비스 설명·대상·신청절차·문의처를 행사 날짜·시간·장소 목록으로 잘못 요약했다.",
+        "인물 위치·옷색 일부를 잘못 연결했다."
+      ],
+      "uncertain_inferences": [
+        "사람들의 실제 감정과 행사가 공공장소에서 진행된다는 추정은 확인되지 않는다."
+      ],
+      "missing": [
+        "치매안심 재산관리 서비스",
+        "대상·이용절차·신청방법",
+        "1355·1899-9988 문의처"
+      ],
+      "note": "어르신과 금융 도형이 있는 인포그래픽은 잡았지만 정책서비스의 핵심 내용은 추출하지 못했다.",
+      "fabricated_text": false,
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 39,
+      "file": "6f96819d13a5746b.do",
+      "path": "dataset/images\\6f96819d13a5746b.do",
+      "stratum": "challenge",
+      "caption": "The image is a promotional graphic for an ice skating event. It features a young man and a young woman on an ice rink. The man is wearing a white helmet and a black jacket, and the woman is holding a camera in her hand. They are both smiling and appear to be posing for the photo. The background shows a large indoor rink with people skating on it. The text on the image reads \"Ep.16\" in Korean, which translates to \"Ice skating event\" in English. There is also a logo on the top left corner of the image.",
+      "alignment": "핵심대상 맞음",
+      "unsupported": true,
+      "unsupported_claims": [
+        "여성이 카메라를 들고 있다는 내용은 실제 스케이트를 든 모습과 다르다."
+      ],
+      "factual_errors": [
+        "Ep.16은 한글 문구도 Ice skating event의 번역도 아니다.",
+        "두 사람 모두 웃고 있다는 묘사는 얼굴 표정과 정확히 맞지 않는다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "인물 성별·연령과 행사의 성격은 검증된 정보로 사용하지 않는다."
+      ],
+      "missing": [
+        "대구 제2빙상장",
+        "동구 핫플 문구"
+      ],
+      "note": "실내 빙상장 썸네일의 핵심은 맞지만 스케이트를 카메라로 바꾸고 텍스트 뜻을 왜곡했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 40,
+      "file": "c218978fb8f2c443.gif",
+      "path": "dataset/images\\c218978fb8f2c443.gif",
+      "stratum": "challenge",
+      "caption": "The image is a black and white square with the letter \"E\" in the center. The letter is slightly blurred, giving it a dreamy, ethereal quality. The background is a solid grey color, making the letter stand out. The image appears to be a logo or icon for a company or organization.",
+      "alignment": "불일치",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "겹친 문서 아이콘의 선을 E 문자로 잘못 읽었다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "회사·기관 로고라는 추정은 이미지에서 확정되지 않는다."
+      ],
+      "missing": [
+        "겹친 문서 형태"
+      ],
+      "note": "아이콘이라는 형식은 언급했지만 실제 도형을 E 문자로 바꿨다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    },
+    {
+      "i": 41,
+      "file": "f87a726b3de847c3.do",
+      "path": "dataset/images\\f87a726b3de847c3.do",
+      "stratum": "challenge",
+      "caption": "The image is a poster for an event called \"HPV 2014.1.1 - 12.31.31\". The poster has a blue background with white text and illustrations of three young boys playing soccer. The boy in the center is wearing an orange jersey and is dribbling the ball, while the two boys on either side of him are wearing blue jerseys. The text on the poster reads \"12원리스타에세요\" which translates to \"12 years old\" in English. There is also a QR code on the right side of the poster, indicating that the event will be held on January 1, 2014.",
+      "alignment": "부분적",
+      "unsupported": false,
+      "unsupported_claims": [],
+      "factual_errors": [
+        "행사가 2014년 1월1일에 열린다는 설정은 없다.",
+        "대상 출생기간 2014.1.1~12.31을 행사명·개최일로 바꿨다.",
+        "12원리스타에세요는 실제 문구가 아니다.",
+        "12.31.31 날짜 표기는 틀렸다."
+      ],
+      "fabricated_text": true,
+      "uncertain_inferences": [
+        "그림 속 인물들의 실제 성별·연령은 별도 사실로 확정하지 않는다."
+      ],
+      "missing": [
+        "12세 남성청소년 HPV 무료 예방접종",
+        "위탁의료기관/보건소·4가 백신·2회/6개월"
+      ],
+      "note": "축구하는 세 인물과 HPV·QR코드는 잡았지만 예방접종 대상 출생기간을 행사일로 오해했다.",
+      "reviewer": "assistant_visual_inspection",
+      "expert_validated": false,
+      "reference_used": "원본 이미지(투명 이미지는 흰 바탕 알파 합성 재확인)와 detailed caption만; alt_text 및 label 미사용",
+      "image_viewed": true
+    }
+  ],
+  "dense_caption_qualitative_only": [
+    {
+      "i": 0,
+      "file": "039c94d89a6db2c3",
+      "labels": [
+        "elderly man speaking into microphone in conference room",
+        "man speaking at conference with microphone",
+        "hand holding microphone",
+        "human face",
+        "glasses",
+        "microphone"
+      ],
+      "note": "마이크·안경·얼굴 등의 근거 영역은 유용하다. conference room과 인구학적 속성은 이미지 사실로 확정할 수 없다."
+    },
+    {
+      "i": 3,
+      "file": "2704361fd844b918.jpg",
+      "labels": [
+        "A man taking a picture of a group of people at a trade show.",
+        "man taking photo with digital camera at convention",
+        "man in blue shirt and gray pants at convention",
+        "woman taking photo at convention",
+        "man",
+        "person",
+        "boy",
+        "person",
+        "footwear",
+        "footwear",
+        "person",
+        "footwear",
+        "footwear",
+        "footwear",
+        "footwear",
+        "footwear",
+        "footwear",
+        "footwear",
+        "footwear",
+        "footwear"
+      ],
+      "note": "중심 로봇이 빠지고 관람객·신발 위주의 region이 다수다. dense 결과가 중심 대상의 포괄적 설명을 보장하지 않는다."
+    },
+    {
+      "i": 5,
+      "file": "9c17cdeeba6b0782.jpg",
+      "labels": [
+        "Korean drama cast and crew posing for group photo in front of banner",
+        "man",
+        "man",
+        "woman",
+        "man"
+      ],
+      "note": "Korean drama cast and crew는 현수막·사진만으로 확인되지 않는 역할 추정이다. 상세 region 검출이 행사명을 읽어 주지는 않는다."
+    },
+    {
+      "i": 18,
+      "file": "1b7d42dd2f95b6e1.jpg",
+      "labels": [
+        "South Korea 10th anniversary logo",
+        "flag"
+      ],
+      "note": "South Korea 10th anniversary는 실제 교제폭력·스토킹 레드플래그10 안내와 다르다. flag 검출은 한글 문구 인식을 대체하지 않는다."
+    },
+    {
+      "i": 27,
+      "file": "425f8567e6c2156b.jpg",
+      "labels": [
+        "Korean music festival poster",
+        "Korean drama poster with musicians and musical instruments",
+        "man with headphones and sheet music",
+        "Johannes Vermeulen playing flute",
+        "woman playing ukulele in front of colorful background",
+        "young man playing drum kit in music studio",
+        "young woman with headphones in music store",
+        "man in black beanie and black t-shirt with colorful background",
+        "musical instrument",
+        "human face"
+      ],
+      "note": "특정 인명 Johannes Vermeulen 및 Korean drama/music festival은 모델 생성물이며 이미지에서 신원이 확인되지 않는다. 인명·행사명을 사실로 보고하지 않는다."
+    },
+    {
+      "i": 39,
+      "file": "6f96819d13a5746b.do",
+      "labels": [
+        "young man rollerblading in indoor arena with helmet and camera",
+        "woman rollerblating with blue gloves and camera",
+        "human face",
+        "woman in black coat walking on street",
+        "human face",
+        "man in black jacket walking on sidewalk",
+        "woman walking on crowded street with pink bag",
+        "man in blue jacket walking in hallway",
+        "woman in pink dress walking on snowy street"
+      ],
+      "note": "실내 빙상장의 인물을 rollerblading·street·sidewalk 등으로 잘못 특정하는 region 설명이 있다. 작은 box를 추가해도 사실성과 한글 정확성이 자동 확보되지 않는다."
+    },
+    {
+      "i": 41,
+      "file": "f87a726b3de847c3.do",
+      "labels": [
+        "soccer player dribbling ball illustration",
+        "boy running with soccer ball illustration",
+        "boy running in blue t-shirt and orange shorts",
+        "football",
+        "human face",
+        "human face",
+        "footwear",
+        "human face"
+      ],
+      "note": "축구 인물/공 검출은 삽화의 일부를 설명하지만 HPV 접종 대상·기관·백신·횟수 정보를 대신하지 못한다."
+    }
+  ]
+}
