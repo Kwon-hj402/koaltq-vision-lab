@@ -1,0 +1,10 @@
+/* Shared navigation: same order, size and position on every report. */
+html{scroll-padding-top:100px}
+.site-navigation{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #d8d8d8;font-family:Arial,'Malgun Gothic','Apple SD Gothic Neo',sans-serif}
+.site-navigation .site-nav{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;margin:0 auto;padding:14px 24px;max-width:1280px;font-size:16px;line-height:1.4}
+.site-navigation .site-nav a{display:block;padding:12px 15px;min-height:46px;border:1px solid transparent;border-radius:6px;color:#353535;text-decoration:none;font-weight:600;white-space:nowrap;letter-spacing:-.025em}
+.site-navigation .site-nav a:hover{background:#f2f2f2;color:#111;border-color:#dedede}
+.site-navigation .site-nav a[aria-current="page"]{background:#202020;color:#fff;border-color:#202020}
+.site-navigation .site-nav a:focus-visible{outline:3px solid #507ba6;outline-offset:2px}
+@media(max-width:760px){html{scroll-padding-top:190px}.site-navigation .site-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:8px 12px}.site-navigation .site-nav a{text-align:center;font-size:14px;padding:10px 4px;min-height:40px}}
+@media print{.site-navigation{display:none}}
